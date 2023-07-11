@@ -1,42 +1,70 @@
-# Nuxt 3 Minimal Starter
+# Kevinmoemyintmyat.github.io
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+****
 
-## Setup
+<p>Version 1.0</p>
+<p>by m3yevn</p>
 
-Make sure to install the dependencies:
+<hr/>
 
-```bash
-# yarn
-yarn install
 
-# npm
-npm install
 
-# pnpm
-pnpm install
+
+
+## ⭐ Public Url
+
+https://kevinmoemyintmyat.github.io
+
+## 📚 Tech Stack
+
+ - Nuxt
+ - Vue
+
+
+## 📸 Screenshots
+
+N.A
+
+## 📜 Scripts
+
+```sh
+build : $ nuxt build
+dev : $ nuxt dev
+generate : $ nuxi generate
+preview : $ nuxi preview
+postinstall : $ nuxi prepare
+deploy : $ gh-pages --dotfiles -d .output/public
+
 ```
 
-## Development Server
+## 🔑 Keywords
 
-Start the development server on `http://localhost:3000`
 
-```bash
-npm run dev
-```
 
-## Production
+## 👾 Submit issues at
 
-Build the application for production:
+Visit the repository to open bug reports and issues
 
-```bash
-npm run build
-```
+## ©️ License
 
-Locally preview production build:
+This project does not have a license.
 
-```bash
-npm run preview
-```
+## Dependencies
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project does not have dependencies
+
+## Dev Dependencies
+
+ - @types/node : $ ^18
+ - gh-pages : $ ^5.0.0
+ - nuxt : $ ^3.5.0
+
+
+<img src="https://cdn.dribbble.com/users/2401141/screenshots/5487982/developers-gif-showcase.gif"/>
+
+## Documentations
+
+
+
+<hr/>
+Happy Coding!

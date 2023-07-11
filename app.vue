@@ -1,21 +1,21 @@
 <template>
-  <div class="welcome">
-    <h1>
-      <a href="https://github.com/m3yevn">@m3yevn</a> is cooking something!
-    </h1>
+  <div class="main">
+    <NavBar />
+    <NuxtPage />
   </div>
 </template>
 
 <style>
-.welcome {
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
 body {
   margin: 0;
+  background-color: black;
+  color: red;
 }
 </style>
