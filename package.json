@@ -7,7 +7,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
-    "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
+    "deploy": "nuxi generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@types/node": "^18",
