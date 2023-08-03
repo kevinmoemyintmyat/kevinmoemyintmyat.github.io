@@ -7,7 +7,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
-    "deploy": "npm run generate && gh-pages --dotfiles -d dist"
+    "deploy": "gh-pages --dotfiles -d dist"
   },
   "devDependencies": {
     "@types/node": "^18",
