@@ -1,0 +1,1 @@
+import{f as e,c as s,o as t,a as c}from"./entry.43d0b03b.js";const n={},o={class:"container h-screen w-screen flex flex-row"},r=c("div",{class:"h-screen w-3/6 flex flex-col justify-center items-center"},null,-1),_=[r];function a(l,i,f,d,p,u){return t(),s("div",o,_)}const h=e(n,[["render",a]]);export{h as default};
