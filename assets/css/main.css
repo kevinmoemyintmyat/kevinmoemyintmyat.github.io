@@ -5,3 +5,33 @@
 p {
     color: whitesmoke
 }
+
+.gallery-card {
+    border-color: red;
+    padding: 16px;
+    margin: 16px;
+    width: 400px;
+}
+
+.gallery-card p {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.gallery-card span {
+    padding: 8px;
+    color: crimson;
+}
+
+.title {
+    margin-top: 100px;
+    padding: 16px;
+    font-size: 32px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #000000, rgba(255, 0, 0, 0.201));
+    opacity: 1;
+  }
