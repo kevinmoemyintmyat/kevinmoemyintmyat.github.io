@@ -33,7 +33,7 @@ dev : $ nuxt dev
 generate : $ nuxi generate
 preview : $ nuxi preview
 postinstall : $ nuxi prepare
-deploy : $ gh-pages --dotfiles -d .output/public
+deploy : $ gh-pages --dotfiles -d dist
 
 ```
 
