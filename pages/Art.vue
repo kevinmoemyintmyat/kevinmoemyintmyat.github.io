@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-screen w-screen">
+  <div class="h-screen w-screen">
     <div class="title">
       Some of my arts and creations
     </div>
