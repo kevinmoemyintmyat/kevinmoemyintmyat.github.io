@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: "/",
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "./favicon.png" }],
+      title: "Kevin Moe Myint Myat - A cat dad, a developer & an artist",
+    },
   },
   css: ["~/assets/css/main.css"],
   postcss: {

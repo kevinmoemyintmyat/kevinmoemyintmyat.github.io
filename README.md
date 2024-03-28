@@ -2,7 +2,7 @@
 
 ****
 
-<p>Version 1.0</p>
+<p>Version 2.0</p>
 <p>by m3yevn</p>
 
 <hr/>
@@ -33,7 +33,7 @@ dev : $ nuxt dev
 generate : $ nuxi generate
 preview : $ nuxi preview
 postinstall : $ nuxi prepare
-deploy : $ gh-pages --dotfiles -d dist
+deploy : $ gh-pages --dotfiles -d .output/public
 
 ```
 
