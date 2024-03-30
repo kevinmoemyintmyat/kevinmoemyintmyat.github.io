@@ -5,7 +5,7 @@
     </div>
     <div v-for="(row, index) in artData" :key="index" class="flex flex-col lg:flex-row justify-center items-center">
       <div v-for="art in row" :key="art.name" class="gallery-card">
-        <img :src="art.image" :alt="art.name" />
+        <img :src="art.image" :alt="art.name" loading="lazy" />
         <div class="overlay"></div>
         <p>
           "{{ art.name }}"
@@ -48,6 +48,11 @@ export default {
           name: "Dancing to the Symphony",
           description: "A women dancing to the symphony where a crowd is watching and metaphorical eyes",
           image: "/art/art-painting-dancing-to-the-symphony.jpg",
+        },
+        {
+          name: "Welcome to Wonderland",
+          description: "An expression of colorful paints blending together to form a scenario of a wonderland",
+          image: "/art/art-painting-welcome-to-wonderland.jpg",
         }]
       ]
     }
