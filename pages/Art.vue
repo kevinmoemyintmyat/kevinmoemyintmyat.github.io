@@ -1,12 +1,11 @@
 <template>
   <div class="h-screen w-screen">
     <div class="title">
-      Some of my arts and creations
+      Some of my paintings
     </div>
     <div v-for="(row, index) in artData" :key="index" class="flex flex-col lg:flex-row justify-center items-center">
       <div v-for="art in row" :key="art.name" class="gallery-card">
         <img :src="art.image" :alt="art.name" loading="lazy" />
-        <div class="overlay"></div>
         <p>
           "{{ art.name }}"
           <br />

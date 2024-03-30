@@ -16,6 +16,6 @@
 body {
   margin: 0;
   background-color: black;
-  color: red;
+  color: crimson;
 }
 </style>

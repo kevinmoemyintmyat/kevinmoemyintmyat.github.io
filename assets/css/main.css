@@ -7,8 +7,9 @@ p {
 }
 
 .gallery-card {
-    border-color: red;
-    padding: 16px;
+    border-radius: 12px;
+    background-color: rgb(40, 40, 40);
+    padding: 8px;
     margin: 16px;
     width: 400px;
 }
@@ -21,6 +22,10 @@ p {
 .gallery-card span {
     padding: 8px;
     color: crimson;
+}
+
+.gallery-card img {
+    border-radius: 12px;
 }
 
 .title {

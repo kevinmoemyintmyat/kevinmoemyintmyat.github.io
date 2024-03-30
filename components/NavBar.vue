@@ -26,9 +26,9 @@
           Work
         </h1>
       </a>
-      <NuxtLink to="/contact" class="mx-3">
+      <NuxtLink to="/about/me" class="mx-3">
         <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Contact
+          About
         </h1>
       </NuxtLink>
     </div>
