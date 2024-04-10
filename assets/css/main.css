@@ -40,3 +40,38 @@ p {
     background-image: linear-gradient(to right, #000000, rgba(255, 0, 0, 0.201));
     opacity: 1;
 }
+
+.blog-img-card-row {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.blog-img-card-row .blog-img-card {
+    margin-right: 10px !important;
+}
+
+video {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.blog-img-card {
+    border-radius: 12px;
+    background-color: rgb(40, 40, 40);
+    padding: 8px;
+    width: 80%;
+    margin-top: 32px;
+}
+
+.blog-img {
+    padding: 16px 0px;
+}
+
+.blog-img-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: tomato;
+}
+
+ul {
+    color: crimson;
+}

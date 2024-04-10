@@ -4,7 +4,7 @@
             <div v-for="(row, index) in blogData" :key="index"
                 class="flex flex-col lg:flex-row justify-center items-center">
                 <div v-for="blog in row" :key="blog.title" class="gallery-card w-full">
-                    <NuxtLink to="/blog/a-tree-of-life">
+                    <NuxtLink to="/blog/first-trip-to-bali">
                         <p>
                             "{{ blog.title }}"
                             <br />
@@ -30,8 +30,8 @@ export default {
         return {
             blogData: [[
                 {
-                    title: "Tree of Life",
-                    description: "A day that I visited to a store to buy a plant, after years later it became a tree. But there was more to it.",
+                    title: "The first solo trip to Bali",
+                    description: "It was a great morning before the flight. I woke up fresh and...",
                     date: "30th March 2024"
                 }],
             []
