@@ -270,7 +270,7 @@
             </p>
         </div>
 
-        <audio loop>
+        <audio autoplay>
             <source
                 src="https://t4.bcbits.com/stream/47d1946f5a22553bdf9801852c8b7e5c/mp3-128/186782171?p=0&ts=1712815151&t=947f97d55c5ec734cc1afcc5cfe8125120cc566b&token=1712815151_c08885c8473c836a74818b3e8e74d8c661c6c538"
                 type="audio/mpeg">

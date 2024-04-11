@@ -4,7 +4,7 @@
             <div v-for="(row, index) in blogData" :key="index"
                 class="flex flex-col lg:flex-row justify-center items-center">
                 <div v-for="blog in row" :key="blog.title" class="gallery-card w-full">
-                    <NuxtLink to="/blog/first-trip-to-bali">
+                    <NuxtLink :to="blog.route">
                         <p>
                             "{{ blog.title }}"
                             <br />
@@ -32,9 +32,15 @@ export default {
                 {
                     title: "The first solo trip to Bali",
                     description: "It was a great morning before the flight. I woke up fresh and...",
-                    date: "30th March 2024"
-                }],
-            []
+                    date: "30th March 2024",
+                    route: "/blog/first-trip-to-bali"
+                },
+                {
+                    title: "The second solo trip to Bali",
+                    description: "One's just not enough when it comes to Bali. But this time, I'm..",
+                    date: "11th April 2024",
+                    route: "/blog/second-trip-to-bali"
+                }]
             ]
         }
     }
