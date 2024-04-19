@@ -278,6 +278,53 @@
     </section>
 </template>
 
+<script setup>
+useHead({
+    title: 'My first trip to Bali by Kevin Moe Myint Myat',
+    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    meta: [
+        { name: 'description', content: 'My first trip to Bali by Kevin Moe Myint Myat' },
+        {
+            name: "description",
+            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+        },
+        {
+            name: "keywords",
+            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+        },
+        {
+            property: "og:title",
+            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        },
+        {
+            property: "og:type",
+            content: "profile",
+        },
+        {
+            property: "og:url",
+            content: `https://kevinmoemyintmyat.github.io`,
+        },
+        {
+            property: "og:site:name",
+            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        },
+        {
+            property: "og:description",
+            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        },
+        {
+            name: "twitter:site",
+            content: "https://kevinmoemyintmyat.github.io",
+        },
+        {
+            name: "twitter:description",
+            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+        }
+    ],
+    ogImage: '/favicon.png'
+})
+</script>
+
 <script>
 export default {
     methods: {

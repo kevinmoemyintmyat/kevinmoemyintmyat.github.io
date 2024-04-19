@@ -5,6 +5,13 @@
   </div>
 </template>
 
+<script setup>
+useHead({
+  title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
+  link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }]
+});
+</script>
+
 <style>
 .main {
   display: flex;

@@ -6,6 +6,24 @@
             One's just not enough when it comes to Bali.
             But this time, I'm going to go to the places that I haven't been able to go on
             <NuxtLink to="/blog/first-trip-to-bali">my first Bali trip.</NuxtLink>
+            That's why this time I've planned to visit mainly in Ubud, the central region of the Bali island.
+        </p>
+        <p class="pt-10">
+            This trip is a special one because I had been watching "Eat, Pray, Love" movie and decided that I needed a healing journey :).
+            On the morning of a sunny 21st December 2023, I came to the airport with my exchanged rupiahs, a backpack and a luggage packed with few clothes.
+            The immigration and checking-in were pretty smooth. As usual, the flight took me around 3 hours to arrive to Ngu Rah Rai airport.
+            <br /><br />
+            I took a taxi to my hotel in Seminyak area where I would spend the night. Since this vacation is a slowed down one where I got 5 days to enjoy myself, I travelled
+            not as rush as last time. I decided to just spend the night at the hotel and ordered a dinner from Grab. The hotel room was spacious and enjoyable. The compund has its own swimming pool
+            and also decorated with ancient Balinese arts and statues.
+            <br/>
+            <span class="blog-img-card">
+                <img src="/blog/second-trip-to-bali/airport.png" class="blog-img" />
+                <span class="blog-img-title">Once again ❤️ </span>
+            </span>
+        </p>
+        <p class="pt-10">
+            Next morning, I walked around Seminyak beach because the hotel is so close to the beach.
         </p>
         <audio autoplay>
             <source

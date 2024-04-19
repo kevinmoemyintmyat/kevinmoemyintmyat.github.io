@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen w-screen flex lg:flex-row sm:flex-col-reverse lg:visible">
     <div class="h-screen lg:w-3/6 w-full flex flex-col justify-center items-center">
+      <img src="@/assets/images/me-cool-avatar.jpg" class="mobile-avatar md:visible sm:visible lg:invisible" />
       <h1 class="p-12">
         <span class="text-9xl">Kevin</span>
         <br/>
@@ -30,5 +31,11 @@ export default {};
 .image {
   background-image: url("@/assets/images/me-cool.jpg");
   background-size: cover;
+}
+
+.mobile-avatar {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
 }
 </style>

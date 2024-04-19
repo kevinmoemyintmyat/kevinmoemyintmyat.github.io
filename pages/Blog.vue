@@ -9,12 +9,12 @@
                             "{{ blog.title }}"
                             <br />
                             <span>{{ blog.description }}</span>
-                            <span class="read-more">
-                                ...Read more
-                            </span>
                         </p>
                         <span class="date">
                             {{ blog.date }}
+                            <span class="read-more">
+                                ...Read more
+                            </span>
                         </span>
                     </NuxtLink>
                 </div>
@@ -55,13 +55,16 @@ p {
 .date {
     font: 1em sans-serif;
     color: gray;
+    position: relative;
+    display: block;
 }
 
 .read-more {
     color: grey;
     text-decoration: underline;
     font-size: 15px;
-    padding-left: 80px;
+    position: absolute;
+    right: 0px;
 }
 
 .gallery-card {
