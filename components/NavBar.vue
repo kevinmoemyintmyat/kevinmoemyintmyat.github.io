@@ -1,36 +1,19 @@
 <template>
   <div>
     <div class="p-4 flex flex-row fixed md:right-0 lg:visible">
-      <NuxtLink to="/" class="mx-3">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Home
-        </h1>
-      </NuxtLink>
-      <NuxtLink to="/art" class="mx-3">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Art
-        </h1>
-      </NuxtLink>
-      <NuxtLink to="/music" class="mx-3">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Music
-        </h1>
-      </NuxtLink>
-      <NuxtLink to="/blog" class="mx-3">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Blog
-        </h1>
-      </NuxtLink>
-      <a href="https://kevinmoemyintmyat.gitlab.io" class="mx-3" target="blank">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          Work
-        </h1>
-      </a>
-      <NuxtLink to="/about/me" class="mx-3">
-        <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
-          About
-        </h1>
-      </NuxtLink>
+      <div v-for="routeItem in state.routes" :key="routeItem.name" class="mx-3">
+        <NuxtLink :to="'/' + routeItem.route" v-if="routeItem.internal">
+          <h1
+            :class="`md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white ` + selected(routeItem.route)">
+            {{ routeItem.name }}
+          </h1>
+        </NuxtLink>
+        <a v-else :href="routeItem.route" target="blank">
+          <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
+            {{ routeItem.name }}
+          </h1>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -38,6 +21,53 @@
 <script>
 
 export default {
+};
+</script>
+
+<script setup>
+const route = useRoute();
+
+const state = reactive({
+  routes: [
+    {
+      name: "Home",
+      route: "",
+      internal: true
+    },
+    {
+      name: "Art",
+      route: "art",
+      internal: true
+    },
+    {
+      name: "Music",
+      route: "music",
+      internal: true
+    },
+    {
+      name: "Blog",
+      route: "blog",
+      internal: true
+    },
+    {
+      name: "Work",
+      route: "https://kevinmoemyintmyat.gitlab.io",
+      internal: false
+    },
+    {
+      name: "About",
+      route: "about/me",
+      internal: true
+    }
+  ]
+});
+
+const selected = (value) => {
+  const mainPath = route.path.split("/")[1];
+  if (mainPath === "about") {
+    return value.includes(mainPath) ? "selected" : "";
+  }
+  return value === mainPath ? "selected" : "";
 };
 </script>
 
@@ -49,5 +79,10 @@ div {
       #000000,
       rgba(255, 0, 0, 0));
   opacity: 1;
+}
+
+.selected {
+  text-decoration: underline;
+  color: whitesmoke;
 }
 </style>

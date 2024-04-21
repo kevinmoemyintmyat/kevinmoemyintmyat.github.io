@@ -11,6 +11,10 @@
           <br />
           <span>{{ art.description }}</span>
         </p>
+        <div class="gallery-card-footer">
+          <button @click="chatWhatsappForPrice(art)"><img src="@/assets/icons/whatsapp-icon.svg" />Chat for
+            price</button>
+        </div>
       </div>
     </div>
   </div>
@@ -53,7 +57,16 @@ export default {
           description: "An expression of colorful paints blending together to form a scenario of a wonderland",
           image: "/art/art-painting-welcome-to-wonderland.jpg",
         }]
-      ]
+      ],
+      whatsAppApiLink: "https://api.whatsapp.com/send?phone=6598882256&text="
+    }
+  },
+  methods: {
+    chatWhatsappForPrice(art) {
+      const imageSrc = `https://kevinmoemyintmyat.github.io${art.image}`;
+      const template = `Hi Kevin Moe Myint Myat, I saw your painting named "${art.name}" at ${imageSrc}. I'm interested in buying it. ` +
+        "Would you like to discuss the price? Hope to hear from you soon about possible viewing."
+      window.open(this.whatsAppApiLink + template, "_blank");
     }
   }
 };

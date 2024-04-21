@@ -12,7 +12,9 @@
                 🐈‍⬛ to <a href="https://www.instagram.com/jiemao_blackcat/" target="_blank">@jiemao_blackcat</a>.
                 <br /><br />
                 I'm spending most of my time working at <a href="https://www.dtone.com/" target="_blank">DT One</a>
-                where I do coding using web technologies.
+                where I do coding using web technologies. You can read more about my professional career portfolio 
+                <a href="https://kevinmoemyintmyat.gitlab.io" target="blank">here</a>.
+                <br /><br />
                 <br /><br />
                 I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating arts and
                 maintaining my projects on
@@ -26,9 +28,9 @@
                 ( <NuxtLink class="selling-link" to="/art">Click here!</NuxtLink> )
                 <br /><br />
                 Just contact me at <a href="mailto: mmm.myintmyat@gmail.comm">mmm.myintmyat@gmail.com</a> if you want to
-                buy my paintings 😊 <br /><br />
-                If you are having a good day and want to sponsor me, you can just PayNow my number
-                at <b>+65 98882256</b>. I appreciate any amount 😉
+                buy my paintings 😊. <br /><br />
+                Or you can whatsapp me
+                at <a :href="whatsAppApiLink" target="_blank">+65 98882256</a> and we can discuss there 😉.
                 <br /><br />
                 <br /><br />
                 <br />
@@ -41,7 +43,13 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            whatsAppApiLink: "https://api.whatsapp.com/send?phone=6598882256&text=" +
+                "Hi Kevin Moe Myint Myat, I saw your art website and I'm interested in your paintings at https://kevinmoemyintmyat.github.io/art. " +
+                "Would you like to discuss about the price?"
+        }
+    }
 }
 </script>
 

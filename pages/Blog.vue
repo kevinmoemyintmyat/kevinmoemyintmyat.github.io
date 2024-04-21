@@ -11,7 +11,9 @@
                             <span>{{ blog.description }}</span>
                         </p>
                         <span class="date">
-                            {{ blog.date }}
+                            Written on {{ blog.date }}, <b>Category</b>: <b class="gallery-card-tag">{{ blog.category
+                                }}</b> <b>, Language</b>: <b class="gallery-card-tag">{{ blog.language
+                                }}</b>
                             <span class="read-more">
                                 ...Read more
                             </span>
@@ -33,13 +35,17 @@ export default {
                     title: "The first solo trip to Bali",
                     description: "It was a great morning before the flight. I woke up fresh and...",
                     date: "30th March 2024",
-                    route: "/blog/first-trip-to-bali"
+                    route: "/blog/first-trip-to-bali",
+                    category: "Travel",
+                    language: "English"
                 },
                 {
                     title: "The second solo trip to Bali",
                     description: "One's just not enough when it comes to Bali. But this time, I'm..",
                     date: "11th April 2024",
-                    route: "/blog/second-trip-to-bali"
+                    route: "/blog/second-trip-to-bali",
+                    category: "Travel",
+                    language: "English"
                 }]
             ]
         }

@@ -24,5 +24,6 @@ body {
   margin: 0;
   background-color: black;
   color: crimson;
+  overflow-x: hidden;
 }
 </style>

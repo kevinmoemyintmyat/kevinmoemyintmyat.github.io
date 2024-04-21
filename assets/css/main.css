@@ -28,6 +28,21 @@ p {
     border-radius: 12px;
 }
 
+.gallery-card-footer {
+    position: relative;
+    display: block;
+    height: 50px;
+}
+
+.gallery-card-footer button {
+    position: absolute;
+    right: 0px;
+}
+
+.gallery-card-tag {
+    color: greenyellow;
+}
+
 .title {
     margin-top: 100px;
     padding: 16px;
@@ -61,6 +76,37 @@ video {
     padding: 8px;
     width: 80%;
     margin-top: 32px;
+    flex-direction: column;
+}
+
+button {
+    background: crimson;
+    outline: none;
+    border: 0;
+    font-size: 17px;
+    padding: 5px 30px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    text-align: center;
+    font-family: inherit;
+}
+
+button:hover {
+    background: unset;
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
+}
+
+button img {
+    margin-right: 4px;
 }
 
 .blog-img {
