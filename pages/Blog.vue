@@ -1,23 +1,26 @@
 <template>
     <div class="h-screen w-screen mt-20">
         <div class="mt-20">
-            <div v-for="(row, index) in blogData" :key="index"
+            <div v-for="(row, index) in  blogData " :key="index"
                 class="flex flex-col lg:flex-row justify-center items-center">
-                <div v-for="blog in row" :key="blog.title" class="gallery-card w-full">
-                    <NuxtLink :to="blog.route">
+                <div v-for="blog in  row " :key="blog.title" class="gallery-card w-full">
+                    <NuxtLink :to="constructPath(blog)">
                         <p>
                             "{{ blog.title }}"
                             <br />
                             <span>{{ blog.description }}</span>
                         </p>
-                        <span class="date">
-                            Written on {{ blog.date }}, <b>Category</b>: <b class="gallery-card-tag">{{ blog.category
-                                }}</b> <b>, Language</b>: <b class="gallery-card-tag">{{ blog.language
-                                }}</b>
+                        <div class="gallery-card-footer">
+                            <span class="date">
+                                Written on {{ blog.date }}, <b>Category</b>: <b class="gallery-card-tag">{{
+                blog.category
+            }}</b> <b>, Language</b>: <b class="gallery-card-tag">{{ blog.language
+                                    }}</b>
+                            </span>
                             <span class="read-more">
                                 ...Read more
                             </span>
-                        </span>
+                        </div>
                     </NuxtLink>
                 </div>
             </div>
@@ -46,8 +49,49 @@ export default {
                     route: "/blog/second-trip-to-bali",
                     category: "Travel",
                     language: "English"
-                }]
+                }],
+            [
+                {
+                    title: "နေရောင်လာပြီ",
+                    title_en: "Here Comes the Sun",
+                    description: "မျှော်လင့်ချက်နှင့် ခွန်အားကို သရုပ်ဖော်ထားသော ကဗျာတစ်ပုဒ်",
+                    description_en: "A poem written in Burmese language depicting hope and strength",
+                    date: "22nd April 2024",
+                    route: "/poems/here-comes-the-sun",
+                    category: "Poem",
+                    language: "Burmese",
+                    language_date: "22nd April 2024 တွင်ရေးသားခဲ့သည်"
+                },
+                {
+                    title: "နေရောင်လာပြီ",
+                    title_en: "Here Comes the Sun",
+                    description: "မျှော်လင့်ချက်နှင့် ခွန်အားကို သရုပ်ဖော်ထားသော ကဗျာတစ်ပုဒ်",
+                    description_en: "A poem written in Burmese language depicting hope and strength",
+                    date: "22nd April 2024",
+                    route: "/poems/here-comes-the-sun",
+                    category: "Poem",
+                    language: "Burmese",
+                    language_date: "22nd April 2024 တွင်ရေးသားခဲ့သည်"
+                }
             ]
+            ]
+        }
+    },
+    methods: {
+        constructPath(blog) {
+            if (blog.language === "English") {
+                return blog.route;
+            }
+            return {
+                path: blog.route,
+                query: {
+                    title: blog.title,
+                    title_en: blog.title_en,
+                    language: blog.language,
+                    language_date: blog.language_date,
+                    date: blog.date
+                }
+            }
         }
     }
 };
@@ -69,16 +113,25 @@ p {
     color: grey;
     text-decoration: underline;
     font-size: 15px;
-    position: absolute;
     right: 0px;
+    bottom: 8px;
+    position: absolute;
 }
 
 .gallery-card {
-    width: auto;
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.gallery-card-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
 }
 
 .gallery-card:hover {
-    width: auto;
+    width: 100%;
 }
 
 a {
