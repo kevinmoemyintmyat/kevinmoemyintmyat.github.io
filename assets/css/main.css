@@ -14,6 +14,14 @@ p {
     width: 400px;
 }
 
+.music-video-card {
+    border-radius: 12px;
+    background-color: rgb(40, 40, 40);
+    padding: 8px;
+    margin: 16px;
+    width: 620px;
+}
+
 .gallery-card p {
     padding: 8px;
     font-weight: bold;
@@ -115,6 +123,21 @@ button img {
 .blog-img-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: tomato;
+}
+
+hr {
+    margin: 16px 6px;
+    width: 90%;
+    color: grey;
+}
+
+.poem-signature hr {
+    width: 20% !important;
+}
+
+.poem-signature {
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 ul {

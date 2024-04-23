@@ -28,6 +28,12 @@
     </div>
 </template>
 
+<script setup>
+useHead({
+    title: "Blogs, Poems and Articles by Kevin Moe Myint Myat"
+})
+</script>
+
 <script>
 export default {
     data() {
@@ -56,22 +62,37 @@ export default {
                     title_en: "Here Comes the Sun",
                     description: "မျှော်လင့်ချက်နှင့် ခွန်အားကို သရုပ်ဖော်ထားသော ကဗျာတစ်ပုဒ်",
                     description_en: "A poem written in Burmese language depicting hope and strength",
-                    date: "22nd April 2024",
+                    date: "8th September 2023",
                     route: "/poems/here-comes-the-sun",
                     category: "Poem",
                     language: "Burmese",
-                    language_date: "22nd April 2024 တွင်ရေးသားခဲ့သည်"
+                    language_date: "8th September 2023 တွင်ရေးသားခဲ့သည်"
                 },
                 {
-                    title: "နေရောင်လာပြီ",
-                    title_en: "Here Comes the Sun",
-                    description: "မျှော်လင့်ချက်နှင့် ခွန်အားကို သရုပ်ဖော်ထားသော ကဗျာတစ်ပုဒ်",
-                    description_en: "A poem written in Burmese language depicting hope and strength",
-                    date: "22nd April 2024",
-                    route: "/poems/here-comes-the-sun",
+                    title: "Memoirs of a Ghost",
+                    description: "A poem depicting internal despair and longing",
+                    date: "5th December 2023",
+                    route: "/poems/memoirs-of-a-ghost",
                     category: "Poem",
-                    language: "Burmese",
-                    language_date: "22nd April 2024 တွင်ရေးသားခဲ့သည်"
+                    language: "English"
+                }
+            ],
+            [
+                {
+                    title: "Rainy Day Reunion",
+                    description: "Once upon a time, in a world where raindrops danced upon the rooftops...",
+                    date: "22th April 2024",
+                    route: "/blog/rainy-day-reunion",
+                    category: "Story",
+                    language: "English"
+                },
+                {
+                    title: "Echoes of Tomorrow",
+                    description: "The year was 2175, and the world had changed beyond recognition...",
+                    date: "23rd April 2024",
+                    route: "/blog/echoes-of-tomorrow",
+                    category: "Story",
+                    language: "English"
                 }
             ]
             ]
@@ -80,7 +101,13 @@ export default {
     methods: {
         constructPath(blog) {
             if (blog.language === "English") {
-                return blog.route;
+                return {
+                    path: blog.route,
+                    query: {
+                        title: blog.title,
+                        date: blog.date
+                    }
+                }
             }
             return {
                 path: blog.route,

@@ -12,7 +12,7 @@
                 🐈‍⬛ to <a href="https://www.instagram.com/jiemao_blackcat/" target="_blank">@jiemao_blackcat</a>.
                 <br /><br />
                 I'm spending most of my time working at <a href="https://www.dtone.com/" target="_blank">DT One</a>
-                where I do coding using web technologies. You can read more about my professional career portfolio 
+                where I do coding using web technologies. You can read more about my professional career portfolio
                 <a href="https://kevinmoemyintmyat.gitlab.io" target="blank">here</a>.
                 <br /><br />
                 <br /><br />
@@ -20,7 +20,8 @@
                 maintaining my projects on
                 <a href="https://github.com/m3yevn" target="_blank">my github portfolio</a>.
                 <br /><br />
-                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs of my solo trips</NuxtLink> and just
+                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs of my solo trips</NuxtLink>, <NuxtLink
+                    to="/blog">poems and stories</NuxtLink> and just
                 reminiscing my past great memories.
                 <br /><br />
                 <br /><br />

@@ -8,43 +8,42 @@
                 </button>
             </span>
         </h2>
-        <p v-if="state.language !== 'en'" class="pt-10">
-            မနေ့ညက နေထွက်တာ ကြည့်ရတယ်လို့ အိမ်မက် မက်တယ် ...
+        <p class="pt-10">
+            Haunted in my own paradise
+            <br />
+            It became a prison.
+            <br />
+            I am a cage longing for screeching doves in unison..
             <br /><br />
-            ဘာအဓိပ္ပယ်မှန်း မသိပေမယ့် ...
-            <br /><br />
-            ကျနော် နည်းနည်း...
-            <br /><br />
-            <br /><br />
-            ပျော်လာမိတယ်
-        </p>
-        <p class="pt-10" v-else>
-            Last night I dreamt of a sunrise...
-            <br /><br />
-            It was nothing, I do not know despise...
-            <br /><br />
-            A small amount of sadness in me sliced...
+            Heaven above turns sour into a heap of throes,
+            <br />
+            a mere pile of ashes and thorns without the rose
             <br /><br />
             <br /><br />
-            I slowly smiled...
-        </p>
+            <br /><br />
+            For what dies have lived for the memoirs of a ghost
+            <br /><br />
         <div class="flex poem-signature">
             <hr />
             Kevin Moe Myint Myat
         </div>
+        </p>
     </section>
 </template>
 
 <script setup>
 const route = useRoute();
 const shouldTranslate = computed(() => {
+    if (!route.query?.language) {
+        return false;
+    }
     return route.query?.language !== "English";
 })
 
 const originalState = {
     title: route.query.title,
     language: route.query.language,
-    date: route.query.language_date,
+    date: route.query.language_date || `Written on ${route.query.date}`,
 };
 
 const state = reactive({ ...originalState });
@@ -54,17 +53,11 @@ function toggleTranslations() {
         state.title = route.query.title_en;
         state.date = `Written on ${route.query.date}`;
         state.language = "en";
-        return useHead({
-            title: "Poems - " + route.query.title_en + " by Kevin Moe Myint Myat",
-        })
+        return;
     }
     state.title = originalState.title;
     state.language = originalState.language;
     state.date = originalState.date;
-
-    useHead({
-        title: "Poems - " + route.query.title + " by Kevin Moe Myint Myat",
-    })
 }
 
 useHead({
