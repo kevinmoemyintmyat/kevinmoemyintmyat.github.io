@@ -22,6 +22,12 @@ p {
     width: 620px;
 }
 
+@media only screen and (max-width: 600px) {
+    .music-video-card {
+        width: 100%;
+    }
+}
+
 .gallery-card p {
     padding: 8px;
     font-weight: bold;
