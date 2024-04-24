@@ -35,15 +35,18 @@ useHead({
 </script>
 
 <script>
+import orderBy from "lodash/orderBy";
+import format from "date-fns/format";
+
 export default {
     data() {
-        //edit from top for latest blog data
+        //must have odd number of blogs to take out latest release
         return {
-            blogData: [[
+            blogs: [
                 {
                     title: "The first solo trip to Bali",
                     description: "It was a great morning before the flight. I woke up fresh and...",
-                    date: "30th March 2024",
+                    date: new Date("2024/03/30"),
                     route: "/blog/first-trip-to-bali",
                     category: "Travel",
                     language: "English"
@@ -51,18 +54,17 @@ export default {
                 {
                     title: "The second solo trip to Bali",
                     description: "One's just not enough when it comes to Bali. But this time, I'm..",
-                    date: "11th April 2024",
+                    date: new Date("2024/04/11"),
                     route: "/blog/second-trip-to-bali",
                     category: "Travel",
                     language: "English"
-                }],
-            [
+                },
                 {
                     title: "နေရောင်လာပြီ",
                     title_en: "Here Comes the Sun",
                     description: "မျှော်လင့်ချက်နှင့် ခွန်အားကို သရုပ်ဖော်ထားသော ကဗျာတစ်ပုဒ်",
                     description_en: "A poem written in Burmese language depicting hope and strength",
-                    date: "8th September 2023",
+                    date: new Date("2023/09/08"),
                     route: "/poems/here-comes-the-sun",
                     category: "Poem",
                     language: "Burmese",
@@ -71,17 +73,15 @@ export default {
                 {
                     title: "Memoirs of a Ghost",
                     description: "A poem depicting internal despair and longing",
-                    date: "5th December 2023",
+                    date: new Date("2023/12/05"),
                     route: "/poems/memoirs-of-a-ghost",
                     category: "Poem",
                     language: "English"
-                }
-            ],
-            [
+                },
                 {
                     title: "Rainy Day Reunion",
                     description: "Once upon a time, in a world where raindrops danced upon the rooftops...",
-                    date: "22th April 2024",
+                    date: new Date("2024/04/22"),
                     route: "/blog/rainy-day-reunion",
                     category: "Story",
                     language: "English"
@@ -89,13 +89,32 @@ export default {
                 {
                     title: "Echoes of Tomorrow",
                     description: "The year was 2175, and the world had changed beyond recognition...",
-                    date: "23rd April 2024",
+                    date: new Date("2024/04/23"),
                     route: "/blog/echoes-of-tomorrow",
                     category: "Story",
                     language: "English"
                 }
             ]
-            ]
+        }
+    },
+    computed: {
+        blogData() {
+            const blogData = [];
+            let row = [];
+            const sortedBlogs = orderBy(this.blogs, "date", "desc");
+            sortedBlogs.forEach((blog) => {
+                row.push({
+                    ...blog,
+                    date: format(blog.date, "do MMMM yyyy")
+                });
+
+                if (row.length === 2) {
+                    blogData.push(row);
+                    row = [];
+                    return;
+                }
+            })
+            return blogData;
         }
     },
     methods: {
