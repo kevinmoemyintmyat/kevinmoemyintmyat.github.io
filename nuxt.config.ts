@@ -10,8 +10,14 @@ export default defineNuxtConfig({
       title: "Kevin Moe Myint Myat - A cat dad, a developer & an artist",
       meta: [
         {
+          "http-equiv": "content-language",
+          "content": "en-us"
+        },
+        {
           name: "description",
-          content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+          content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
+            He spends most of his time working as a software engineer at DT One (https://www.dtone.com) and during the weekends, he pursues his passion "Art" and works on his paintings. He has participated in
+            World Charity Painting 2024 (https://en.artassociation.asia/wcpc) and World Heritage Painting 2024 (https://en.artassociation.asia/whpc).`,
         },
         {
           name: "keywords",

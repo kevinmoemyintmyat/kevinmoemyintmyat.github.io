@@ -78,22 +78,22 @@ export default {
                     category: "Poem",
                     language: "English"
                 },
-                {
-                    title: "Rainy Day Reunion",
-                    description: "Once upon a time, in a world where raindrops danced upon the rooftops...",
-                    date: new Date("2024/04/22"),
-                    route: "/blog/rainy-day-reunion",
-                    category: "Story",
-                    language: "English"
-                },
-                {
-                    title: "Echoes of Tomorrow",
-                    description: "The year was 2175, and the world had changed beyond recognition...",
-                    date: new Date("2024/04/23"),
-                    route: "/blog/echoes-of-tomorrow",
-                    category: "Story",
-                    language: "English"
-                }
+                // {
+                //     title: "Rainy Day Reunion",
+                //     description: "Once upon a time, in a world where raindrops danced upon the rooftops...",
+                //     date: new Date("2024/04/22"),
+                //     route: "/blog/rainy-day-reunion",
+                //     category: "Story",
+                //     language: "English"
+                // },
+                // {
+                //     title: "Echoes of Tomorrow",
+                //     description: "The year was 2175, and the world had changed beyond recognition...",
+                //     date: new Date("2024/04/23"),
+                //     route: "/blog/echoes-of-tomorrow",
+                //     category: "Story",
+                //     language: "English"
+                // }
             ]
         }
     },

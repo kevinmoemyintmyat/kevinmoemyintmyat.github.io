@@ -1,79 +1,163 @@
 <template>
-  <div class="h-screen w-screen">
-    <div class="title">Some of the music that I like</div>
-    <div v-for="(row, index) in musicData" :key="index" class="flex flex-col lg:flex-row justify-center items-center">
-      <div v-for="art in row" :key="art.src" class="gallery-card">
-        <div v-html="art.src"></div>
+  <section v-if="showSmule">
+    <div class="title">Some of my karaokes on <a href="https://www.smule.com/m3_yevn" target="blank">Smule</a></div>
+    <div v-if="state.isLoading" class="flex justify-center items-center">
+      <h2 class="loading-text">Loading...</h2>
+    </div>
+    <div v-for="(row, index) in state.smuleData" :key="index"
+      class="flex flex-col lg:flex-row justify-center items-center">
+      <div v-for="music in row" :key="music.key" class="gallery-card music-card">
+        <a :href="'https://smule.com' + music.web_url" target="blank">
+          <img class="cover-img" :src="music.cover_url" :alt="music.key" loading="lazy" />
+          <p>
+            Title: <span class="tooltip">"{{ constructLabel(music.title) }}" <span v-if="music.title.length > 25"
+                class="tooltiptext"> {{ music.title }}</span></span>
+            <br />
+            Artist: <span class="tooltip">{{ constructLabel(music.artist) }} <span v-if="music.artist.length > 25"
+                class="tooltiptext"> {{ music.artist }}</span></span>
+            <br />
+            Description: <span class="tooltip">{{ constructLabel(music.message) }} <span
+                v-if="music.message.length > 25" class="tooltiptext"> {{ music.message }}</span></span>
+            <br />
+            Cover by: <span class="tooltip"><a :href="'https://smule.com' + music.performed_by_url" target="blank">{{
+              constructLabel(music.performed_by) }}</a></span>
+          </p>
+          <div class="gallery-card-footer">
+            <a :href="'https://smule.com' + music.web_url" target="blank">
+              <button><img src="@/assets/icons/whatsapp-icon.svg" />View this recording</button>
+            </a>
+          </div>
+        </a>
       </div>
     </div>
+    <div class="flex justify-center align-center">
+      <button class="outlined" @click="fetchMoreSmuleData" :disabled="state.isLoading">
+        {{ state.isLoading ? "Loading..." : "LoadMore" }}</button>
+    </div>
+  </section>
 
-    <div class="title">Some of the music videos that I like</div>
-    <div v-for="(row, index) in youtubeData" :key="index" class="flex flex-col lg:flex-row justify-center items-center">
-      <div v-for="art in row" :key="art.src" class="music-video-card">
-        <div v-html="art.src"></div>
+  <section v-if="showSoundcloud">
+    <div class="title">Some of my <a href="https://soundcloud.com/kevinmoemyintmyat" target="blank">Soundcloud</a>
+      mixes back in 2020</div>
+    <div v-for="(row, index) in soundCloudData" :key="index"
+      class="flex flex-col lg:flex-row justify-center items-center">
+      <div v-for="music in row" :key="music.src" class="music-video-card">
+        <div v-html="music.src"></div>
       </div>
     </div>
+  </section>
+
+  <div class="h-screen w-screen">
+    <section v-if="showSpotify">
+      <div class="title">Some of the songs that inspire me</div>
+      <div v-for="(row, index) in spotifyData" :key="index"
+        class="flex flex-col lg:flex-row justify-center items-center">
+        <div v-for="music in row" :key="music.src" class="gallery-card">
+          <div v-html="music.src"></div>
+        </div>
+      </div>
+    </section>
+
+    <section v-if="showYoutube">
+      <div class="title">Some of the music videos that I like</div>
+      <div v-for="(row, index) in youtubeData" :key="index"
+        class="flex flex-col lg:flex-row justify-center items-center">
+        <div v-for="music in row" :key="music.src" class="music-video-card">
+          <div v-html="music.src"></div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
+<script setup>
+const smuleApiUrl = `http://localhost:10000/profile`;
+
+const state = reactive({
+  isLoading: false,
+  smuleQuery: {
+    pageNumber: 0,
+    pageLimit: 6
+  },
+  smuleData: []
+});
+
+function constructLabel(label) {
+  if (label.length > 25) {
+    return `${label.slice(0, 25)}...`
+  }
+  return label;
+}
+
+async function fetchSmuleData() {
+  try {
+    state.isLoading = true;
+    const url = smuleApiUrl + `?offset=${state.smuleQuery.pageNumber}&limit=${state.smuleQuery.pageLimit}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    constructData(data.list);
+  } catch (ex) {
+    console.error(ex);
+  } finally {
+    state.isLoading = false;
+  }
+}
+
+function fetchMoreSmuleData() {
+  state.smuleQuery.pageNumber = state.smuleQuery.pageNumber + state.smuleQuery.pageLimit;
+  fetchSmuleData();
+}
+
+function constructData(list) {
+  const dataSchema = [];
+  if (Array.isArray(list)) {
+    let innerArray = [];
+    list.forEach((item, index) => {
+      if (innerArray?.length <= 3) {
+        innerArray.push(item);
+      }
+      if (innerArray.length === 3) {
+        dataSchema.push(innerArray);
+        innerArray = [];
+      }
+    });
+    state.smuleData = state.smuleData.concat(dataSchema);
+  }
+}
+
+onMounted(() => {
+  fetchSmuleData();
+})
+
+</script>
+
 <script>
+import spotifyData from "~/assets/data/data-spotify";
+import youtubeData from "~/assets/data/data-youtube";
+import soundCloudData from "~/assets/data/data-soundcloud";
+
 export default {
   data() {
     return {
-      musicData: [
-        [
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4T6FWA703h6H7zk1FoSARw?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-          },
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/10nyNJ6zNy2YVYLrcwLccB?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-          },
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5hM5arv9KDbCHS0k9uqwjr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-          },
-        ],
-        [
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2i4AouhQeGFBb4g3cx8yqg?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-          },
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0SpkyS1Q4MD8GaVcP5YjT4?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
-          },
-          {
-            src: `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2V5SGZFsF1yoDakHRwrmma?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
-          }
-        ],
-      ],
-      youtubeData: [
-        [
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/0AbvnTgGH8s?si=SpZcqpNL-oDp4PNV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-          },
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bimd2nZirT4?si=KZWq5R0cOdTv_NXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-          }
-        ],
-        [
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/QZTgkVmnwzQ?si=wfds6NGZKBbxfWxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-          },
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/DAOZJPquY_w?si=hrZcB8IDX7YFoQ5W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-          }
-        ],
-        [
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/Skhw1BT1BR8?si=Hh4yNwCo1Uoo4Xaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-          },
-          {
-            src: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/CPEBN2dVNUY?si=GG3oQB352NX-ZaFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-          }
-        ]
-      ]
+      showSpotify: true,
+      showYoutube: true,
+      showSmule: true,
+      showSoundcloud: true,
+      spotifyData,
+      soundCloudData,
+      youtubeData
     };
-  },
+  }
 };
 </script>
+
+<style scoped>
+.loading-text {
+  font-size: 50px;
+  color: whitesmoke;
+  padding: 12px;
+}
+</style>
 
 <style>
 .image {

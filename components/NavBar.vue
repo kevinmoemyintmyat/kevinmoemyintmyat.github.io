@@ -3,15 +3,15 @@
     <div class="p-4 flex flex-row fixed md:right-0 lg:visible">
       <div v-for="routeItem in state.routes" :key="routeItem.name" class="mx-3">
         <NuxtLink :to="'/' + routeItem.route" v-if="routeItem.internal">
-          <h1
+          <h2
             :class="`md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white ` + selected(routeItem.route)">
             {{ routeItem.name }}
-          </h1>
+        </h2>
         </NuxtLink>
         <a v-else :href="routeItem.route" target="blank">
-          <h1 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
+          <h2 class="md:text-4xl sm:text-xl font-bold hover:underline hover:cursor-pointer hover:text-white">
             {{ routeItem.name }}
-          </h1>
+          </h2>
         </a>
       </div>
     </div>

@@ -285,10 +285,6 @@ useHead({
     meta: [
         { name: 'description', content: 'My first trip to Bali by Kevin Moe Myint Myat' },
         {
-            name: "description",
-            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-        },
-        {
             name: "keywords",
             content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
         },

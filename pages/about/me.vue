@@ -12,20 +12,20 @@
                 🐈‍⬛ to <a href="https://www.instagram.com/jiemao_blackcat/" target="_blank">@jiemao_blackcat</a>.
                 <br /><br />
                 I'm spending most of my time working at <a href="https://www.dtone.com/" target="_blank">DT One</a>
-                where I do coding using web technologies. You can read more about my professional career portfolio
+                as a Software Engineer. You can read more about my professional career portfolio
                 <a href="https://kevinmoemyintmyat.gitlab.io" target="blank">here</a>.
                 <br /><br />
                 <br /><br />
-                I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating arts and
+                I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating <a href="/art" target="_blank">arts</a> and
                 maintaining my projects on
                 <a href="https://github.com/m3yevn" target="_blank">my github portfolio</a>.
                 <br /><br />
-                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs of my solo trips</NuxtLink>, <NuxtLink
-                    to="/blog">poems and stories</NuxtLink> and just
-                reminiscing my past great memories.
+                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs</NuxtLink>, <NuxtLink
+                    to="/blog">poems and articles</NuxtLink>. Every now and then, I sing <NuxtLink to="/music">karaoke 🎤 </NuxtLink>on Smule and also experiment with cooking recipes 🧑‍🍳 which are available on my 
+                    <a href="https://www.tiktok.com/@m3_yevnnn" target="_blank">TikTok</a>.
                 <br /><br />
                 <br /><br />
-                You can check out my arts and paintings too if you are an art enthusiast like me.
+                You can check out my arts and paintings if you are an art enthusiast like me.
                 ( <NuxtLink class="selling-link" to="/art">Click here!</NuxtLink> )
                 <br /><br />
                 Just contact me at <a href="mailto: mmm.myintmyat@gmail.comm">mmm.myintmyat@gmail.com</a> if you want to

@@ -12,6 +12,7 @@ p {
     padding: 8px;
     margin: 16px;
     width: 400px;
+    cursor: pointer;
 }
 
 .music-video-card {
@@ -20,6 +21,13 @@ p {
     padding: 8px;
     margin: 16px;
     width: 620px;
+}
+
+.sound-cloud-card {
+    border-radius: 12px;
+    background-color: rgb(40, 40, 40);
+    padding: 8px;
+    margin: 16px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -37,8 +45,17 @@ p {
     color: crimson;
 }
 
+.gallery-card span a {
+    color: gray;
+    text-decoration: underline;
+}
+
 .gallery-card img {
     border-radius: 12px;
+}
+
+.gallery-card.music-card img.cover-img {
+    height: 120px;
 }
 
 .gallery-card-footer {
@@ -57,7 +74,7 @@ p {
 }
 
 .title {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 16px;
     font-size: 32px;
 }
@@ -112,6 +129,17 @@ button {
     font-family: inherit;
 }
 
+button.outlined {
+    background: unset;
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
+}
+
+button.outlined:hover {
+    background: crimson;
+    border: 0;
+}
+
 button:hover {
     background: unset;
     border: 3px solid whitesmoke;
@@ -148,4 +176,43 @@ hr {
 
 ul {
     color: crimson;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
