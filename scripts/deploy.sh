@@ -1,7 +1,5 @@
-npm run build
-npm run deploy
-
 npm run generate
+npm run deploy
 
 #Art deployment
 cd .output/public/art
