@@ -18,3 +18,21 @@ git add .
 git commit -a -m "deploy"
 git push -f origin master
 cd ../../..
+
+#Blog deployment
+cd .output/public/music
+git init
+git remote add origin https://github.com/kevinmoemyintmyat/blog.git
+git add .
+git commit -a -m "deploy"
+git push -f origin master
+cd ../../..
+
+#AboutMe deployment
+cd .output/public/about
+git init
+git remote add origin https://github.com/kevinmoemyintmyat/about.git
+git add .
+git commit -a -m "deploy"
+git push -f origin master
+cd ../../..

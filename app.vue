@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
   link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }]
 });

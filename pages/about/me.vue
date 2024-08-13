@@ -16,13 +16,15 @@
                 <a href="https://kevinmoemyintmyat.gitlab.io" target="blank">here</a>.
                 <br /><br />
                 <br /><br />
-                I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating <a href="/art" target="_blank">arts</a> and
+                I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating <a href="/art"
+                    target="_blank">arts</a> and
                 maintaining my projects on
                 <a href="https://github.com/m3yevn" target="_blank">my github portfolio</a>.
                 <br /><br />
-                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs</NuxtLink>, <NuxtLink
-                    to="/blog">poems and articles</NuxtLink>. Every now and then, I sing <NuxtLink to="/music">karaoke 🎤 </NuxtLink>on Smule and also experiment with cooking recipes 🧑‍🍳 which are available on my 
-                    <a href="https://www.tiktok.com/@m3_yevnnn" target="_blank">TikTok</a>.
+                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs</NuxtLink>, <NuxtLink to="/blog">poems and
+                    articles</NuxtLink>. Every now and then, I sing <NuxtLink to="/music">karaoke 🎤 </NuxtLink>on Smule
+                and also experiment with cooking recipes 🧑‍🍳 which are available on my
+                <a href="https://www.tiktok.com/@m3_yevnnn" target="_blank">TikTok</a>.
                 <br /><br />
                 <br /><br />
                 You can check out my arts and paintings if you are an art enthusiast like me.
@@ -55,13 +57,15 @@ export default {
 </script>
 
 <script setup>
-useSeoMeta({
+useHead({
     title: "About Kevin Moe Myint Myat",
     meta: [
         {
-            name: "description",
-            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-        },
+            name: 'description', content: `I'm Kevin, a software developer/artist based in Singapore and a full-time cat dad 🐈‍⬛ to @jiemao_blackcat.
+I'm spending most of my time working at DT One as a Software Engineer. You can read more about my professional career portfolio in https://kevinmoemyintmyat.gitlab.io.
+I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating arts and maintaining my projects on my github portfolio.
+Aside from that, I enjoy writing blogs, poems and articles. Every now and then, I sing karaoke 🎤 on Smule and also experiment with cooking recipes 🧑‍🍳 which are available on my TikTok.
+` },
         {
             name: "keywords",
             content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
@@ -76,7 +80,7 @@ useSeoMeta({
         },
         {
             property: "og:url",
-            content: `https://kevinmoemyintmyat.github.io`,
+            content: `https://kevinmoemyintmyat.github.io/about/me`,
         },
         {
             property: "og:site:name",
@@ -88,7 +92,7 @@ useSeoMeta({
         },
         {
             name: "twitter:site",
-            content: "https://kevinmoemyintmyat.github.io",
+            content: "https://kevinmoemyintmyat.github.io/about/me",
         },
         {
             name: "twitter:description",
