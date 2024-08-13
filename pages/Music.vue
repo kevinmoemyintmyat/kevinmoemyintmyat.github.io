@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-const smuleApiUrl = `http://localhost:10000/profile`;
+const smuleApiUrl = `https://kevinmoemyintmyat-api.onrender.com/profile`;
 
 const state = reactive({
   isLoading: false,
