@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       karaoke_api_url: process.env.NUXT_ENV_KARAOKE_API,
+      dev_blog_api_url: process.env.NUXT_ENV_DEV_TO_API,
     },
   },
   app: {

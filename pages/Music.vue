@@ -10,14 +10,14 @@
         <a :href="'https://smule.com' + music.web_url" target="blank">
           <img class="cover-img" :src="music.cover_url" :alt="music.key" loading="lazy" />
           <p>
-            Title: <span class="tooltip">"{{ constructLabel(music.title) }}" <span v-if="music.title.length > 25"
+            Title: <span class="tooltip">"{{ constructLabel(music.title) }}" <span v-if="music?.title?.length > 25"
                 class="tooltiptext"> {{ music.title }}</span></span>
             <br />
-            Artist: <span class="tooltip">{{ constructLabel(music.artist) }} <span v-if="music.artist.length > 25"
+            Artist: <span class="tooltip">{{ constructLabel(music.artist) }} <span v-if="music?.artist?.length > 25"
                 class="tooltiptext"> {{ music.artist }}</span></span>
             <br />
             Description: <span class="tooltip">{{ constructLabel(music.message) }} <span
-                v-if="music.message.length > 25" class="tooltiptext"> {{ music.message }}</span></span>
+                v-if="music?.message?.length > 25" class="tooltiptext"> {{ music.message }}</span></span>
             <br />
             Cover by: <span class="tooltip"><a :href="'https://smule.com' + music.performed_by_url" target="blank">{{
               constructLabel(music.performed_by) }}</a></span>
@@ -72,7 +72,7 @@
 
 <script setup>
 const config = useRuntimeConfig();
-const smuleApiUrl = config?.public?.karaoke_api_url || `https://kevinmoemyintmyat-api.onrender.com/profile?`;
+const smuleApiUrl = config?.public?.karaoke_api_url;
 
 useHead({
   title: "Kevin Moe Myint Myat's Music Works",
@@ -127,7 +127,7 @@ const state = reactive({
 });
 
 function constructLabel(label) {
-  if (label.length > 25) {
+  if (label?.length > 25) {
     return `${label.slice(0, 25)}...`
   }
   return label;
@@ -162,6 +162,9 @@ function constructData(list) {
         innerArray.push(item);
       }
       if (innerArray.length === 3) {
+        dataSchema.push(innerArray);
+        innerArray = [];
+      } else if (index === list.length - 1) {
         dataSchema.push(innerArray);
         innerArray = [];
       }

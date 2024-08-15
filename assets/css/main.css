@@ -216,3 +216,51 @@ ul {
     visibility: visible;
     opacity: 1;
 }
+
+
+.blog-body p {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.blog-body h2 {
+    color: crimson;
+}
+
+.blog-body p span {
+    display: block;
+}
+
+.blog-body p a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.blog-body hr {
+    margin: 16px 0px;
+    width: 90%;
+    color: grey;
+}
+
+.blog-body ul {
+    margin-bottom: 20px;
+}
+
+.blog-body h1,h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.blog-body ul li {
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.blog-body ul li:hover {
+    text-decoration: underline;
+}
