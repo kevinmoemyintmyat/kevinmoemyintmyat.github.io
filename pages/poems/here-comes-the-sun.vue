@@ -69,16 +69,12 @@ function toggleTranslations() {
 
 useHead({
     title: "Poems - " + route.query.title + " by Kevin Moe Myint Myat",
-    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
-        { name: 'description', content: 'My first trip to Bali by Kevin Moe Myint Myat' },
-        {
-            name: "description",
-            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-        },
+        { name: 'description', content: 'Here Comes the Sun by Kevin Moe Myint Myat' },
         {
             name: "keywords",
-            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog,poems, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
         },
         {
             property: "og:title",
@@ -90,7 +86,7 @@ useHead({
         },
         {
             property: "og:url",
-            content: `https://kevinmoemyintmyat.github.io`,
+            content: `https://kevinmoemyintmyat.github.io/poems/here-comes-the-sun`,
         },
         {
             property: "og:site:name",

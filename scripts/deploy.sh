@@ -20,7 +20,7 @@ git push -f origin master
 cd ../../..
 
 #Blog deployment
-cd .output/public/music
+cd .output/public/blog
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/blog.git
 git add .

@@ -3,15 +3,26 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
   },
+  runtimeConfig: {
+    public: {
+      karaoke_api_url: process.env.NUXT_ENV_KARAOKE_API,
+    },
+  },
   app: {
     baseURL: "/",
     head: {
-      link: [{ rel: "icon", type: "image/png", href: "./favicon.png" }],
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "https://kevinmoemyintmyat.github.io/favicon.png",
+        },
+      ],
       title: "Kevin Moe Myint Myat - A cat dad, a developer & an artist",
       meta: [
         {
           "http-equiv": "content-language",
-          "content": "en-us"
+          content: "en-us",
         },
         {
           name: "description",

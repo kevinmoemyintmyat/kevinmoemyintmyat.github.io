@@ -8,7 +8,7 @@
 <script setup>
 useSeoMeta({
   title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
-  link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }]
+  link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }]
 });
 </script>
 

@@ -59,6 +59,7 @@ export default {
 <script setup>
 useHead({
     title: "About Kevin Moe Myint Myat",
+    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         {
             name: 'description', content: `I'm Kevin, a software developer/artist based in Singapore and a full-time cat dad 🐈‍⬛ to @jiemao_blackcat.

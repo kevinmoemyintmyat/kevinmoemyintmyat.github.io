@@ -31,7 +31,7 @@
 <script setup>
 useHead({
     title: "Blogs, Poems and Articles by Kevin Moe Myint Myat",
-    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         {
             name: 'description', content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
@@ -116,23 +116,7 @@ export default {
                     route: "/poems/memoirs-of-a-ghost",
                     category: "Poem",
                     language: "English"
-                },
-                // {
-                //     title: "Rainy Day Reunion",
-                //     description: "Once upon a time, in a world where raindrops danced upon the rooftops...",
-                //     date: new Date("2024/04/22"),
-                //     route: "/blog/rainy-day-reunion",
-                //     category: "Story",
-                //     language: "English"
-                // },
-                // {
-                //     title: "Echoes of Tomorrow",
-                //     description: "The year was 2175, and the world had changed beyond recognition...",
-                //     date: new Date("2024/04/23"),
-                //     route: "/blog/echoes-of-tomorrow",
-                //     category: "Story",
-                //     language: "English"
-                // }
+                }
             ]
         }
     },

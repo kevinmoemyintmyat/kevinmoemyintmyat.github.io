@@ -281,7 +281,7 @@
 <script setup>
 useHead({
     title: 'My first trip to Bali by Kevin Moe Myint Myat',
-    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         { name: 'description', content: 'My first trip to Bali by Kevin Moe Myint Myat' },
         {
@@ -298,7 +298,7 @@ useHead({
         },
         {
             property: "og:url",
-            content: `https://kevinmoemyintmyat.github.io`,
+            content: `https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali`,
         },
         {
             property: "og:site:name",
