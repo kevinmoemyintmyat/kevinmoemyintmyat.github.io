@@ -32,7 +32,7 @@
     </div>
     <div class="flex justify-center align-center">
       <button class="outlined" @click="fetchMoreSmuleData" :disabled="state.isLoading">
-        {{ state.isLoading ? "Loading..." : "LoadMore" }}</button>
+        {{ state.isLoading ? "Loading..." : "Load More" }}</button>
     </div>
   </section>
 
