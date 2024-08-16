@@ -36,26 +36,31 @@
 </template>
 
 <script setup>
+import blogs from "~/assets/data/data-blog";
+import format from "date-fns/format";
+
 const route = useRoute();
+const thisBlog = blogs.find(blog => blog.id === parseInt(route.query?.blog_id));
+
 const shouldTranslate = computed(() => {
-    return route.query?.language !== "English";
+    return thisBlog?.language !== "English";
 })
 
 const originalState = {
-    title: route.query.title,
-    language: route.query.language,
-    date: route.query.language_date,
+    title: thisBlog.title,
+    language: thisBlog.language,
+    date: thisBlog.language_date,
 };
 
 const state = reactive({ ...originalState });
 
 function toggleTranslations() {
     if (state.language !== "en") {
-        state.title = route.query.title_en;
-        state.date = `Written on ${route.query.date}`;
+        state.title = thisBlog.title_en;
+        state.date = `Written on ${format(new Date(thisBlog.date), "dd MMMM yyyy")}`;
         state.language = "en";
         return useHead({
-            title: "Poems - " + route.query.title_en + " by Kevin Moe Myint Myat",
+            title: "Poems - " + thisBlog.title_en + " by Kevin Moe Myint Myat",
         })
     }
     state.title = originalState.title;
@@ -63,12 +68,12 @@ function toggleTranslations() {
     state.date = originalState.date;
 
     useHead({
-        title: "Poems - " + route.query.title + " by Kevin Moe Myint Myat",
+        title: "Poems - " + thisBlog.title + " by Kevin Moe Myint Myat",
     })
 }
 
 useHead({
-    title: "Poems - " + route.query.title + " by Kevin Moe Myint Myat",
+    title: "Poems - " + thisBlog.title + " by Kevin Moe Myint Myat",
     link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         { name: 'description', content: 'Here Comes the Sun by Kevin Moe Myint Myat' },
