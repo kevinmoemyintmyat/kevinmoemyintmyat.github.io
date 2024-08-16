@@ -150,7 +150,7 @@ async function fetchDevBlogData() {
     state.blogs = state.blogs.concat(data.map(item => {
         return {
             ...item,
-            date: item.created_at,
+            date: item.published_at,
             route: `/blog/${item.slug}`,
             language: "English",
             type: "dev"

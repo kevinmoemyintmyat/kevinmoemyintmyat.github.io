@@ -1,23 +1,26 @@
 <template>
     <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-        <h1>{{ route.query.title }}</h1>
-        <h2>Written on {{ route.query.date }}</h2>
-        <div v-if="state.isLoading" class="flex justify-center align-center">Loading...</div>
+        <h1>{{ state?.blogData?.title }}</h1>
+        <h2 v-if="state?.blogData?.date">Written on {{ state?.blogData?.date }}</h2>
         <p class="blog-body" v-if="!state.isLoading" v-html="state?.blogData?.body_html"></p>
     </section>
 </template>
 
 
 <script setup>
+import { format } from 'date-fns/format';
+
 const route = useRoute();
 
 const state = reactive({
     isLoading: false,
-    blogData: null
+    blogData: {
+        body_html: `<div class="flex justify-center align-center" style="font-size:80px">Loading...</div>`
+    }
 })
 
 useHead({
-    title: `${route?.query?.title} - Written by Kevin Moe Myint Myat` || "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+    title: `${state.blogData?.title} - Written by Kevin Moe Myint Myat` || "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
     link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         { name: 'description', content: `${route?.query?.title} - Written by Kevin Moe Myint Myat` },
@@ -69,7 +72,13 @@ async function fetchBlogData() {
         state.isLoading = true;
         const response = await fetch(`${blogApiUrl}/articles/${route.query.blog_id}`);
         const data = await response.json();
-        state.blogData = data;
+        state.blogData = {
+            ...data,
+            date: format(new Date(data.published_at), "dd MMMM yyyy")
+        };
+        useHead({
+            title: `${state.blogData?.title} - Written by Kevin Moe Myint Myat` || "Kevin Moe Myint Myat - a cat dad, a developer & an artist"
+        });
     }
     catch (ex) {
         console.error(ex)
