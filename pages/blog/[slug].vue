@@ -11,6 +11,7 @@
 import { format } from 'date-fns/format';
 
 const route = useRoute();
+const router = useRouter();
 
 const state = reactive({
     isLoading: false,
@@ -20,7 +21,7 @@ const state = reactive({
 })
 
 useHead({
-    title: `${state.blogData?.title} - Written by Kevin Moe Myint Myat` || "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+    title: `${state.blogData?.title || "Blog"} - Written by Kevin Moe Myint Myat` || "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
     link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         { name: 'description', content: `${route?.query?.title} - Written by Kevin Moe Myint Myat` },
@@ -61,6 +62,9 @@ useHead({
 })
 
 onBeforeMount(() => {
+    if (!route.query.blog_id || !route.query.type) {
+        return router.replace({ path: "/blog" })
+    }
     fetchBlogData();
 })
 
