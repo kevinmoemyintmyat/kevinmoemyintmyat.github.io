@@ -34,6 +34,13 @@ export default {
 };
 </script>
 
+<script setup>
+useHead({
+  title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
+  link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }]
+});
+</script>
+
 <style scoped>
 .image {
   background-image: url("@/assets/images/me-cool.jpg");
