@@ -61,7 +61,7 @@ import format from "date-fns/format";
 import blogs from "~/assets/data/data-blog.js"
 
 useHead({
-    title: "Blogs, Poems and Articles by Kevin Moe Myint Myat",
+    title: "Blogs and Articles by Kevin Moe Myint Myat",
     link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
     meta: [
         {
@@ -70,7 +70,7 @@ useHead({
             personal website to share his vacation experiences with his audiences.` },
         {
             name: "keywords",
-            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travel blogs, poems, articles`,
+            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travel blogs, articles`,
         },
         {
             property: "og:title",
@@ -230,18 +230,12 @@ span.description {
 
 .gallery-card {
     width: 100%;
-    height: 180px;
     position: relative;
 }
 
 .gallery-card-footer {
-    position: absolute;
     bottom: 0px;
     width: 95%;
-}
-
-.gallery-card:hover {
-    width: 100%;
 }
 
 a {
