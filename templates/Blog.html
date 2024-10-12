@@ -1,11 +1,12 @@
 <template>
-  <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>{{ title }} <br/><span>By Kevin Moe Myint Myat</span></h1>
+  <section class="mt-20 lg:pl-20 p-5 ml-20 lg:w-4/6" ref="startOfArticle">
+    <h1>{{ title }} <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on {{ date }}</h2>
     <img class="cover-image" src="{{ cover_image }}" />
     <div class="blog-body">{{{ html }}}</div>
     <footer>
-        Read my original blog on <a href="{{ source }}" target="_blank">{{ source }}</a>
+      Read my original blog on
+      <a href="{{ source }}" target="_blank">{{ source }}</a>
     </footer>
   </section>
 </template>
@@ -91,8 +92,9 @@
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 10px;
+    line-height: 2;
   }
 
   .blog-body {
@@ -105,7 +107,14 @@
     padding-bottom: 10px;
   }
 
-  a {
-    text-decortation: underline;
+  footer {
+    padding-top: 32px;
+    font-size: 20px;
+    color: gray;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: maroon;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>FTP Seer - A simple web based FTP file explorer <br/><span>By Kevin Moe Myint Myat</span></h1>
+  <section class="mt-20 lg:pl-20 p-5 ml-20 lg:w-4/6" ref="startOfArticle">
+    <h1>FTP Seer - A simple web based FTP file explorer <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 23 February 2020</h2>
     <img class="cover-image" src="https://media.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png" />
     <div class="blog-body"><h1>
@@ -43,7 +43,8 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
 
 </div>
     <footer>
-        Read my original blog on <a href="https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m" target="_blank">https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m</a>
+      Read my original blog on
+      <a href="https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m" target="_blank">https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m</a>
     </footer>
   </section>
 </template>
@@ -129,8 +130,9 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 10px;
+    line-height: 2;
   }
 
   .blog-body {
@@ -143,7 +145,14 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
     padding-bottom: 10px;
   }
 
-  a {
-    text-decortation: underline;
+  footer {
+    padding-top: 32px;
+    font-size: 20px;
+    color: gray;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: maroon;
   }
 </style>

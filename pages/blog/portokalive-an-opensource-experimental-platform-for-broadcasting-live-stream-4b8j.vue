@@ -1,6 +1,6 @@
 <template>
-  <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>PortokaLive - An opensource experimental platform for broadcasting live stream <br/><span>By Kevin Moe Myint Myat</span></h1>
+  <section class="mt-20 lg:pl-20 p-5 ml-20 lg:w-4/6" ref="startOfArticle">
+    <h1>PortokaLive - An opensource experimental platform for broadcasting live stream <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 29 July 2021</h2>
     <img class="cover-image" src="" />
     <div class="blog-body"><p>🎉🎉🎉 After years of procrastinating on working on this project, I'm finally proud to launch this platform PortokaLive to public. Hooray! Here's the link</p>
@@ -85,7 +85,8 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
 
 </div>
     <footer>
-        Read my original blog on <a href="https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j" target="_blank">https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j</a>
+      Read my original blog on
+      <a href="https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j" target="_blank">https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j</a>
     </footer>
   </section>
 </template>
@@ -171,8 +172,9 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 10px;
+    line-height: 2;
   }
 
   .blog-body {
@@ -185,7 +187,14 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
     padding-bottom: 10px;
   }
 
-  a {
-    text-decortation: underline;
+  footer {
+    padding-top: 32px;
+    font-size: 20px;
+    color: gray;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: maroon;
   }
 </style>

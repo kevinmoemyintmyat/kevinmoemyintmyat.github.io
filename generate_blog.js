@@ -8,6 +8,7 @@ const appRoot = path.resolve(__dirname);
 dotenv.config();
 
 const devBlogApiUrl = process.env.NUXT_ENV_DEV_TO_API;
+const apiKey = process.env.API_KEY;
 
 const readFile = (path) => {
   return new Promise((resolve, reject) => {
@@ -26,7 +27,12 @@ const fillTemplate = (html, replacements) => {
 };
 
 async function fetchDevBlogData() {
-  const response = await fetch(`${devBlogApiUrl}/articles?username=m3yevn`);
+  const response = await fetch(`${devBlogApiUrl}/articles/me/all`, {
+    cache: "no-cache",
+    headers: {
+      'api-key': apiKey
+    }
+  });
   const data = await response.json();
 
   const devBlogs = await Promise.all(
@@ -54,6 +60,8 @@ async function fetchDevBlogData() {
         }
       });
     });
+
+    console.log(`${blogData.slug} is saved.`);
   }
 
   const dataJson = await readFile("templates/data.js");

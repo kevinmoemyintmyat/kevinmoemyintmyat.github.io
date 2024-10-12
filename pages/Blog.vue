@@ -26,33 +26,35 @@
         :key="index"
         class="flex flex-col lg:flex-row justify-center items-center"
       >
-        <div v-for="blog in row" :key="blog.title" class="gallery-card w-full">
-          <NuxtLink :to="constructPath(blog)">
-            <p>
-              <span class="tooltip title"
-                >"{{ constructLabel(blog.title) }}"
-                <span v-if="blog?.title?.length > 55" class="tooltiptext">{{
-                  blog?.title
-                }}</span>
-              </span>
-              <br />
-              <span class="tooltip description"
-                >{{ constructLabel(blog.description) }}
-                <span
-                  v-if="blog?.description?.length > 55"
-                  class="tooltiptext"
-                  >{{ blog?.description }}</span
-                >
-              </span>
-            </p>
-            <div class="gallery-card-footer">
-              <span class="date">
-                Written on {{ blog.date }}, <b>Category</b>:
-                <b class="gallery-card-tag">{{ blog.category }}</b>
-                <b>, Language</b>:
-                <b class="gallery-card-tag">{{ blog.language }}</b>
-              </span>
-              <span class="read-more"> ...Read more </span>
+        <div v-for="blog in row" :key="blog.title" class="w-full">
+          <NuxtLink v-if="!blog.isHidden" :to="constructPath(blog)">
+            <div class="gallery-card">
+              <p>
+                <span class="tooltip title"
+                  >"{{ constructLabel(blog.title) }}"
+                  <span v-if="blog?.title?.length > 55" class="tooltiptext">{{
+                    blog?.title
+                  }}</span>
+                </span>
+                <br />
+                <span class="tooltip description"
+                  >{{ constructLabel(blog.description) }}
+                  <span
+                    v-if="blog?.description?.length > 55"
+                    class="tooltiptext"
+                    >{{ blog?.description }}</span
+                  >
+                </span>
+              </p>
+              <div class="gallery-card-footer">
+                <span class="date">
+                  Written on {{ blog.date }}, <b>Category</b>:
+                  <b class="gallery-card-tag">{{ blog.category }}</b>
+                  <b>, Language</b>:
+                  <b class="gallery-card-tag">{{ blog.language }}</b>
+                </span>
+                <span class="read-more"> ...Read more </span>
+              </div>
             </div>
           </NuxtLink>
         </div>
@@ -65,7 +67,6 @@
 import orderBy from "lodash/orderBy";
 import format from "date-fns/format";
 import blogs from "~/assets/data/data-blog.js";
-import fs from "fs";
 import dataDevBlogs from "~/assets/data/data-dev-blogs";
 
 useHead({
@@ -80,7 +81,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
+      content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_theblackcattt).
             He spends most of his time working as a software engineer at DT One (https://www.dtone.com) and when he's on his annual leave, he pursues his passion "Travelling" and explore the world. He wrote his travel blogs on this
             personal website to share his vacation experiences with his audiences.`,
     },
@@ -129,13 +130,22 @@ const blogData = computed(() => {
   const blogData = [];
   let row = [];
   const sortedBlogs = orderBy(state.blogs, "date", "desc");
-  state.latestBlog = sortedBlogs.shift();
+  let results = [];
+  if (sortedBlogs.length % 2 === 0) {
+    results = sortedBlogs.concat({
+      isHidden: true,
+      date: new Date(),
+    });
+  } else {
+    results = sortedBlogs;
+  }
+  state.latestBlog = results.shift();
   state.latestBlog = {
     ...state.latestBlog,
     date: format(state.latestBlog.date, "do MMMM yyyy"),
   };
 
-  sortedBlogs.forEach((blog, index) => {
+  results.forEach((blog, index) => {
     if (row?.length <= 2) {
       row.push({
         ...blog,
@@ -150,10 +160,11 @@ const blogData = computed(() => {
       row = [];
     }
   });
+
   return blogData;
 });
 
-onMounted(() => {
+onBeforeMount(() => {
   fetchDevBlogData();
 });
 
@@ -162,7 +173,7 @@ async function fetchDevBlogData() {
     dataDevBlogs.map((item) => {
       return {
         ...item,
-        date: item.published_at,
+        date: new Date(item.published_at),
         route: `/blog/${item.slug}`,
         language: "English",
         type: "dev",
@@ -186,7 +197,6 @@ function constructPath(blog) {
         slug: blog.slug,
       },
       query: {
-        blog_id: blog.id,
         type: blog.type,
       },
     };
@@ -194,7 +204,6 @@ function constructPath(blog) {
   return {
     path: blog.route,
     query: {
-      blog_id: blog.id,
       type: blog.type,
     },
   };
@@ -241,7 +250,7 @@ span.description {
 }
 
 .gallery-card {
-  width: 100%;
+  width: 98%;
   position: relative;
 }
 

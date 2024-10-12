@@ -9,7 +9,7 @@
         <span class="text-white text-2xl p-2">Moe Myint Myat</span>
       </h1>
       <div class="mt-6">
-        <a class="underline cursor-pointer" href="https://www.instagram.com/jiemao_blackcat/" target="blank">
+        <a class="underline cursor-pointer" href="https://www.instagram.com/jiemao_theblackcattt/" target="blank">
           <span class="text-white text-1xl">A cat dad</span></a>,
         <a class="underline cursor-pointer" href="https://kevinmoemyintmyat.gitlab.io/" target="blank">
           <span class="text-white text-1xl">a developer</span></a>

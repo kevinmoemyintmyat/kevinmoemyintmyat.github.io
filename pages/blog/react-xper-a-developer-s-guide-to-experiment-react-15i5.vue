@@ -1,6 +1,6 @@
 <template>
-  <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 <br/><span>By Kevin Moe Myint Myat</span></h1>
+  <section class="mt-20 lg:pl-20 p-5 ml-20 lg:w-4/6" ref="startOfArticle">
+    <h1>React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 10 July 2021</h2>
     <img class="cover-image" src="https://media.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0yvn9awow1fbhteif6tq.PNG" />
     <div class="blog-body"><p>React Xper is a experimental website to test out the<br>
@@ -37,7 +37,8 @@ Or if you would like to contribute or make experiments on your own, create a bra
 
 </div>
     <footer>
-        Read my original blog on <a href="https://dev.to/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5" target="_blank">https://dev.to/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5</a>
+      Read my original blog on
+      <a href="https://dev.to/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5" target="_blank">https://dev.to/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5</a>
     </footer>
   </section>
 </template>
@@ -123,8 +124,9 @@ Or if you would like to contribute or make experiments on your own, create a bra
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 45px;
     padding-bottom: 10px;
+    line-height: 2;
   }
 
   .blog-body {
@@ -137,7 +139,14 @@ Or if you would like to contribute or make experiments on your own, create a bra
     padding-bottom: 10px;
   }
 
-  a {
-    text-decortation: underline;
+  footer {
+    padding-top: 32px;
+    font-size: 20px;
+    color: gray;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: maroon;
   }
 </style>

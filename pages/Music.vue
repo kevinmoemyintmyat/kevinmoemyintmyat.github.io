@@ -79,7 +79,7 @@ useHead({
   link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
   meta: [
     {
-      name: 'description', content: `Kevin Moe Myint Myat is a software developer, an aspiring artist and a karaoke singer based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
+      name: 'description', content: `Kevin Moe Myint Myat is a software developer, an aspiring artist and a karaoke singer based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_theblackcattt).
             He spends most of his time working as a software engineer at DT One (https://www.dtone.com) and during the weekends, he pursues his passion 'Music' and works on his cover songs. He keens to participate in X-factor or *The Idol singing competition one day. :)` },
     {
       name: "keywords",
