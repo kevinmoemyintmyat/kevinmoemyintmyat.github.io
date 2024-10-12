@@ -6,14 +6,14 @@ export default [
     description:
       'Woah, I finally have the time to write this blog that’s been on my mind recently!   "a day in the...',
     readable_publish_date: "Oct 12",
-    slug: "a-day-in-the-life-of-a-software-engineer-1lmh",
+    slug: "a-day-in-the-life-of",
     path: "/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
     url: "https://dev.to/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
     comments_count: 0,
-    public_reactions_count: 0,
+    public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2024-10-12T06:35:01Z",
-    positive_reactions_count: 0,
+    positive_reactions_count: 1,
     cover_image:
       "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhegttjvo34a4cxob8x3f.jpg",
     social_image:
@@ -58,7 +58,7 @@ export default [
     description:
       "🎉🎉🎉 After years of procrastinating on working on this project, I'm finally proud to launch this...",
     readable_publish_date: "Jul 29 '21",
-    slug: "portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j",
+    slug: "portokalive-an-opens",
     path: "/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j",
     url: "https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j",
     comments_count: 0,
@@ -103,7 +103,7 @@ export default [
     description:
       "React Xper is a experimental website to test out the many concepts of ReactJS and its related...",
     readable_publish_date: "Jul 10 '21",
-    slug: "react-xper-a-developer-s-guide-to-experiment-react-15i5",
+    slug: "react-xper-a-develop",
     path: "/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5",
     url: "https://dev.to/m3yevn/react-xper-a-developer-s-guide-to-experiment-react-15i5",
     comments_count: 0,
@@ -150,7 +150,7 @@ export default [
     description:
       "😅 Last month I participated in a game jam on https://itch.io with a browser game that I've...",
     readable_publish_date: "Dec 23 '20",
-    slug: "my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff",
+    slug: "my-experience-on-par",
     path: "/m3yevn/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff",
     url: "https://dev.to/m3yevn/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff",
     comments_count: 0,
@@ -196,7 +196,7 @@ export default [
     description:
       "My open source project FTP Seer is on Google Search now. Yay!!! 🦄               Background o...",
     readable_publish_date: "Mar 29 '20",
-    slug: "ftp-seer-api-ftp-seer-client-google-seo-3lf2",
+    slug: "ftp-seer-api-ftp-see",
     path: "/m3yevn/ftp-seer-api-ftp-seer-client-google-seo-3lf2",
     url: "https://dev.to/m3yevn/ftp-seer-api-ftp-seer-client-google-seo-3lf2",
     comments_count: 0,
@@ -242,7 +242,7 @@ export default [
     description:
       "I've developed a full stack app. 🎉 Yayy!!   If you need a full stack app which can explore F...",
     readable_publish_date: "Feb 23 '20",
-    slug: "ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m",
+    slug: "ftp-seer-a-simple-we",
     path: "/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m",
     url: "https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m",
     comments_count: 1,

@@ -120,7 +120,7 @@ Please share in the comments below. 👇</p>
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff`,
+        content: `https://kevinmoemyintmyat.github.io/blog/my-experience-on-par`,
       },
       {
         property: "og:site:name",

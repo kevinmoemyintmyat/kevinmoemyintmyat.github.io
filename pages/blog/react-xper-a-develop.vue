@@ -74,7 +74,7 @@ Or if you would like to contribute or make experiments on your own, create a bra
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/react-xper-a-developer-s-guide-to-experiment-react-15i5`,
+        content: `https://kevinmoemyintmyat.github.io/blog/react-xper-a-develop`,
       },
       {
         property: "og:site:name",

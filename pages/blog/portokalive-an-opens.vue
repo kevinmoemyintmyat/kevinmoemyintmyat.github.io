@@ -122,7 +122,7 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j`,
+        content: `https://kevinmoemyintmyat.github.io/blog/portokalive-an-opens`,
       },
       {
         property: "og:site:name",

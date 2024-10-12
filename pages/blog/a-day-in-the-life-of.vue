@@ -184,7 +184,7 @@
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/a-day-in-the-life-of-a-software-engineer-1lmh`,
+        content: `https://kevinmoemyintmyat.github.io/blog/a-day-in-the-life-of`,
       },
       {
         property: "og:site:name",

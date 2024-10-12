@@ -80,7 +80,7 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m`,
+        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-a-simple-we`,
       },
       {
         property: "og:site:name",

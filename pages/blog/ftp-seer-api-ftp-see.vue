@@ -121,7 +121,7 @@ FTP Seer Client - <a href="https://circleci.com/gh/m3yevn/ftp-seer-client" targe
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-api-ftp-seer-client-google-seo-3lf2`,
+        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-api-ftp-see`,
       },
       {
         property: "og:site:name",
