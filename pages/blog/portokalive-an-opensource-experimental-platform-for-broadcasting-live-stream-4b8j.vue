@@ -1,7 +1,8 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>PortokaLive - An opensource experimental platform for broadcasting live stream</h1>
+    <h1>PortokaLive - An opensource experimental platform for broadcasting live stream <br/><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 29 July 2021</h2>
+    <img class="cover-image" src="" />
     <div class="blog-body"><p>🎉🎉🎉 After years of procrastinating on working on this project, I'm finally proud to launch this platform PortokaLive to public. Hooray! Here's the link</p>
 
 <ul>
@@ -83,6 +84,9 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
 <a href="https://kevinmoemyintmyat.gitlab.io" target="_blank" rel="noopener noreferrer">https://kevinmoemyintmyat.gitlab.io</a></p>
 
 </div>
+    <footer>
+        Read my original blog on <a href="https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j" target="_blank">https://dev.to/m3yevn/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j</a>
+    </footer>
   </section>
 </template>
 
@@ -105,11 +109,11 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
       },
       {
         name: "keywords",
-        content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+        content: `portokalive,portoka,live,react, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
       },
       {
         property: "og:title",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
       },
       {
         property: "og:type",
@@ -117,15 +121,15 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali`,
+        content: `https://kevinmoemyintmyat.github.io/blog/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j`,
       },
       {
         property: "og:site:name",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
       },
       {
         property: "og:description",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
       },
       {
         name: "twitter:site",
@@ -159,6 +163,11 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 10px;
+  }
+
+  h1 span {
+    font-size: 50px;
+    color: whitesmoke;
   }
 
   h2 {

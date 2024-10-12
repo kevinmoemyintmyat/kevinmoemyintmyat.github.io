@@ -1,6 +1,6 @@
 <template>
     <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-        <h1>My First Solo Trip to Bali</h1>
+        <h1>My First Solo Trip to Bali <br/><span>By Kevin Moe Myint Myat</span></h1>
         <h2>Written on 30th March 2024</h2>
         <p>On 11th November 2022 , It was a great morning before the flight. I woke up fresh and felt ready to start the
             day.
@@ -339,6 +339,11 @@ div {
 h1 {
     font-size: 100px;
     padding-bottom: 10px;
+}
+
+h1 span {
+    font-size: 50px;
+    color: whitesmoke;
 }
 
 h2 {

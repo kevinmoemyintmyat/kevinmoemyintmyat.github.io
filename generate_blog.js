@@ -3,18 +3,19 @@ const dotenv = require("dotenv");
 const fs = require("fs");
 const path = require("path");
 const handlebars = require("handlebars");
+const { exec } = require("child_process");
 const appRoot = path.resolve(__dirname);
 dotenv.config();
 
 const devBlogApiUrl = process.env.NUXT_ENV_DEV_TO_API;
 
-const readHTMLFile = (path) => {
+const readFile = (path) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(path, { encoding: "utf-8" }, function (err, html) {
+    fs.readFile(path, { encoding: "utf-8" }, function (err, file) {
       if (err) {
         reject(err);
       } else {
-        resolve(html);
+        resolve(file);
       }
     });
   });
@@ -28,36 +29,46 @@ async function fetchDevBlogData() {
   const response = await fetch(`${devBlogApiUrl}/articles?username=m3yevn`);
   const data = await response.json();
 
-  data.forEach(async (blog) => {
-    const blogResult = await fetch(`${devBlogApiUrl}/articles/${blog.id}`);
-    const blogData = await blogResult.json();
-    console.log(blogData);
-
-    const html = await readHTMLFile("templates/Blog.html");
+  const devBlogs = await Promise.all(
+    data.map(async (blog) =>
+      (await fetch(`${devBlogApiUrl}/articles/${blog.id}`)).json()
+    )
+  );
+  for (blogData of devBlogs) {
+    const html = await readFile("templates/Blog.html");
     const templateReplacement = {
       html: blogData.body_html,
       title: blogData.title,
       date: format(new Date(blogData.published_at), "dd MMMM yyyy"),
+      slug: blogData.slug,
+      source: blogData.url,
+      tags: blogData.tags,
+      cover_image: blogData.cover_image,
     };
     const template = fillTemplate(html, templateReplacement);
-    const path = appRoot + `/pages/blog/${blog.slug}.vue`;
-    fs.readFile(path, (err, data) => {
+    const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
+    fs.readFile(path, () => {
+      fs.writeFile(path, template, function (err) {
+        if (err) {
+          return console.log(err);
+        }
+      });
+    });
+  }
+
+  const dataJson = await readFile("templates/data.js");
+  const dataJsonReplacement = {
+    data: JSON.stringify(devBlogs),
+  };
+  const dataFile = fillTemplate(dataJson, dataJsonReplacement);
+  const dataPath = appRoot + `/assets/data/data-dev-blogs.js`;
+  fs.readFile(dataPath, () => {
+    fs.writeFile(dataPath, dataFile, function (err) {
       if (err) {
-        fs.writeFile(path, template, function (err) {
-          if (err) {
-            return console.log(err);
-          }
-          console.log(`${blog.slug} was saved!`);
-        });
-      } else {
-        fs.writeFile(path, template, function (err) {
-          if (err) {
-            return console.log(err);
-          }
-          console.log(`${blog.slug} was saved!`);
-        });
+        return console.log(err);
       }
     });
+    exec(`npm run prettier ${dataPath}`);
   });
 }
 

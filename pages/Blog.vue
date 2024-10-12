@@ -1,244 +1,256 @@
 <template>
-    <div class="h-screen w-screen mt-5">
-        <div>
-            <div v-if="state.latestBlog.title" class="title">Latest Blog</div>
-            <div v-if="state.latestBlog.title" class="gallery-card w-full">
-                <NuxtLink :to="constructPath(state.latestBlog)">
-                    <p>
-                        "{{ state.latestBlog.title }}"
-                        <br />
-                        <span>{{ state.latestBlog.description }}</span>
-                    </p>
-                    <div class="gallery-card-footer">
-                        <span class="date">
-                            Written on {{ state.latestBlog.date }}, <b>Category</b>: <b class="gallery-card-tag">{{
-                                state.latestBlog.category
-                            }}</b> <b>, Language</b>: <b class="gallery-card-tag">{{ state.latestBlog.language
-                                }}</b>
-                        </span>
-                        <span class="read-more">
-                            ...Read more
-                        </span>
-                    </div>
-                </NuxtLink>
+  <div class="h-screen w-screen mt-5">
+    <div>
+      <div v-if="state.latestBlog.title" class="title">Latest Blog</div>
+      <div v-if="state.latestBlog.title" class="gallery-card w-full">
+        <NuxtLink :to="constructPath(state.latestBlog)">
+          <p>
+            "{{ state.latestBlog.title }}"
+            <br />
+            <span>{{ state.latestBlog.description }}</span>
+          </p>
+          <div class="gallery-card-footer">
+            <span class="date">
+              Written on {{ state.latestBlog.date }}, <b>Category</b>:
+              <b class="gallery-card-tag">{{ state.latestBlog.category }}</b>
+              <b>, Language</b>:
+              <b class="gallery-card-tag">{{ state.latestBlog.language }}</b>
+            </span>
+            <span class="read-more"> ...Read more </span>
+          </div>
+        </NuxtLink>
+      </div>
+      <div class="title">Published Blogs</div>
+      <div
+        v-for="(row, index) in blogData"
+        :key="index"
+        class="flex flex-col lg:flex-row justify-center items-center"
+      >
+        <div v-for="blog in row" :key="blog.title" class="gallery-card w-full">
+          <NuxtLink :to="constructPath(blog)">
+            <p>
+              <span class="tooltip title"
+                >"{{ constructLabel(blog.title) }}"
+                <span v-if="blog?.title?.length > 55" class="tooltiptext">{{
+                  blog?.title
+                }}</span>
+              </span>
+              <br />
+              <span class="tooltip description"
+                >{{ constructLabel(blog.description) }}
+                <span
+                  v-if="blog?.description?.length > 55"
+                  class="tooltiptext"
+                  >{{ blog?.description }}</span
+                >
+              </span>
+            </p>
+            <div class="gallery-card-footer">
+              <span class="date">
+                Written on {{ blog.date }}, <b>Category</b>:
+                <b class="gallery-card-tag">{{ blog.category }}</b>
+                <b>, Language</b>:
+                <b class="gallery-card-tag">{{ blog.language }}</b>
+              </span>
+              <span class="read-more"> ...Read more </span>
             </div>
-            <div class="title">Published Blogs</div>
-            <div v-for="(row, index) in blogData " :key="index"
-                class="flex flex-col lg:flex-row justify-center items-center">
-                <div v-for="blog in row " :key="blog.title" class="gallery-card w-full">
-                    <NuxtLink :to="constructPath(blog)">
-                        <p>
-                            <span class="tooltip title">"{{ constructLabel(blog.title) }}"
-                                <span v-if="blog?.title?.length > 55" class="tooltiptext">{{ blog?.title }}</span>
-                            </span>
-                            <br />
-                            <span class="tooltip description">{{ constructLabel(blog.description) }}
-                                <span v-if="blog?.description?.length > 55" class="tooltiptext">{{ blog?.description
-                                    }}</span>
-                            </span>
-                        </p>
-                        <div class="gallery-card-footer">
-                            <span class="date">
-                                Written on {{ blog.date }}, <b>Category</b>: <b class="gallery-card-tag">{{
-                                    blog.category
-                                    }}</b> <b>, Language</b>: <b class="gallery-card-tag">{{ blog.language
-                                    }}</b>
-                            </span>
-                            <span class="read-more">
-                                ...Read more
-                            </span>
-                        </div>
-                    </NuxtLink>
-                </div>
-            </div>
+          </NuxtLink>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
 import orderBy from "lodash/orderBy";
 import format from "date-fns/format";
-import blogs from "~/assets/data/data-blog.js"
+import blogs from "~/assets/data/data-blog.js";
+import fs from "fs";
+import dataDevBlogs from "~/assets/data/data-dev-blogs";
 
 useHead({
-    title: "Blogs and Articles by Kevin Moe Myint Myat",
-    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
-    meta: [
-        {
-            name: 'description', content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
+  title: "Blogs and Articles by Kevin Moe Myint Myat",
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "https://kevinmoemyintmyat.github.io/favicon.png",
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_blackcat).
             He spends most of his time working as a software engineer at DT One (https://www.dtone.com) and when he's on his annual leave, he pursues his passion "Travelling" and explore the world. He wrote his travel blogs on this
-            personal website to share his vacation experiences with his audiences.` },
-        {
-            name: "keywords",
-            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travel blogs, articles`,
-        },
-        {
-            property: "og:title",
-            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
-        },
-        {
-            property: "og:type",
-            content: "profile",
-        },
-        {
-            property: "og:url",
-            content: `https://kevinmoemyintmyat.github.io/blog`,
-        },
-        {
-            property: "og:site:name",
-            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
-        },
-        {
-            property: "og:description",
-            content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
-        },
-        {
-            name: "twitter:site",
-            content: "https://kevinmoemyintmyat.github.io",
-        },
-        {
-            name: "twitter:description",
-            content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-        }
-    ]
-})
+            personal website to share his vacation experiences with his audiences.`,
+    },
+    {
+      name: "keywords",
+      content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travel blogs, articles`,
+    },
+    {
+      property: "og:title",
+      content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+    },
+    {
+      property: "og:type",
+      content: "profile",
+    },
+    {
+      property: "og:url",
+      content: `https://kevinmoemyintmyat.github.io/blog`,
+    },
+    {
+      property: "og:site:name",
+      content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+    },
+    {
+      property: "og:description",
+      content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+    },
+    {
+      name: "twitter:site",
+      content: "https://kevinmoemyintmyat.github.io",
+    },
+    {
+      name: "twitter:description",
+      content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+    },
+  ],
+});
 
 const config = useRuntimeConfig();
-const devBlogApiUrl = config?.public?.dev_blog_api_url;
-
 const state = reactive({
-    latestBlog: {},
-    blogs
+  latestBlog: {},
+  blogs,
 });
 
 const blogData = computed(() => {
-    const blogData = [];
-    let row = [];
-    const sortedBlogs = orderBy(state.blogs, "date", "desc");
-    state.latestBlog = sortedBlogs.shift();
-    state.latestBlog = {
-        ...state.latestBlog,
-        date: format(state.latestBlog.date, "do MMMM yyyy")
-    };
+  const blogData = [];
+  let row = [];
+  const sortedBlogs = orderBy(state.blogs, "date", "desc");
+  state.latestBlog = sortedBlogs.shift();
+  state.latestBlog = {
+    ...state.latestBlog,
+    date: format(state.latestBlog.date, "do MMMM yyyy"),
+  };
 
-    sortedBlogs.forEach((blog, index) => {
-        if (row?.length <= 2) {
-            row.push({
-                ...blog,
-                date: format(blog.date, "do MMMM yyyy")
-            });
-        }
-        if (row.length === 2) {
-            blogData.push(row);
-            row = [];
-        } else if (index === sortedBlogs.length - 1) {
-            blogData.push(row);
-            row = [];
-        }
-    })
-    return blogData;
+  sortedBlogs.forEach((blog, index) => {
+    if (row?.length <= 2) {
+      row.push({
+        ...blog,
+        date: format(blog.date, "do MMMM yyyy"),
+      });
+    }
+    if (row.length === 2) {
+      blogData.push(row);
+      row = [];
+    } else if (index === sortedBlogs.length - 1) {
+      blogData.push(row);
+      row = [];
+    }
+  });
+  return blogData;
 });
 
 onMounted(() => {
-    fetchDevBlogData();
+  fetchDevBlogData();
 });
 
 async function fetchDevBlogData() {
-    const response = await fetch(`${devBlogApiUrl}/articles?username=m3yevn`);
-    const data = await response.json();
-    console.log(data);
-    state.blogs = state.blogs.concat(data.map(item => {
-        return {
-            ...item,
-            date: item.published_at,
-            route: `/blog/${item.slug}`,
-            language: "English",
-            type: "dev"
-        }
-    }));
+  state.blogs = state.blogs.concat(
+    dataDevBlogs.map((item) => {
+      return {
+        ...item,
+        date: item.published_at,
+        route: `/blog/${item.slug}`,
+        language: "English",
+        type: "dev",
+      };
+    })
+  );
 }
 
 function constructLabel(label) {
-    if (label?.length > 55) {
-        return `${label.slice(0, 55)}...`
-    }
-    return label;
+  if (label?.length > 55) {
+    return `${label.slice(0, 55)}...`;
+  }
+  return label;
 }
 
 function constructPath(blog) {
-    if (blog.language === "English") {
-        return {
-            path: blog.route,
-            params: {
-                slug: blog.slug,
-            },
-            query: {
-                blog_id: blog.id,
-                type: blog.type
-            }
-        }
-    }
+  if (blog.language === "English") {
     return {
-        path: blog.route,
-        query: {
-            blog_id: blog.id,
-            type: blog.type
-        }
-    }
+      path: blog.route,
+      params: {
+        slug: blog.slug,
+      },
+      query: {
+        blog_id: blog.id,
+        type: blog.type,
+      },
+    };
+  }
+  return {
+    path: blog.route,
+    query: {
+      blog_id: blog.id,
+      type: blog.type,
+    },
+  };
 }
-
 </script>
 
 <style scoped>
 .title {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 p {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 span.title {
-    color: whitesmoke;
-    font-size: 1.5rem;
-    padding: unset;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: unset;
 }
 
 span.description {
-    color: crimson;
+  color: crimson;
 }
 
 .tooltiptext {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .date {
-    font: 1em sans-serif;
-    color: gray;
-    position: relative;
-    display: block;
+  font: 1em sans-serif;
+  color: gray;
+  position: relative;
+  display: block;
 }
 
 .read-more {
-    color: grey;
-    text-decoration: underline;
-    font-size: 15px;
-    right: 0px;
-    bottom: 8px;
-    position: absolute;
+  color: grey;
+  text-decoration: underline;
+  font-size: 15px;
+  right: 0px;
+  bottom: 8px;
+  position: absolute;
 }
 
 .gallery-card {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .gallery-card-footer {
-    bottom: 0px;
-    width: 95%;
+  bottom: 0px;
+  width: 95%;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 </style>

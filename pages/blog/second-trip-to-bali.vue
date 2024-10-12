@@ -1,6 +1,6 @@
 <template>
     <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-        <h1>My Second Solo Trip to Bali</h1>
+        <h1>My Second Solo Trip to Bali <br/><span>By Kevin Moe Myint Myat</span></h1>
         <h2>Written on 11th April 2024</h2>
         <p>
             One's just not enough when it comes to Bali.
@@ -345,6 +345,11 @@ div {
 h1 {
     font-size: 100px;
     padding-bottom: 10px;
+}
+
+h1 span {
+    font-size: 50px;
+    color: whitesmoke;
 }
 
 h2 {

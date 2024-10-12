@@ -1,7 +1,8 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>👾 Krescent - My experience on participating Github Game Off 2020 Game Jam on Itch.io 👾</h1>
+    <h1>👾 Krescent - My experience on participating Github Game Off 2020 Game Jam on Itch.io 👾 <br/><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 23 December 2020</h2>
+    <img class="cover-image" src="https://media.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fnisypnnl5ktwlvbdx1pp.png" />
     <div class="blog-body"><p>😅 Last month I participated in a game jam on <a href="https://itch.io" target="_blank" rel="noopener noreferrer">https://itch.io</a> with a browser game that I've co-developed with my colleague from work. It's called...</p>
 
 <h1>
@@ -81,6 +82,9 @@ Please share in the comments below. 👇</p>
 <a href="https://github.com/m3yevn/krescent" target="_blank" rel="noopener noreferrer">https://github.com/m3yevn/krescent</a></p>
 
 </div>
+    <footer>
+        Read my original blog on <a href="https://dev.to/m3yevn/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff" target="_blank">https://dev.to/m3yevn/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff</a>
+    </footer>
   </section>
 </template>
 
@@ -103,11 +107,11 @@ Please share in the comments below. 👇</p>
       },
       {
         name: "keywords",
-        content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+        content: `gamedev,vue,babylonjs, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
       },
       {
         property: "og:title",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `👾 Krescent - My experience on participating Github Game Off 2020 Game Jam on Itch.io 👾 - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
       },
       {
         property: "og:type",
@@ -115,15 +119,15 @@ Please share in the comments below. 👇</p>
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali`,
+        content: `https://kevinmoemyintmyat.github.io/blog/my-experience-on-participating-github-game-off-2020-game-jam-on-itch-io-4dff`,
       },
       {
         property: "og:site:name",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `👾 Krescent - My experience on participating Github Game Off 2020 Game Jam on Itch.io 👾 - Written by Kevin Moe Myint Myat`,
       },
       {
         property: "og:description",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `👾 Krescent - My experience on participating Github Game Off 2020 Game Jam on Itch.io 👾 - Written by Kevin Moe Myint Myat`,
       },
       {
         name: "twitter:site",
@@ -157,6 +161,11 @@ Please share in the comments below. 👇</p>
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 10px;
+  }
+
+  h1 span {
+    font-size: 50px;
+    color: whitesmoke;
   }
 
   h2 {

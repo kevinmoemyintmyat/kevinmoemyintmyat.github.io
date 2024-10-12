@@ -1,7 +1,8 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>FTP Seer - A simple web based FTP file explorer</h1>
+    <h1>FTP Seer - A simple web based FTP file explorer <br/><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 23 February 2020</h2>
+    <img class="cover-image" src="https://media.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png" />
     <div class="blog-body"><h1>
   <a name="ive-developed-a-full-stack-app-yayy" href="#ive-developed-a-full-stack-app-yayy">
   </a>
@@ -41,6 +42,9 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
 <p>Check me out @ <a href="https://kevinmoemyintmyat.gitlab.io" target="_blank" rel="noopener noreferrer">https://kevinmoemyintmyat.gitlab.io</a></p>
 
 </div>
+    <footer>
+        Read my original blog on <a href="https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m" target="_blank">https://dev.to/m3yevn/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m</a>
+    </footer>
   </section>
 </template>
 
@@ -63,11 +67,11 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
       },
       {
         name: "keywords",
-        content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+        content: `node,fullstack,svelte,ftpseer, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
       },
       {
         property: "og:title",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer - A simple web based FTP file explorer - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
       },
       {
         property: "og:type",
@@ -75,15 +79,15 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali`,
+        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m`,
       },
       {
         property: "og:site:name",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer - A simple web based FTP file explorer - Written by Kevin Moe Myint Myat`,
       },
       {
         property: "og:description",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer - A simple web based FTP file explorer - Written by Kevin Moe Myint Myat`,
       },
       {
         name: "twitter:site",
@@ -117,6 +121,11 @@ Frontend UI - <a href="https://ftpseerclient.herokuapp.com" target="_blank" rel=
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 10px;
+  }
+
+  h1 span {
+    font-size: 50px;
+    color: whitesmoke;
   }
 
   h2 {

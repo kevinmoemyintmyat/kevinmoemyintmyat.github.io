@@ -1,7 +1,8 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5" ref="startOfArticle">
-    <h1>FTP Seer API + FTP Seer Client Google SEO</h1>
+    <h1>FTP Seer API + FTP Seer Client Google SEO <br/><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 29 March 2020</h2>
+    <img class="cover-image" src="https://media.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fliw75hbrte70vgzwwmhy.png" />
     <div class="blog-body"><h1>
   <a name="my-open-source-project-ftp-seer-is-on-google-search-now-yay" href="#my-open-source-project-ftp-seer-is-on-google-search-now-yay">
   </a>
@@ -82,6 +83,9 @@ FTP Seer Client - <a href="https://circleci.com/gh/m3yevn/ftp-seer-client" targe
 </h5>
 
 </div>
+    <footer>
+        Read my original blog on <a href="https://dev.to/m3yevn/ftp-seer-api-ftp-seer-client-google-seo-3lf2" target="_blank">https://dev.to/m3yevn/ftp-seer-api-ftp-seer-client-google-seo-3lf2</a>
+    </footer>
   </section>
 </template>
 
@@ -104,11 +108,11 @@ FTP Seer Client - <a href="https://circleci.com/gh/m3yevn/ftp-seer-client" targe
       },
       {
         name: "keywords",
-        content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+        content: `ftpseer,ftpseerapi,ftpseerclient,seer, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
       },
       {
         property: "og:title",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer API + FTP Seer Client Google SEO - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
       },
       {
         property: "og:type",
@@ -116,15 +120,15 @@ FTP Seer Client - <a href="https://circleci.com/gh/m3yevn/ftp-seer-client" targe
       },
       {
         property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali`,
+        content: `https://kevinmoemyintmyat.github.io/blog/ftp-seer-api-ftp-seer-client-google-seo-3lf2`,
       },
       {
         property: "og:site:name",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer API + FTP Seer Client Google SEO - Written by Kevin Moe Myint Myat`,
       },
       {
         property: "og:description",
-        content: `Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+        content: `FTP Seer API + FTP Seer Client Google SEO - Written by Kevin Moe Myint Myat`,
       },
       {
         name: "twitter:site",
@@ -158,6 +162,11 @@ FTP Seer Client - <a href="https://circleci.com/gh/m3yevn/ftp-seer-client" targe
     font-size: 60px;
     font-weight: 700;
     padding-bottom: 10px;
+  }
+
+  h1 span {
+    font-size: 50px;
+    color: whitesmoke;
   }
 
   h2 {
