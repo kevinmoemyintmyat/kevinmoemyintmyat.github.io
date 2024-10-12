@@ -8,6 +8,7 @@ git remote add origin https://github.com/kevinmoemyintmyat/art.git
 git add .
 git commit -a -m "deploy"
 git push -f origin master
+rm -rf .git
 cd ../../..
 
 #Music deployment
@@ -17,6 +18,7 @@ git remote add origin https://github.com/kevinmoemyintmyat/music.git
 git add .
 git commit -a -m "deploy"
 git push -f origin master
+rm -rf .git
 cd ../../..
 
 #Blog deployment
@@ -28,6 +30,7 @@ git remote add origin https://github.com/kevinmoemyintmyat/blog.git
 git add .
 git commit -a -m "deploy"
 git push -f origin master
+rm -rf .git
 cd ../../..
 
 #AboutMe deployment
@@ -37,4 +40,5 @@ git remote add origin https://github.com/kevinmoemyintmyat/about.git
 git add .
 git commit -a -m "deploy"
 git push -f origin master
+rm -rf .git
 cd ../../..
