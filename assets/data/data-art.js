@@ -1,7 +1,7 @@
 export default [
   [
     {
-      name: "The Monk with a Fan & a Gourd",
+      name: "The Monk with a Fan and a Gourd",
       description:
         "A depiction of Ji Gong (濟公), an icon of charitable acts and kind heart",
       image: "/art/art-painting-the-monk-with-a-fan-and-a-gourd.jpg",
