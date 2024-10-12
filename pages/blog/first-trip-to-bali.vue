@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-20 ml-20 lg:pl-20 p-5 lg:w-4/6" ref="startOfArticle">
+    <section class="mt-20 lg:ml-20 lg:pl-20 p-5 lg:w-4/6" ref="startOfArticle">
         <h1>My First Solo Trip to Bali <br/><span>By Kevin Moe Myint Myat</span></h1>
         <h2>Written on 30th March 2024</h2>
         <p>On 11th November 2022 , It was a great morning before the flight. I woke up fresh and felt ready to start the

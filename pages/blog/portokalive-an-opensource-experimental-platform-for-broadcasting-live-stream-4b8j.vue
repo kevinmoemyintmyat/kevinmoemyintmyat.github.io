@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-20 lg:pl-20 p-5 ml-20 lg:w-4/6" ref="startOfArticle">
+  <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>PortokaLive - An opensource experimental platform for broadcasting live stream <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 29 July 2021</h2>
     <img class="cover-image" src="" />

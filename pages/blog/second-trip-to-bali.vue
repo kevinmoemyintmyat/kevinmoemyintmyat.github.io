@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-20 ml-20 lg:pl-20 lg:w-4/6 p-5" ref="startOfArticle">
+    <section class="mt-20 lg:ml-20 lg:pl-20 lg:w-4/6 p-5" ref="startOfArticle">
         <h1>My Second Solo Trip to Bali <br/><span>By Kevin Moe Myint Myat</span></h1>
         <h2>Written on 11th April 2024</h2>
         <p>
