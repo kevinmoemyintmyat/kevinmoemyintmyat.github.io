@@ -1,0 +1,12 @@
+[submodule "about"]
+	path = about
+	url = https://github.com/kevinmoemyintmyat/about.git
+[submodule "art"]
+	path = art
+	url = https://github.com/kevinmoemyintmyat/art.git
+[submodule "blog"]
+	path = blog
+	url = https://github.com/kevinmoemyintmyat/blog.git
+[submodule "music"]
+	path = music
+	url = https://github.com/kevinmoemyintmyat/music.git
