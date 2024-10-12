@@ -1,5 +1,5 @@
-[submodule "about"]
-	path = about
+[submodule "About"]
+	path = About
 	url = https://github.com/kevinmoemyintmyat/about.git
 [submodule "art"]
 	path = art
@@ -7,6 +7,6 @@
 [submodule "blog"]
 	path = blog
 	url = https://github.com/kevinmoemyintmyat/blog.git
-[submodule "music"]
-	path = music
+[submodule "Music"]
+	path = Music
 	url = https://github.com/kevinmoemyintmyat/music.git
