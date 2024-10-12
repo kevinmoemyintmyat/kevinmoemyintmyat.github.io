@@ -10,3 +10,6 @@
 [submodule "Music"]
 	path = Music
 	url = https://github.com/kevinmoemyintmyat/music.git
+[submodule "music"]
+	path = music
+	url = https://github.com/kevinmoemyintmyat/music.git
