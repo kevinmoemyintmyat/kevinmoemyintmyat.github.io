@@ -46,13 +46,13 @@ async function fetchDevBlogData() {
       html: blogData.body_html,
       title: blogData.title,
       date: format(new Date(blogData.published_at), "dd MMMM yyyy"),
-      slug: blogData.slug.slice(0,20),
+      slug: blogData.slug,
       source: blogData.url,
       tags: blogData.tags,
       cover_image: blogData.cover_image,
     };
     const template = fillTemplate(html, templateReplacement);
-    const path = appRoot + `/pages/blog/${blogData.slug.slice(0,20)}.vue`;
+    const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
     fs.readFile(path, () => {
       fs.writeFile(path, template, function (err) {
         if (err) {
@@ -67,8 +67,7 @@ async function fetchDevBlogData() {
   const dataJson = await readFile("templates/data.js");
   const dataJsonReplacement = {
     data: JSON.stringify(devBlogs.map(blog => ({
-      ...blog,
-      slug: blog.slug.slice(0,20)
+      ...blog
     }))),
   };
   const dataFile = fillTemplate(dataJson, dataJsonReplacement);
