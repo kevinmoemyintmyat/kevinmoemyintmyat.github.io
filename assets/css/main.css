@@ -45,6 +45,10 @@ p {
     color: crimson;
 }
 
+.gallery-card span p {
+    color: crimson;
+}
+
 .gallery-card span a {
     color: gray;
     text-decoration: underline;

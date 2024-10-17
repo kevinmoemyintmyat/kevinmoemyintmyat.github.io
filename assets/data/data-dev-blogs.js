@@ -9,7 +9,7 @@ export default [
     slug: "a-day-in-the-life-of-a-software-engineer-1lmh",
     path: "/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
     url: "https://dev.to/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
-    comments_count: 0,
+    comments_count: 1,
     public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2024-10-12T06:35:01Z",
@@ -24,7 +24,7 @@ export default [
     edited_at: null,
     crossposted_at: null,
     published_at: "2024-10-12T06:35:01Z",
-    last_comment_at: "2024-10-12T06:35:01Z",
+    last_comment_at: "2024-10-13T12:44:48Z",
     reading_time_minutes: 6,
     tag_list:
       "softwareengineering, softwaredevelopment, dayinthelifeofsoftwarengineer",

@@ -5,9 +5,23 @@
       <div v-if="state.latestBlog.title" class="gallery-card w-full">
         <NuxtLink :to="constructPath(state.latestBlog)">
           <p>
-            "{{ state.latestBlog.title }}"
+            <span class="tooltip title"
+              >"{{ constructLabel(state.latestBlog.title) }}"
+              <span
+                v-if="state.latestBlog?.title?.length > 55"
+                class="tooltiptext"
+                >{{ state.latestBlog?.title }}</span
+              >
+            </span>
             <br />
-            <span>{{ state.latestBlog.description }}</span>
+            <span class="tooltip description"
+              >{{ constructLabel(state.latestBlog.description) }}
+              <span
+                v-if="state.latestBlog?.description?.length > 55"
+                class="tooltiptext"
+                >{{ state.latestBlog?.description }}</span
+              >
+            </span>
           </p>
           <div class="gallery-card-footer">
             <span class="date">
@@ -27,7 +41,7 @@
         class="flex flex-col lg:flex-row justify-center items-center"
       >
         <div v-for="blog in row" :key="blog.title" class="w-full">
-          <NuxtLink v-if="!blog.isHidden" :to="constructPath(blog)">
+          <NuxtLink v-if="!blog.isHidden">
             <div class="gallery-card">
               <p>
                 <span class="tooltip title"
@@ -68,6 +82,7 @@ import orderBy from "lodash/orderBy";
 import format from "date-fns/format";
 import blogs from "~/assets/data/data-blog.js";
 import dataDevBlogs from "~/assets/data/data-dev-blogs";
+import dataBlogspotBlogs from "~/assets/data/data-blogspot-blogs";
 
 useHead({
   title: "Blogs and Articles by Kevin Moe Myint Myat",
@@ -166,9 +181,10 @@ const blogData = computed(() => {
 
 onBeforeMount(() => {
   fetchDevBlogData();
+  fetchBlogspotBlogData();
 });
 
-async function fetchDevBlogData() {
+function fetchDevBlogData() {
   state.blogs = state.blogs.concat(
     dataDevBlogs.map((item) => {
       return {
@@ -177,6 +193,24 @@ async function fetchDevBlogData() {
         route: `/blog/${item.slug}`,
         language: "English",
         type: "dev",
+      };
+    })
+  );
+}
+
+function fetchBlogspotBlogData() {
+  state.blogs = state.blogs.concat(
+    dataBlogspotBlogs.map((item) => {
+      const div = document.createElement("div");
+      div.innerHTML = item.content;
+      const description = div.textContent.slice(0, 80);
+      return {
+        ...item,
+        description: description,
+        date: new Date(item.published),
+        route: `/blog/${item.id}`,
+        language: "English",
+        type: "travel",
       };
     })
   );
@@ -194,18 +228,12 @@ function constructPath(blog) {
     return {
       path: blog.route,
       params: {
-        slug: blog.slug,
-      },
-      query: {
-        type: blog.type,
+        slug: blog.slug || blog.id,
       },
     };
   }
   return {
     path: blog.route,
-    query: {
-      type: blog.type,
-    },
   };
 }
 </script>
