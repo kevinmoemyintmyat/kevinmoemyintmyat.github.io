@@ -41,7 +41,7 @@
         class="flex flex-col lg:flex-row justify-center items-center"
       >
         <div v-for="blog in row" :key="blog.title" class="w-full">
-          <NuxtLink v-if="!blog.isHidden">
+          <NuxtLink v-if="!blog.isHidden" :to="constructPath(blog)">
             <div class="gallery-card">
               <p>
                 <span class="tooltip title"
