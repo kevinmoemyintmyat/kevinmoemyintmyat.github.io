@@ -35,7 +35,7 @@ async function fetchBlogsplotData() {
   });
   const data = await response.json();
   for (blogData of data?.items) {
-    const html = await readFile("templates/Blog.html");
+    const html = await readFile("templates/Blog.vue");
     const templateReplacement = {
       html: blogData.content,
       title: blogData.title,
@@ -92,7 +92,7 @@ async function fetchDevBlogData() {
     )
   );
   for (blogData of devBlogs) {
-    const html = await readFile("templates/Blog.html");
+    const html = await readFile("templates/Blog.vue");
     const templateReplacement = {
       html: blogData.body_html,
       title: blogData.title,

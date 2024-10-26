@@ -228,6 +228,12 @@ ul {
     font-size: large;
 }
 
+.blog-body div span {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: large;
+}
+
 .blog-body h2 {
     color: crimson;
 }
