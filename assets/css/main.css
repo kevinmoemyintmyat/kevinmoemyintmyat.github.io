@@ -234,6 +234,12 @@ ul {
     font-size: large;
 }
 
+.blog-body div span div.separator {
+    font-weight: bold;
+    color: crimson;
+    font-size: large;
+}
+
 .blog-body h2 {
     color: crimson;
 }
