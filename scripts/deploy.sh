@@ -3,6 +3,7 @@ npm run deploy
 
 #Art deployment
 cd .output/public/art
+rm -rf .git
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/art.git
 git add .
@@ -13,6 +14,7 @@ cd ../../..
 
 #Music deployment
 cd .output/public/music
+rm -rf .git
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/music.git
 git add .
@@ -25,6 +27,7 @@ cd ../../..
 cp .output/public/200.html .output/public/blog
 cp .output/public/404.html .output/public/blog
 cd .output/public/blog
+rm -rf .git
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/blog.git
 git add .
@@ -35,6 +38,7 @@ cd ../../..
 
 #AboutMe deployment
 cd .output/public/about
+rm -rf .git
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/about.git
 git add .
