@@ -92,109 +92,129 @@ Therefore, I changed it to using api.video(<a href="https://api.video" target="_
 </template>
 
 <script setup>
-  useHead({
-    title:
-      `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat` ||
-      "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-    link: [
-      {
-        rel: "icon",
-        type: "image/png",
-        href: "https://kevinmoemyintmyat.github.io/favicon.png",
-      },
-    ],
-    meta: [
-      {
-        name: "description",
-        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
-      },
-      {
-        name: "keywords",
-        content: `portokalive,portoka,live,react, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
-      },
-      {
-        property: "og:title",
-        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
-      },
-      {
-        property: "og:type",
-        content: "profile",
-      },
-      {
-        property: "og:url",
-        content: `https://kevinmoemyintmyat.github.io/blog/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j`,
-      },
-      {
-        property: "og:site:name",
-        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
-      },
-      {
-        property: "og:description",
-        content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
-      },
-      {
-        name: "twitter:site",
-        content: "https://kevinmoemyintmyat.github.io",
-      },
-      {
-        name: "twitter:description",
-        content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
-      },
-    ],
-    ogImage: "/favicon.png",
-  });
+useHead({
+  title:
+    `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat` ||
+    "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "https://kevinmoemyintmyat.github.io/favicon.png",
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
+    },
+    {
+      name: "keywords",
+      content: `portokalive,portoka,live,react, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+    },
+    {
+      property: "og:title",
+      content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+    },
+    {
+      property: "og:type",
+      content: "profile",
+    },
+    {
+      property: "og:url",
+      content: `https://kevinmoemyintmyat.github.io/blog/portokalive-an-opensource-experimental-platform-for-broadcasting-live-stream-4b8j`,
+    },
+    {
+      property: "og:site:name",
+      content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
+    },
+    {
+      property: "og:description",
+      content: `PortokaLive - An opensource experimental platform for broadcasting live stream - Written by Kevin Moe Myint Myat`,
+    },
+    {
+      name: "twitter:site",
+      content: "https://kevinmoemyintmyat.github.io",
+    },
+    {
+      name: "twitter:description",
+      content: "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
+    },
+  ],
+  ogImage: "/favicon.png",
+});
 </script>
 
 <script>
-  export default {
-    methods: {
-      showSection(section) {
-        this.$refs[section].scrollIntoView({ behavior: "smooth" });
-      },
+export default {
+  methods: {
+    showSection(section) {
+      this.$refs[section].scrollIntoView({ behavior: "smooth" });
     },
-  };
+  },
+};
 </script>
 
 <style scoped>
-  div {
-    margin-top: 30px;
-  }
+div {
+  margin-top: 30px;
+}
 
-  h1 {
-    font-size: 60px;
-    font-weight: 700;
-    padding-bottom: 10px;
-  }
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
 
-  h1 span {
-    font-size: 50px;
-    color: whitesmoke;
-  }
+h1 span {
+  font-size: 50px;
+  color: whitesmoke;
+}
 
-  h2 {
-    font-size: 45px;
-    padding-bottom: 10px;
-    line-height: 2;
-  }
+h2 {
+  font-size: 45px;
+  padding-bottom: 10px;
+  line-height: 2;
+}
 
-  .blog-body {
-    margin-top: 20px;
-  }
+.blog-body {
+  margin-top: 20px;
+}
 
-  .blog-body h1 {
-    font-size: 40px;
-    font-weight: 500;
-    padding-bottom: 10px;
-  }
+code {
+  padding: 16px;
+  background: rgb(41, 41, 41);
+  display: block;
+  border-radius: 12px;
+  width: 1024px;
+}
 
-  footer {
-    padding-top: 32px;
-    font-size: 20px;
-    color: gray;
-  }
+ol,
+ul,
+menu {
+  list-style: decimal;
+  margin: 1em;
+  padding: 1em;
+}
 
-  footer a {
-    text-decoration: underline;
-    color: maroon;
-  }
+ol li {
+  padding: 8px;
+}
+
+.blog-body h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+footer {
+  padding-top: 32px;
+  font-size: 20px;
+  color: gray;
+}
+
+footer a {
+  text-decoration: underline;
+  color: maroon;
+}
 </style>
