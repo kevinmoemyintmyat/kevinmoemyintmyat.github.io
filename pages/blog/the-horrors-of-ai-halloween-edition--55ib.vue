@@ -23,7 +23,7 @@
 <li>M means to move forward by one grid cell in its current direction.</li>
 </ul>
 
-<p>For example, if the command sequence is “MMMLMMM,” the rover would end up at coordinates (5, 2), facing north. The output format should look like “5:2:N”. Simple enough?</p>
+<p>For example, if the command sequence is “MMMLMMM,” the rover would end up at coordinates (8, 2), facing north. The output format should look like “8:2:N”. Simple enough?</p>
 
 <p>Since I’ve been working with React for a couple of years, my natural approach to solving this was to think in terms of State and Effect, where the state would represent the rover’s coordinates and direction. But as this wasn’t a UI test, the interviewer encouraged me to stick to pure logical programming. I chose Node.js, my preferred backend language, to tackle the problem.</p>
 
