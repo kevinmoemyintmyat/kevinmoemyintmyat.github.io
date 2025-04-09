@@ -1,6 +1,6 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
-    <h1>12 Years A Guest - Singapore and I <br /><span>By Kevin Moe Myint Myat</span></h1>
+    <h1>12 Years A Guest - Singapore &amp; I <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 08 April 2025</h2>
     <img class="cover-image" src="" />
     <div class="blog-body"><h3 style="text-align: left;"><span style="background-color: black; color: white; font-family: arial; font-size: large;">It feels as though several lifetimes have slipped through my fingers&nbsp;</span></h3><div style="text-align: left;"><span style="font-family: arial;">since I last walked the soil of my homeland. There was a time—yes, I still remember—when my heart beat with the bright rhythm of hope, of youthful zeal, of dreams that knew no border. I was but a boy then, untouched by the world, never once having stepped into an airplane.</span></div>
@@ -70,7 +70,7 @@
 <script setup>
 useHead({
   title:
-    `12 Years A Guest - Singapore and I - Written by Kevin Moe Myint Myat` ||
+    `12 Years A Guest - Singapore &amp; I - Written by Kevin Moe Myint Myat` ||
     "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
   link: [
     {
@@ -82,7 +82,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: `12 Years A Guest - Singapore and I - Written by Kevin Moe Myint Myat`,
+      content: `12 Years A Guest - Singapore &amp; I - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "keywords",
@@ -90,7 +90,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: `12 Years A Guest - Singapore and I - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+      content: `12 Years A Guest - Singapore &amp; I - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
     },
     {
       property: "og:type",
@@ -102,11 +102,11 @@ useHead({
     },
     {
       property: "og:site:name",
-      content: `12 Years A Guest - Singapore and I - Written by Kevin Moe Myint Myat`,
+      content: `12 Years A Guest - Singapore &amp; I - Written by Kevin Moe Myint Myat`,
     },
     {
       property: "og:description",
-      content: `12 Years A Guest - Singapore and I - Written by Kevin Moe Myint Myat`,
+      content: `12 Years A Guest - Singapore &amp; I - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "twitter:site",
