@@ -5,7 +5,7 @@ export default [
     title: "The Horrors of AI (Halloween Edition 🎃)",
     description:
       "I was horrified by AI on the eve of Halloween 💀   Just days before Halloween 2024, I had a...",
-    readable_publish_date: "Oct 31",
+    readable_publish_date: "Oct 31 '24",
     slug: "the-horrors-of-ai-halloween-edition--55ib",
     path: "/m3yevn/the-horrors-of-ai-halloween-edition--55ib",
     url: "https://dev.to/m3yevn/the-horrors-of-ai-halloween-edition--55ib",
@@ -13,6 +13,8 @@ export default [
     public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2024-10-31T08:11:15Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 1,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc4gvfv41vzn59lyyv59h.png",
@@ -24,7 +26,7 @@ export default [
     edited_at: "2024-10-31T14:37:55Z",
     crossposted_at: null,
     published_at: "2024-10-31T08:11:15Z",
-    last_comment_at: "2024-10-31T10:03:58Z",
+    last_comment_at: "2024-11-08T01:14:32Z",
     reading_time_minutes: 6,
     tag_list: "ai, machinelearning, softwareengineering, programming",
     tags: ["ai", "machinelearning", "softwareengineering", "programming"],
@@ -44,6 +46,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -51,7 +54,7 @@ export default [
     title: "From Human to Machine",
     description:
       "I’m transitioning…   And so is everyone.  As speculated in the film I, Robot (2004), 20...",
-    readable_publish_date: "Oct 28",
+    readable_publish_date: "Oct 28 '24",
     slug: "from-human-to-machine-1p1j",
     path: "/m3yevn/from-human-to-machine-1p1j",
     url: "https://dev.to/m3yevn/from-human-to-machine-1p1j",
@@ -59,6 +62,8 @@ export default [
     public_reactions_count: 0,
     collection_id: null,
     published_timestamp: "2024-10-28T17:42:40Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 0,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fa120x1vj8nyk0btf12p5.png",
@@ -89,6 +94,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -96,7 +102,7 @@ export default [
     title: "a day in the life of a software engineer",
     description:
       'Woah, I finally have the time to write this blog that’s been on my mind recently!   "a day in the...',
-    readable_publish_date: "Oct 12",
+    readable_publish_date: "Oct 12 '24",
     slug: "a-day-in-the-life-of-a-software-engineer-1lmh",
     path: "/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
     url: "https://dev.to/m3yevn/a-day-in-the-life-of-a-software-engineer-1lmh",
@@ -104,6 +110,8 @@ export default [
     public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2024-10-12T06:35:01Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 1,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhegttjvo34a4cxob8x3f.jpg",
@@ -140,6 +148,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -156,6 +165,8 @@ export default [
     public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2021-07-29T06:04:22Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 1,
     cover_image: null,
     social_image:
@@ -186,6 +197,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -201,6 +213,8 @@ export default [
     public_reactions_count: 0,
     collection_id: null,
     published_timestamp: "2021-07-10T10:13:28Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 0,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0yvn9awow1fbhteif6tq.PNG",
@@ -232,6 +246,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -248,6 +263,8 @@ export default [
     public_reactions_count: 3,
     collection_id: null,
     published_timestamp: "2020-12-23T15:06:25Z",
+    language: "en",
+    subforem_id: null,
     positive_reactions_count: 3,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fnisypnnl5ktwlvbdx1pp.png",
@@ -279,6 +296,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -294,6 +312,8 @@ export default [
     public_reactions_count: 6,
     collection_id: null,
     published_timestamp: "2020-03-29T02:13:08Z",
+    language: null,
+    subforem_id: null,
     positive_reactions_count: 6,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fliw75hbrte70vgzwwmhy.png",
@@ -325,6 +345,7 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
   {
     type_of: "article",
@@ -340,6 +361,8 @@ export default [
     public_reactions_count: 8,
     collection_id: null,
     published_timestamp: "2020-02-23T13:15:13Z",
+    language: null,
+    subforem_id: null,
     positive_reactions_count: 8,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png",
@@ -371,5 +394,6 @@ export default [
       profile_image_90:
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
+    category: "Tech",
   },
 ];

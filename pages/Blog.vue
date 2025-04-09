@@ -27,8 +27,7 @@
             <span class="date">
               Written on {{ state.latestBlog.date }}, <b>Category</b>:
               <b class="gallery-card-tag">{{ state.latestBlog.category }}</b>
-              <b>, Language</b>:
-              <b class="gallery-card-tag">{{ state.latestBlog.language }}</b>
+              <b></b>
             </span>
             <span class="read-more"> ...Read more </span>
           </div>
@@ -64,8 +63,6 @@
                 <span class="date">
                   Written on {{ blog.date }}, <b>Category</b>:
                   <b class="gallery-card-tag">{{ blog.category }}</b>
-                  <b>, Language</b>:
-                  <b class="gallery-card-tag">{{ blog.language }}</b>
                 </span>
                 <span class="read-more"> ...Read more </span>
               </div>
@@ -209,8 +206,7 @@ function fetchBlogspotBlogData() {
         description: description,
         date: new Date(item.published),
         route: `/blog/${item.id}`,
-        language: "English",
-        type: "travel",
+        language: "English"
       };
     })
   );

@@ -166,7 +166,6 @@ h1 {
 }
 
 h1 span {
-  font-size: 50px;
   color: whitesmoke;
 }
 
@@ -209,11 +208,11 @@ ol li {
 footer {
   padding-top: 32px;
   font-size: 20px;
-  color: gray;
+  color: whitesmoke;
 }
 
 footer a {
   text-decoration: underline;
-  color: maroon;
+  color: crimson;
 }
 </style>

@@ -31,7 +31,7 @@ const fillTemplate = (html, replacements) => {
 
 async function fetchBlogsplotData() {
   const response = await fetch(`${bloggerApiUrl}?key=${bloggerApiKey}`, {
-    cache: "no-cache"
+    cache: "no-cache",
   });
   const data = await response.json();
   for (blogData of data?.items) {
@@ -62,6 +62,7 @@ async function fetchBlogsplotData() {
     data: JSON.stringify(
       data?.items.map((blog) => ({
         ...blog,
+        category: "Memoir"
       }))
     ),
   };
@@ -120,6 +121,7 @@ async function fetchDevBlogData() {
     data: JSON.stringify(
       devBlogs.map((blog) => ({
         ...blog,
+        category: "Tech",
       }))
     ),
   };
