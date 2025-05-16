@@ -79,62 +79,73 @@ async function fetchBlogsplotData() {
 }
 
 async function fetchDevBlogData() {
-  const response = await fetch(`${devBlogApiUrl}/articles/me/all`, {
-    cache: "no-cache",
-    headers: {
-      "api-key": devApiKey,
-    },
-  });
-  const data = await response.json();
+  try {
+    const response = await fetch(`${devBlogApiUrl}/articles/me/all`, {
+      cache: "no-cache",
+      headers: {
+        "api-key": devApiKey,
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
 
-  const devBlogs = await Promise.all(
-    data.map(async (blog) =>
-      (await fetch(`${devBlogApiUrl}/articles/${blog.id}`)).json()
-    )
-  );
-  for (blogData of devBlogs) {
-    const html = await readFile("templates/Blog.vue");
-    const templateReplacement = {
-      html: blogData.body_html,
-      title: blogData.title,
-      date: format(new Date(blogData.published_at), "dd MMMM yyyy"),
-      slug: blogData.slug,
-      source: blogData.url,
-      tags: blogData.tags,
-      cover_image: blogData.cover_image,
+    const devBlogs = await Promise.all(
+      data.map(async (blog) => {
+        const blogResponse = await fetch(`${devBlogApiUrl}/articles/${blog.id}`);
+        if (!blogResponse.ok) {
+          throw new Error(`HTTP error! status: ${blogResponse.status}`);
+        }
+        return blogResponse.json();
+      })
+    );
+    for (blogData of devBlogs) {
+      const html = await readFile("templates/Blog.vue");
+      const templateReplacement = {
+        html: blogData.body_html,
+        title: blogData.title,
+        date: format(new Date(blogData.published_at), "dd MMMM yyyy"),
+        slug: blogData.slug,
+        source: blogData.url,
+        tags: blogData.tags,
+        cover_image: blogData.cover_image,
+      };
+      const template = fillTemplate(html, templateReplacement);
+      const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
+      fs.readFile(path, () => {
+        fs.writeFile(path, template, function (err) {
+          if (err) {
+            return console.log(err);
+          }
+        });
+      });
+
+      console.log(`${blogData.slug} is saved.`);
+    }
+
+    const dataJson = await readFile("templates/data.js");
+    const dataJsonReplacement = {
+      data: JSON.stringify(
+        devBlogs.map((blog) => ({
+          ...blog,
+          category: "Tech",
+        }))
+      ),
     };
-    const template = fillTemplate(html, templateReplacement);
-    const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
-    fs.readFile(path, () => {
-      fs.writeFile(path, template, function (err) {
+    const dataFile = fillTemplate(dataJson, dataJsonReplacement);
+    const dataPath = appRoot + `/assets/data/data-dev-blogs.js`;
+    fs.readFile(dataPath, () => {
+      fs.writeFile(dataPath, dataFile, function (err) {
         if (err) {
           return console.log(err);
         }
       });
+      exec(`npm run prettier ${dataPath}`);
     });
-
-    console.log(`${blogData.slug} is saved.`);
+  } catch (error) {
+    console.error("Error fetching Dev.to blogs:", error);
   }
-
-  const dataJson = await readFile("templates/data.js");
-  const dataJsonReplacement = {
-    data: JSON.stringify(
-      devBlogs.map((blog) => ({
-        ...blog,
-        category: "Tech",
-      }))
-    ),
-  };
-  const dataFile = fillTemplate(dataJson, dataJsonReplacement);
-  const dataPath = appRoot + `/assets/data/data-dev-blogs.js`;
-  fs.readFile(dataPath, () => {
-    fs.writeFile(dataPath, dataFile, function (err) {
-      if (err) {
-        return console.log(err);
-      }
-    });
-    exec(`npm run prettier ${dataPath}`);
-  });
 }
 
 fetchDevBlogData();

@@ -47,7 +47,7 @@ Visit the repository to open bug reports and issues
 
 ## ©️ License
 
-This project does not have a license.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Dependencies
 
