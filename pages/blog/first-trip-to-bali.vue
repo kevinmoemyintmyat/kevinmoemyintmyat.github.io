@@ -16,7 +16,7 @@
             before the departure time of the airplane.
             <br />
             <span class="blog-img-card">
-                <img src="/blog/first-trip-to-bali/jewel-changi-airport.png" class="blog-img" />
+                <img src="/blog/first-trip-to-bali/jewel-changi-airport.png" class="blog-img" alt="Selfie around Jewel Changi Airport" />
                 <span class="blog-img-title">Selfie around Jewel Changi Airport</span>
             </span>
         </p>
@@ -34,7 +34,7 @@
             amazing and it made me take a selfie there.
             <br />
             <span class="blog-img-card">
-                <img src="/blog/first-trip-to-bali/ngurah-rai-airport.png" class="blog-img" />
+                <img src="/blog/first-trip-to-bali/ngurah-rai-airport.png" class="blog-img" alt="Ngurah Rai Airport is decorated with ancient Balinese architecture." />
                 <span class="blog-img-title">Ngurah Rai Airport is decorated with ancient Balinese architecture.</span>
             </span>
         </p>
@@ -103,11 +103,11 @@
 
             <span class="blog-img-card-row">
                 <span class="blog-img-card">
-                    <img src="/blog/first-trip-to-bali/rented-motor-bike.png" class="blog-img" />
+                    <img src="/blog/first-trip-to-bali/rented-motor-bike.png" class="blog-img" alt="Pretty satisfying ride around Kuta beach 🏍️" />
                     <span class="blog-img-title">Pretty satisfying ride around Kuta beach 🏍️</span>
                 </span>
                 <span class="blog-img-card">
-                    <img src="/blog/first-trip-to-bali/first-satay.png" class="blog-img" />
+                    <img src="/blog/first-trip-to-bali/first-satay.png" class="blog-img" alt="Satay is so tender and meaty 🍢" />
                     <span class="blog-img-title">Satay is so tender and meaty 🍢</span>
                 </span>
             </span>
@@ -150,11 +150,11 @@
 
                 <span class="blog-img-card-row">
                     <span class="blog-img-card">
-                        <img src="/blog/first-trip-to-bali/outlined.png" class="blog-img" />
+                        <img src="/blog/first-trip-to-bali/outlined.png" class="blog-img" alt="I won't lie, it's quite painful in the chest area :')" />
                         <span class="blog-img-title">I won't lie, it's quite painful in the chest area :')</span>
                     </span>
                     <span class="blog-img-card">
-                        <img src="/blog/first-trip-to-bali/tattoo.png" class="blog-img" />
+                        <img src="/blog/first-trip-to-bali/tattoo.png" class="blog-img" alt="Thank you @KutaInked for a shoutout on their Instagram post" />
                         <span class="blog-img-title">Thank you @KutaInked for a shoutout on their
                             <a href="https://www.instagram.com/p/Ck9_DzxSfL_/?hl=en&img_index=1">Instagram
                                 post</a></span>
@@ -198,7 +198,7 @@
                 I could see many activities around Bajra Sandhi monument compound. People are jogging and there were
                 some students doing some PT activities.
                 <span class="blog-img-card">
-                    <img src="/blog/first-trip-to-bali/bajra-sandhi.png" class="blog-img" />
+                    <img src="/blog/first-trip-to-bali/bajra-sandhi.png" class="blog-img" alt="Me with Bajra Sandhi Monument 👍" />
                     <span class="blog-img-title">Me with Bajra Sandhi Monument 👍</span>
                 </span>
             </p>
@@ -220,7 +220,7 @@
                 <br /><br />
                 I rode to the end of the Sanur beach coast and decided to rest at a stop and took a photo there.
                 <span class="blog-img-card">
-                    <img src="/blog/first-trip-to-bali/sanur-beach.png" class="blog-img" />
+                    <img src="/blog/first-trip-to-bali/sanur-beach.png" class="blog-img" alt="The quiet vibe of Sanur 🏖️" />
                     <span class="blog-img-title">The quiet vibe of Sanur 🏖️</span>
                 </span>
             </p>
@@ -237,12 +237,13 @@
                 After my dinner, I went back to the hotel and rest for the night.
                 <br />
                 <span class="blog-img-card">
-                    <img src="/blog/first-trip-to-bali/bakso-sapi.png" class="blog-img" />
+                    <img src="/blog/first-trip-to-bali/bakso-sapi.png" class="blog-img" alt="Yummy!" />
                     <span class="blog-img-title">Yummy!</span>
                 </span>
             </p>
-            <p class="pt-10" ref="uluwatuTemple">
-            <h2>Last day in Bali</h2>
+        </div>
+        <h2 class="pt-10" ref="uluwatuTemple">Last day in Bali</h2>
+        <p>
             The next day is my last day in Bali and I started packing my
             things.
             I checked out of the hotel and asked them to keep my luggage at a store room. There were some time to spend
@@ -257,11 +258,10 @@
             why the scenery of the island's end is very beautiful.
             <br />
             <span class="blog-img-card">
-                <img src="/blog/first-trip-to-bali/uluwatu-temple.png" class="blog-img" />
+                <img src="/blog/first-trip-to-bali/uluwatu-temple.png" class="blog-img" alt="I love Bali ❤️ " />
                 <span class="blog-img-title">I love Bali ❤️ </span>
             </span>
-            </p>
-        </div>
+        </p>
         <div class="pt-10">
             <p>
                 Well, this is it. I took a Gojek bike back to the hotel, took my luggages and the backpack and went to
@@ -281,7 +281,10 @@
 <script setup>
 useHead({
     title: 'My first trip to Bali by Kevin Moe Myint Myat',
-    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
+    link: [
+        { rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" },
+        { rel: "canonical", href: "https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali" }
+    ],
     meta: [
         { name: 'description', content: 'My first trip to Bali by Kevin Moe Myint Myat' },
         {
@@ -318,6 +321,34 @@ useHead({
         }
     ],
     ogImage: '/favicon.png'
+})
+
+// JSON-LD Structured Data
+useSeoMeta({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'My first trip to Bali by Kevin Moe Myint Myat',
+        'description': 'My first trip to Bali by Kevin Moe Myint Myat',
+        'author': {
+          '@type': 'Person',
+          'name': 'Kevin Moe Myint Myat'
+        },
+        'datePublished': '2024-03-30',
+        'mainEntityOfPage': {
+          '@type': 'WebPage',
+          '@id': 'https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali'
+        },
+        'image': [
+          'https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali/jewel-changi-airport.png',
+          'https://kevinmoemyintmyat.github.io/blog/first-trip-to-bali/ngurah-rai-airport.png'
+        ]
+      })
+    }
+  ]
 })
 </script>
 

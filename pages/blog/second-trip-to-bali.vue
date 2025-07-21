@@ -38,7 +38,7 @@
             and also decorated with ancient Balinese arts and statues.
             <br />
             <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/airport.png" class="blog-img" />
+                <img src="/blog/second-trip-to-bali/airport.png" class="blog-img" alt="Airport arrival" />
                 <span class="blog-img-title">Once again ❤️ </span>
             </span>
         </p>
@@ -53,70 +53,69 @@
             After that I had a great lunch at one of the restaurant located in a resort compound in the crowded streets
             of Legian.
             <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/atas-lunch.png" class="blog-img" />
+                <img src="/blog/second-trip-to-bali/atas-lunch.png" class="blog-img" alt="Roasted pork lunch" />
                 <span class="blog-img-title">The roasted pork is chewy and cripsy! 😋 #Eat #EatPrayLove</span>
             </span>
         </p>
         <div class="pt-10" ref="tanahLot">
-            <p>
             <h2>A sunset viewing trip to Tanah Lot Temple</h2>
-            After the satisfying lunch, I walked back to my hotel. I swam in the swimming pool provided and relaxed.
-            As I dip into the cool, crystalline waters, the worries of my mind dissolve, replaced by a sense of
-            weightlessness and freedom. The gentle lapping of water against the pool's edge provides a soothing
-            soundtrack to my adventure.
-            <br /><br />
-            The sun's warm rays dance upon the surface, casting mesmerizing patterns that add to the enchantment of
-            the
-            experience.
-            Whether you're leisurely floating on your back, or engaging in a spirited race with friends, swimming in
-            the
-            hotel pool offers a delightful respite, a moment of pure bliss amidst the luxury of your surroundings.
-            <br /><br />
-            I took a nap afterwards and woke up again in the evening. I grabbed a Gojek ride to catch the sunset at
-            Pura
-            Tanah Lot,
-            a popular tourist and cultural icon for photography.
-
-            As the sun sets in a blaze of orange and pink hues, casting a golden glow upon the temple's weathered
-            stones, Pura Tanah Lot becomes a scene of unparalleled magnificence. Pilgrims and tourists alike flock
-            to
-            witness this awe-inspiring spectacle, as waves crash against the base of the cliffs, adding to the
-            dramatic
-            ambiance. Beyond its stunning natural setting, Pura Tanah Lot holds profound religious significance for
-            the
-            Balinese people, serving as a sacred site for worship and meditation. Visiting Pura Tanah Lot is not
-            just a
-            journey to a picturesque landmark but an encounter with the spiritual essence of Bali, where nature and
-            culture converge in harmonious beauty.
-            <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/purah-tanah-lot.png" class="blog-img" />
-                <span class="blog-img-title">Sunset view of the temple in the sea is stunning. 🌇 #Pray
-                    #EatPrayLove</span>
-            </span>
-            I went back to the hotel safely and slept for tomorrow vacation plan.
+            <p>
+                After the satisfying lunch, I walked back to my hotel. I swam in the swimming pool provided and relaxed.
+                As I dip into the cool, crystalline waters, the worries of my mind dissolve, replaced by a sense of
+                weightlessness and freedom. The gentle lapping of water against the pool's edge provides a soothing
+                soundtrack to my adventure.
+                <br /><br />
+                The sun's warm rays dance upon the surface, casting mesmerizing patterns that add to the enchantment of
+                the
+                experience.
+                Whether you're leisurely floating on your back, or engaging in a spirited race with friends, swimming in
+                the
+                hotel pool offers a delightful respite, a moment of pure bliss amidst the luxury of your surroundings.
+                <br /><br />
+                I took a nap afterwards and woke up again in the evening. I grabbed a Gojek ride to catch the sunset at
+                Pura
+                Tanah Lot,
+                a popular tourist and cultural icon for photography.
+                As the sun sets in a blaze of orange and pink hues, casting a golden glow upon the temple's weathered
+                stones, Pura Tanah Lot becomes a scene of unparalleled magnificence. Pilgrims and tourists alike flock
+                to
+                witness this awe-inspiring spectacle, as waves crash against the base of the cliffs, adding to the
+                dramatic
+                ambiance. Beyond its stunning natural setting, Pura Tanah Lot holds profound religious significance for
+                the
+                Balinese people, serving as a sacred site for worship and meditation. Visiting Pura Tanah Lot is not
+                just a
+                journey to a picturesque landmark but an encounter with the spiritual essence of Bali, where nature and
+                culture converge in harmonious beauty.
+                <span class="blog-img-card">
+                    <img src="/blog/second-trip-to-bali/purah-tanah-lot.png" class="blog-img" alt="Sunset view of Tanah Lot Temple" />
+                    <span class="blog-img-title">Sunset view of the temple in the sea is stunning. 🌇 #Pray
+                        #EatPrayLove</span>
+                </span>
+                I went back to the hotel safely and slept for tomorrow vacation plan.
             </p>
         </div>
-        <p class="pt-10" ref="ubud">
-        <h2>Spending Christmas in Ubud</h2>
-        On 23rd December 2022, I woke up fresh and booked a taxi to go to Ubud, nestled in the heart of Bali's lush
-        interior, and a haven for art, culture, and natural beauty. I'm planning to spend my Christmas night in Ubud
-        in a 3-day stay at a quiet hotel.
-        <br /><br />
-        The taxi driver lady was very friendly and we had a good conversation about politics around the world,
-        Bali's tourism and we exchanged our life stories.
-        She told me she studied in Surabaya but as a local Balinese, she preferred to settle in Bali. Her husband
-        was a software developer like me and currently working in
-        Jakarta, the capital city of Indonesia.
-        <br />
-        I arrived to the hotel and checked myself in for the stay.
-        <br /><br />
-        The hotel is a small settlement in the wilderness of Ubud giving me the jungle vibe and also peace and calm.
-        There aren't many places nearby and I can see the hotel is surrounded by emerald rice paddies and verdant
-        forests, this charming remote small hotel exudes a serene ambiance that gives solace and inspiration.
-        <br />
-        <video controls>
-            <source src="/blog/second-trip-to-bali/swimming-in-ubud.mp4" type="video/mp4">
-        </video>
+        <h2 class="pt-10" ref="ubud">Spending Christmas in Ubud</h2>
+        <p>
+            On 23rd December 2022, I woke up fresh and booked a taxi to go to Ubud, nestled in the heart of Bali's lush
+            interior, and a haven for art, culture, and natural beauty. I'm planning to spend my Christmas night in Ubud
+            in a 3-day stay at a quiet hotel.
+            <br /><br />
+            The taxi driver lady was very friendly and we had a good conversation about politics around the world,
+            Bali's tourism and we exchanged our life stories.
+            She told me she studied in Surabaya but as a local Balinese, she preferred to settle in Bali. Her husband
+            was a software developer like me and currently working in
+            Jakarta, the capital city of Indonesia.
+            <br />
+            I arrived to the hotel and checked myself in for the stay.
+            <br /><br />
+            The hotel is a small settlement in the wilderness of Ubud giving me the jungle vibe and also peace and calm.
+            There aren't many places nearby and I can see the hotel is surrounded by emerald rice paddies and verdant
+            forests, this charming remote small hotel exudes a serene ambiance that gives solace and inspiration.
+            <br />
+            <video controls>
+                <source src="/blog/second-trip-to-bali/swimming-in-ubud.mp4" type="video/mp4">
+            </video>
         </p>
         <p class="pt-10">
             The taxi driver lady suggested me on the way that Ubud is famous for its duck cuisine. So, I've decided to
@@ -140,7 +139,7 @@
             including temples, museums, and art galleries, making it a must-visit destination for anyone exploring Ubud.
 
             <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/ubud-bebek.png" class="blog-img" />
+                <img src="/blog/second-trip-to-bali/ubud-bebek.png" class="blog-img" alt="Hearty duck meal in Ubud" />
                 <span class="blog-img-title">Hearty duck meal in Ubud. 🦆 #Eat
                     #EatPrayLove</span>
             </span>
@@ -163,7 +162,7 @@
         I trek in the rain soaking wet and refreshed at the same time. It's an adventurous experience indeed!
 
         <span class="blog-img-card">
-            <img src="/blog/second-trip-to-bali/trekking-uma-ceking.png" class="blog-img" />
+            <img src="/blog/second-trip-to-bali/trekking-uma-ceking.png" class="blog-img" alt="Trekking in Uma Ceking" />
             <span class="blog-img-title">Rain or not also don't care #Love
                 #EatPrayLove</span>
         </span>
@@ -185,7 +184,7 @@
             in traditional healing practices.
             I will always cherish those wise words throughout my healing journey.
             <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/quote-ketut.png" class="blog-img" />
+                <img src="/blog/second-trip-to-bali/quote-ketut.png" class="blog-img" alt="Ketut Liyer quote" />
                 <span class="blog-img-title">Even smile from your liver 😊 #Love
                     #EatPrayLove</span>
             </span>
@@ -234,7 +233,7 @@
             Tegenungan took me the whole day.
             <br /><br />
             <span class="blog-img-card">
-                <img src="/blog/second-trip-to-bali/tegenungan-waterfall.png" class="blog-img" />
+                <img src="/blog/second-trip-to-bali/tegenungan-waterfall.png" class="blog-img" alt="Cleansing at Tegenungan Waterfall" />
                 <span class="blog-img-title">Cleansing and healing with natural water 😊 #Love
                     #EatPrayLove</span>
             </span>
@@ -270,7 +269,7 @@
         <h2>Well, that's it. That's my second solo trip to Bali. I didn't found Love like Julia Roberts but I did have a
             great eat, a great prayer and maybe...a new found love for this island. Cheers! 🍹 </h2>
         <span class="blog-img-card">
-            <img src="/blog/second-trip-to-bali/pina-colada.png" class="blog-img" />
+            <img src="/blog/second-trip-to-bali/pina-colada.png" class="blog-img" alt="Pina Colada" />
             <span class="blog-img-title">If you like Pina Colada, and getting caught in the rain ....🎵 #Love
                 #EatPrayLove</span>
         </span>
@@ -286,13 +285,15 @@
 <script setup>
 useHead({
     title: 'My second trip to Bali by Kevin Moe Myint Myat',
-    link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }],
+    link: [
+        { rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" },
+        { rel: "canonical", href: "https://kevinmoemyintmyat.github.io/blog/second-trip-to-bali" }
+    ],
     meta: [
         { name: 'description', content: 'My second trip to Bali by Kevin Moe Myint Myat' },
         {
             name: "keywords",
-            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, 
-            stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travelling, solo travel, bali`,
+            content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, travelling, solo travel, bali`,
         },
         {
             property: "og:title",
@@ -324,6 +325,34 @@ useHead({
         }
     ],
     ogImage: '/favicon.png'
+})
+
+// JSON-LD Structured Data
+useSeoMeta({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'My second trip to Bali by Kevin Moe Myint Myat',
+        'description': 'My second trip to Bali by Kevin Moe Myint Myat',
+        'author': {
+          '@type': 'Person',
+          'name': 'Kevin Moe Myint Myat'
+        },
+        'datePublished': '2024-04-11',
+        'mainEntityOfPage': {
+          '@type': 'WebPage',
+          '@id': 'https://kevinmoemyintmyat.github.io/blog/second-trip-to-bali'
+        },
+        'image': [
+          'https://kevinmoemyintmyat.github.io/blog/second-trip-to-bali/airport.png',
+          'https://kevinmoemyintmyat.github.io/blog/second-trip-to-bali/atas-lunch.png'
+        ]
+      })
+    }
+  ]
 })
 </script>
 

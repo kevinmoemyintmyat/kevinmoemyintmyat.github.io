@@ -5,6 +5,7 @@
 		"build": "nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxi generate",
+		"generate-blog": "node generate_blog.js",
 		"preview": "nuxi preview",
 		"postinstall": "nuxi prepare",
 		"deploy": "gh-pages --dotfiles -d .output/public",

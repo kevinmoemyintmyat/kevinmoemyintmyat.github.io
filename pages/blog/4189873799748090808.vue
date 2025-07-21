@@ -13,8 +13,7 @@
 
 <script setup>
 useHead({
-  title:
-    `မှတ်မိနေမည် မနီလာ အပိုင်း (၃) - Written by Kevin Moe Myint Myat` ||
+  title: `မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat` ||
     "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
   link: [
     {
@@ -22,19 +21,23 @@ useHead({
       type: "image/png",
       href: "https://kevinmoemyintmyat.github.io/favicon.png",
     },
+    {
+      rel: "canonical",
+      href: "https://kevinmoemyintmyat.github.io/blog/4189873799748090808"
+    }
   ],
   meta: [
     {
       name: "description",
-      content: `မှတ်မိနေမည် မနီလာ အပိုင်း (၃) - Written by Kevin Moe Myint Myat`,
+      content: `မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "keywords",
-      content: `, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+      content: `manila,manila memories,part-3,part-three,travel, Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe My Int Myat, Github, art`,
     },
     {
       property: "og:title",
-      content: `မှတ်မိနေမည် မနီလာ အပိုင်း (၃) - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+      content: `မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
     },
     {
       property: "og:type",
@@ -46,11 +49,11 @@ useHead({
     },
     {
       property: "og:site:name",
-      content: `မှတ်မိနေမည် မနီလာ အပိုင်း (၃) - Written by Kevin Moe Myint Myat`,
+      content: `မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat`,
     },
     {
       property: "og:description",
-      content: `မှတ်မိနေမည် မနီလာ အပိုင်း (၃) - Written by Kevin Moe Myint Myat`,
+      content: `မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "twitter:site",
@@ -63,6 +66,25 @@ useHead({
   ],
   ogImage: "/favicon.png",
 });
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "မှတ်မိနေမည် မနီလာ အပိုင်း(၃)",
+  "description": "မှတ်မိနေမည် မနီလာ အပိုင်း(၃) - Written by Kevin Moe Myint Myat",
+  "author": {
+    "@type": "Person",
+    "name": "Kevin Moe Myint Myat"
+  },
+  "datePublished": "2024-10-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kevinmoemyintmyat.github.io/blog/4189873799748090808"
+  },
+  "image": [
+    // Add main image URLs here if available
+  ]
+};
 </script>
 
 <script>
