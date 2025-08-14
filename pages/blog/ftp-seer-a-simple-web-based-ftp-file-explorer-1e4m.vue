@@ -2,7 +2,7 @@
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>FTP Seer - A simple web based FTP file explorer <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 23 February 2020</h2>
-    <img class="cover-image" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png" alt="Screenshot of FTP Seer web based FTP file explorer UI" />
+    <img class="cover-image" src="https://media2.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png" />
     <div class="blog-body"><h1>
   <a name="ive-developed-a-full-stack-app-yayy" href="#ive-developed-a-full-stack-app-yayy">
   </a>
@@ -60,10 +60,6 @@ useHead({
       type: "image/png",
       href: "https://kevinmoemyintmyat.github.io/favicon.png",
     },
-    {
-      rel: "canonical",
-      href: "https://kevinmoemyintmyat.github.io/blog/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m"
-    }
   ],
   meta: [
     {
@@ -105,25 +101,6 @@ useHead({
   ],
   ogImage: "/favicon.png",
 });
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "FTP Seer - A simple web based FTP file explorer",
-  "description": "FTP Seer - A simple web based FTP file explorer - Written by Kevin Moe Myint Myat",
-  "author": {
-    "@type": "Person",
-    "name": "Kevin Moe Myint Myat"
-  },
-  "datePublished": "2020-02-23",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://kevinmoemyintmyat.github.io/blog/ftp-seer-a-simple-web-based-ftp-file-explorer-1e4m"
-  },
-  "image": [
-    "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F02zlb2uu47n2zkgd6ge6.png"
-  ]
-};
 </script>
 
 <script>

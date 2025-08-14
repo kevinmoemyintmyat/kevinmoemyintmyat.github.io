@@ -2,7 +2,7 @@
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 <br /><span>By Kevin Moe Myint Myat</span></h1>
     <h2>Written on 10 July 2021</h2>
-    <img class="cover-image" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0yvn9awow1fbhteif6tq.PNG" alt="Screenshot of React Xper experimental website UI" />
+    <img class="cover-image" src="https://media2.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0yvn9awow1fbhteif6tq.PNG" />
     <div class="blog-body"><p>React Xper is a experimental website to test out the<br>
 many concepts of ReactJS and its related libraries.<br>
 The beautiful UI is bootstrapped with Grommet v2 with a little bit of styled-components custom styling. Dark mode is available too 🧛‍♂️ .</p>
@@ -46,7 +46,7 @@ Or if you would like to contribute or make experiments on your own, create a bra
 <script setup>
 useHead({
   title:
-    `React Xper - A developer's guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat` ||
+    `React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat` ||
     "Kevin Moe Myint Myat - a cat dad, a developer & an artist",
   link: [
     {
@@ -54,15 +54,11 @@ useHead({
       type: "image/png",
       href: "https://kevinmoemyintmyat.github.io/favicon.png",
     },
-    {
-      rel: "canonical",
-      href: "https://kevinmoemyintmyat.github.io/blog/react-xper-a-developer-s-guide-to-experiment-react-15i5"
-    }
   ],
   meta: [
     {
       name: "description",
-      content: `React Xper - A developer's guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
+      content: `React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "keywords",
@@ -70,7 +66,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: `React Xper - A developer's guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
+      content: `React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat - a cat dad, a developer & an artist`,
     },
     {
       property: "og:type",
@@ -82,11 +78,11 @@ useHead({
     },
     {
       property: "og:site:name",
-      content: `React Xper - A developer's guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
+      content: `React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
     },
     {
       property: "og:description",
-      content: `React Xper - A developer's guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
+      content: `React Xper - A developer&#x27;s guide to experiment React 👨‍🔬 - Written by Kevin Moe Myint Myat`,
     },
     {
       name: "twitter:site",
@@ -99,25 +95,6 @@ useHead({
   ],
   ogImage: "/favicon.png",
 });
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "React Xper - A developer's guide to experiment React",
-  "description": "React Xper - A developer's guide to experiment React - Written by Kevin Moe Myint Myat",
-  "author": {
-    "@type": "Person",
-    "name": "Kevin Moe Myint Myat"
-  },
-  "datePublished": "2021-07-10",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://kevinmoemyintmyat.github.io/blog/react-xper-a-developer-s-guide-to-experiment-react-15i5"
-  },
-  "image": [
-    "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0yvn9awow1fbhteif6tq.PNG"
-  ]
-};
 </script>
 
 <script>

@@ -13,7 +13,7 @@
 
 <p>However, during some of my job-seeking phases, I’ve encountered a different method of assessing candidates: the pairing session. I’m not opposed to it, as it gives the interviewer (the “navigator”) a chance to see the candidate(the “driver”)’s ability to verbalize their thought process while solving problems together.</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fd3ra0bi8t6fjyfa3b146.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fd3ra0bi8t6fjyfa3b146.png" alt="Image description" loading="lazy" width="800" height="457"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fd3ra0bi8t6fjyfa3b146.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fd3ra0bi8t6fjyfa3b146.png" alt=" " loading="lazy" width="800" height="457"></a></p>
 
 <p>The problem is like this: imagine a 10x10 grid with a rover starting at coordinates (5, 5)—essentially in the middle of the grid—facing east. The rover can receive commands represented by "L," "R," or "M," where:</p>
 
@@ -60,7 +60,7 @@ function processCommands(commandString) {
 
 
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv4mhbx9qkylyrw4gdp2v.gif" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv4mhbx9qkylyrw4gdp2v.gif" alt="Image description" loading="lazy" width="791" height="1024" data-animated="true"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv4mhbx9qkylyrw4gdp2v.gif" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv4mhbx9qkylyrw4gdp2v.gif" alt=" " loading="lazy" width="791" height="1024" data-animated="true"></a></p>
 
 <p>The command "M" is straightforward since it just requires moving one grid forward (+1). But which coordinate—x or y—should we adjust? That depends on the direction. If the rover is facing "E" (East) or "W" (West), the x-axis changes. If it’s facing "N" (North) or "S" (South), the y-axis changes.</p>
 
@@ -242,7 +242,7 @@ console.log(rover.getPosition());
 <p>The genius revealed to me that it’s the classic Mars Rover problem. Wow—just from my short prompt, it knew exactly what I was asking...<br>
 A CLAIRVOYANT HERE!!!</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbx6nswk9c4d7gsucj53o.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbx6nswk9c4d7gsucj53o.png" alt="Image description" loading="lazy" width="800" height="457"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbx6nswk9c4d7gsucj53o.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbx6nswk9c4d7gsucj53o.png" alt=" " loading="lazy" width="800" height="457"></a></p>
 
 <p>It even knew right away to use an object-oriented approach for better readability and reusability—something that only dawned on me hours after the interview. Talk about the difference pressure and emotion make! The advantage of being an emotionless, massive dataset is that AI can process and solve problems instantly, while a mere mortal developer like me took 45 minutes to barely complete it, even with the interviewer's help.</p>
 
@@ -282,7 +282,7 @@ I'm designed to assist, augment, and accelerate development, not replace it.</li
   For Humans, By Humans
 </h2>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9af048dkik969fonbx0n.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9af048dkik969fonbx0n.png" alt="Image description" loading="lazy" width="800" height="457"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9af048dkik969fonbx0n.png" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9af048dkik969fonbx0n.png" alt=" " loading="lazy" width="800" height="457"></a></p>
 
 <h1>
   <a name="happy-halloween-2024-" href="#happy-halloween-2024-">

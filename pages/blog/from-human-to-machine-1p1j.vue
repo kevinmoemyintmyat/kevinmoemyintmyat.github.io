@@ -45,7 +45,7 @@ Me: Play “Bittersweet Symphony” on Spotify…</p>
 
 <p>ChatGPT is my work buddy. We chat a lot, mostly about work, and it gives me great advice, which I usually follow. My job mostly involves Ctrl+C and Ctrl+V of its suggestions.</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fx7o48i7kg0kaqnoo03cm.gif" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fx7o48i7kg0kaqnoo03cm.gif" alt="Image description" loading="lazy" width="503" height="200" data-animated="true"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fx7o48i7kg0kaqnoo03cm.gif" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fx7o48i7kg0kaqnoo03cm.gif" alt=" " loading="lazy" width="503" height="200"></a></p>
 
 <p>My actual teammates are still sleeping on the other side of the world, and those on this side are probably working from home. I don’t see them often.</p>
 
@@ -64,7 +64,7 @@ When I head out for lunch, I see many people like me, AirPods in their ears, pro
 
 <p>My smartphone tracks my geolocation, too. My whereabouts are saved in the “Find My Phone” app. My personal information, photos, memories, and artwork are all stored on social media like Facebook and Instagram, floating around in Meta’s cloud. My work experience and portfolio live on LinkedIn. Worst of all, my facial patterns have been cataloged by several models—my iPhone, the office door system, even the government. Thinking about it, the collective digital version of me has <strong>transcended</strong> into the internet. ☁️</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcrbn2mx8h36wexqnsh7d.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcrbn2mx8h36wexqnsh7d.jpg" alt="Image description" loading="lazy" width="800" height="500"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcrbn2mx8h36wexqnsh7d.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcrbn2mx8h36wexqnsh7d.jpg" alt=" " loading="lazy" width="800" height="500"></a></p>
 
 <p>When I’m bored with Siri, I switch over to DJ X (an AI) from Spotify to curate a playlist for me. Since he knows what I’ve been listening to for the past ten years, this guy delivers just the hits I like.</p>
 
@@ -92,13 +92,13 @@ DUH!</p>
 
 <p>At night, I cocoon myself in bed, open my relaxing tunes on the electronic speaker, and let Delta and Alpha waves wash over me. It does the trick—I start to drift off. I charge all my digital friends—my smartwatch, smartphone, and AirPods—and say goodbye to this AI world as I prepare to recharge myself in sleep, but as you know...</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2a4q38osv4kikksdwt34.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2a4q38osv4kikksdwt34.jpg" alt="Image description" loading="lazy" width="735" height="772"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2a4q38osv4kikksdwt34.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2a4q38osv4kikksdwt34.jpg" alt=" " loading="lazy" width="735" height="772"></a></p>
 
 <p>In the end, my life is so entangled with machine-made decisions that I wonder if I’m even a sentient being anymore. My life feels like nothing but a cron job running daily…</p>
 
 <p>As I wrote this original text, I submitted it to my best buddy, hoping for grammatical corrections and a more polished version. Once I copy and paste the edits, I usually leave the last sentence as my own—keeping a small piece of my humanity intact… the most emotional piece of my blog. (What you’ve read may not be the original script.)</p>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9vjycb9ge62obescier.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9vjycb9ge62obescier.jpg" alt="Image description" loading="lazy" width="800" height="800"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9vjycb9ge62obescier.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9vjycb9ge62obescier.jpg" alt=" " loading="lazy" width="800" height="800"></a></p>
 
 <p>Yes, I may be assisted by artificial intelligence, by machines, by mobility, and many of my ideas may be assisted by AI, yet I’m still human, I’m still feeling, and I’m still vulnerable. I hope I can hold onto my humanity in the years to come, resisting the pull to become fully mechanized.</p>
 
@@ -110,7 +110,7 @@ DUH!</p>
   im a cyborg, but that’s okay.
 </h2>
 
-<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fggp0dtz7pgzvzprc2hy9.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fggp0dtz7pgzvzprc2hy9.jpg" alt="Image description" loading="lazy" width="800" height="516"></a></p>
+<p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fggp0dtz7pgzvzprc2hy9.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fggp0dtz7pgzvzprc2hy9.jpg" alt=" " loading="lazy" width="800" height="516"></a></p>
 
 </div>
     <footer>
