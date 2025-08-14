@@ -91,16 +91,40 @@ async function fetchDevBlogData() {
     }
     const data = await response.json();
 
-    const devBlogs = await Promise.all(
-      data.map(async (blog) => {
+    // Process blogs one by one with delays to avoid rate limiting
+    const devBlogs = [];
+    for (const blog of data) {
+      try {
         const blogResponse = await fetch(`${devBlogApiUrl}/articles/${blog.id}`);
         if (!blogResponse.ok) {
           throw new Error(`HTTP error! status: ${blogResponse.status}`);
         }
-        return blogResponse.json();
-      })
-    );
-    for (blogData of devBlogs) {
+        const blogData = await blogResponse.json();
+        devBlogs.push(blogData);
+        
+        // Add delay between requests to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
+        
+      } catch (error) {
+        console.error(`Error fetching blog ${blog.id}:`, error);
+        // Continue with other blogs instead of failing completely
+      }
+    }
+    
+    // Process blogs and generate shorter filenames
+    const processedBlogs = devBlogs.map(blogData => {
+      let filename = blogData.slug;
+      if (filename.length > 50) {
+        const words = filename.split('-');
+        if (words.length > 3) {
+          filename = words.slice(0, 3).join('-');
+        }
+        filename = filename + '-' + blogData.id.toString().slice(-4);
+      }
+      return { ...blogData, shortSlug: filename };
+    });
+    
+    for (blogData of processedBlogs) {
       const html = await readFile("templates/Blog.vue");
       const templateReplacement = {
         html: blogData.body_html,
@@ -112,7 +136,8 @@ async function fetchDevBlogData() {
         cover_image: blogData.cover_image,
       };
       const template = fillTemplate(html, templateReplacement);
-      const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
+      
+      const path = appRoot + `/pages/blog/${blogData.shortSlug}.vue`;
       fs.readFile(path, () => {
         fs.writeFile(path, template, function (err) {
           if (err) {
@@ -127,7 +152,7 @@ async function fetchDevBlogData() {
     const dataJson = await readFile("templates/data.js");
     const dataJsonReplacement = {
       data: JSON.stringify(
-        devBlogs.map((blog) => ({
+        processedBlogs.map((blog) => ({
           ...blog,
           category: "Tech",
         }))

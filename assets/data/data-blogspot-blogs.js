@@ -24,7 +24,7 @@ export default [
       selfLink:
         "https://www.googleapis.com/blogger/v3/blogs/6655808940462000438/posts/6065732185309731980/comments",
     },
-    etag: '"dGltZXN0YW1wOiAxNzQ0MTc2NzE2ODU5Cm9mZnNldDogMjg4MDAwMDAK"',
+    etag: '"dGltZXN0YW1wOiAJIDE3NDQxNzY3MTY4NTkKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
   },
   {
@@ -52,7 +52,7 @@ export default [
       selfLink:
         "https://www.googleapis.com/blogger/v3/blogs/6655808940462000438/posts/1759324615477656166/comments",
     },
-    etag: '"dGltZXN0YW1wOiAxNzQ0MTc3NzE4ODc3Cm9mZnNldDogMjg4MDAwMDAK"',
+    etag: '"dGltZXN0YW1wOiAJIDE3NDQxNzc3MTg4NzcKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
   },
   {
@@ -80,7 +80,7 @@ export default [
       selfLink:
         "https://www.googleapis.com/blogger/v3/blogs/6655808940462000438/posts/4189873799748090808/comments",
     },
-    etag: '"dGltZXN0YW1wOiAxNzI5OTY2OTY2NDU1Cm9mZnNldDogMjg4MDAwMDAK"',
+    etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NjY5NjY0NTUKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
   },
   {
@@ -109,7 +109,7 @@ export default [
         "https://www.googleapis.com/blogger/v3/blogs/6655808940462000438/posts/3653068274143975781/comments",
     },
     labels: ["manila", "manila memories", "part-2", "part-two", "travel"],
-    etag: '"dGltZXN0YW1wOiAxNzI5OTU5ODc5MjY4Cm9mZnNldDogMjg4MDAwMDAK"',
+    etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NTk4NzkyNjgKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
   },
   {
@@ -138,7 +138,7 @@ export default [
         "https://www.googleapis.com/blogger/v3/blogs/6655808940462000438/posts/3975425417229776902/comments",
     },
     labels: ["manila", "manila memories", "part-1", "part-one", "travel"],
-    etag: '"dGltZXN0YW1wOiAxNzI5OTY1OTY0MzExCm9mZnNldDogMjg4MDAwMDAK"',
+    etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NjU5NjQzMTEKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
   },
 ];
