@@ -113,15 +113,7 @@ async function fetchDevBlogData() {
     
     // Process blogs and generate shorter filenames
     const processedBlogs = devBlogs.map(blogData => {
-      let filename = blogData.slug;
-      if (filename.length > 50) {
-        const words = filename.split('-');
-        if (words.length > 3) {
-          filename = words.slice(0, 3).join('-');
-        }
-        filename = filename + '-' + blogData.id.toString().slice(-4);
-      }
-      return { ...blogData, shortSlug: filename };
+      return { ...blogData };
     });
     
     for (blogData of processedBlogs) {
@@ -130,14 +122,14 @@ async function fetchDevBlogData() {
         html: blogData.body_html,
         title: blogData.title,
         date: format(new Date(blogData.published_at), "dd MMMM yyyy"),
-        slug: blogData.slug,
+        slug: blogData.slug, // Use original slug
         source: blogData.url,
         tags: blogData.tags,
         cover_image: blogData.cover_image,
       };
       const template = fillTemplate(html, templateReplacement);
       
-      const path = appRoot + `/pages/blog/${blogData.shortSlug}.vue`;
+      const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
       fs.readFile(path, () => {
         fs.writeFile(path, template, function (err) {
           if (err) {
