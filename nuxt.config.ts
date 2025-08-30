@@ -28,13 +28,13 @@ export default defineNuxtConfig({
         },
         {
           name: "description",
-          content: `Kevin Moe Myint Myat is a software developer and an art hobbyist based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_theblackcattt).
-            He spends most of his time working as a software engineer at DT One (https://www.dtone.com) and during the weekends, he pursues his passion "Art" and works on his paintings. He has participated in
+          content: `Kevin Moe Myint Myat is a software developer and tech blogger based in Singapore. He is also a full-time cat dad to JieMao (https://www.instagram.com/jiemao_theblackcattt).
+            He spends most of his time working remotely as a software engineer and writes technical blogs about software development, AI, and his experiences in tech. He has participated in
             World Charity Painting 2024 (https://en.artassociation.asia/wcpc) and World Heritage Painting 2024 (https://en.artassociation.asia/whpc).`,
         },
         {
           name: "keywords",
-          content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, poems, blogs, poem, articles, articles, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art`,
+          content: `Kevin Moe Myint Myat,kevinmoemyintmyat,kevinmoemyintmyat.github.io,blog, blogs, articles, stories, software developer, artist, cat dad,fullstack,software,kevin,moe,myint,myat,kevn,Kevn Moe Myint Myat,KevinMoeMyintMyat, Kevin Moe Myint Myat, Github, art, tech blog, developer blog, software engineering blog`,
         },
         {
           property: "og:title",
@@ -101,9 +101,7 @@ export default defineNuxtConfig({
         '/blog/the-horrors-of-ai-halloween-edition--55ib/',
         '/blog/second-trip-to-bali/',
         '/blog/first-trip-to-bali/',
-        '/poems/',
-        '/poems/here-comes-the-sun/',
-        '/poems/memoirs-of-a-ghost/',
+
       ]
     }
   }
@@ -121,9 +119,7 @@ export const sitemap = {
         '/',
         '/blog/',
         '/art/',
-        '/music/',
         '/about/me/',
-        '/poems/',
         '/blog/3975425417229776902/',
         '/blog/3653068274143975781/',
         '/blog/4189873799748090808/',
@@ -139,8 +135,6 @@ export const sitemap = {
         '/blog/the-horrors-of-ai-halloween-edition--55ib/',
         '/blog/second-trip-to-bali/',
         '/blog/first-trip-to-bali/',
-        '/poems/here-comes-the-sun/',
-        '/poems/memoirs-of-a-ghost/',
       ]
     }
   }

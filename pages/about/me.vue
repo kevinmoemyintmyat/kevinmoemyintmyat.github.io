@@ -11,8 +11,7 @@
                 dad
                 🐈‍⬛ to <a href="https://www.instagram.com/jiemao_theblackcattt/" target="_blank">@jiemao_blackcat</a>.
                 <br /><br />
-                I'm currently looking for new opportunities
-                as a Software Engineer. You can read more about my professional career portfolio
+                I'm currently working remotely as a Software Engineer. You can read more about my professional career portfolio
                 <a href="https://kevinmoemyintmyat.gitlab.io" target="blank">here</a>.
                 <br /><br />
                 <br /><br />
@@ -21,8 +20,8 @@
                 maintaining my projects on
                 <a href="https://github.com/m3yevn" target="_blank">my github portfolio</a>.
                 <br /><br />
-                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs</NuxtLink>, <NuxtLink to="/blog">poems and
-                    articles</NuxtLink>. Every now and then, I sing <NuxtLink to="/music">karaoke 🎤 </NuxtLink>on Smule, dabble with video content creating 
+                Aside from that, I enjoy writing <NuxtLink to="/blog">blogs</NuxtLink> and
+                    <NuxtLink to="/blog">articles</NuxtLink>. Every now and then, I dabble with video content creating 
                 and also experiment with cooking recipes 🧑‍🍳 which are available on my
                 <a href="https://www.tiktok.com/@m3_yevnnn" target="_blank">TikTok</a>.
                 <br /><br />
@@ -63,9 +62,9 @@ useHead({
     meta: [
         {
             name: 'description', content: `I'm Kevin, a software developer/artist based in Singapore and a full-time cat dad 🐈‍⬛ to @jiemao_blackcat.
-I'm spending most of my time working at DT One as a Software Engineer. You can read more about my professional career portfolio in https://kevinmoemyintmyat.gitlab.io.
+I'm spending most of my time working remotely as a Software Engineer. You can read more about my professional career portfolio in https://kevinmoemyintmyat.gitlab.io.
 I ❤️ swimming in the weekends, sometimes cycling in the city and of course, creating arts and maintaining my projects on my github portfolio.
-Aside from that, I enjoy writing blogs, poems and articles. Every now and then, I sing karaoke 🎤 on Smule and also experiment with cooking recipes 🧑‍🍳 which are available on my TikTok.
+Aside from that, I enjoy writing blogs and articles. Every now and then, I experiment with cooking recipes 🧑‍🍳 which are available on my TikTok.
 ` },
         {
             name: "keywords",

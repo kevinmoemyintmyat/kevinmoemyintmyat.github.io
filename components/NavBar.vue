@@ -39,11 +39,7 @@ const state = reactive({
       route: "art",
       internal: true
     },
-    {
-      name: "Music",
-      route: "music",
-      internal: true
-    },
+
     {
       name: "Blog",
       route: "blog",
