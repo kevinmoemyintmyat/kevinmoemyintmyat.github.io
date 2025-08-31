@@ -373,9 +373,28 @@ div {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 32px;
   font-weight: 700;
   padding-bottom: 10px;
+}
+
+/* Responsive font sizing for larger screens */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 h1 span {
@@ -383,9 +402,29 @@ h1 span {
 }
 
 h2 {
-  font-size: 45px;
-  padding-bottom: 10px;
-  line-height: 2;
+  font-size: 24px;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Responsive font sizing for larger screens */
+@media (min-width: 640px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
 }
 
 .blog-body {
@@ -430,26 +469,41 @@ footer a {
 }
 
 .tip-section {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: left;
 }
 
 .tip-button {
   display: inline-block;
-  background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 50%, #1a1a1a 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
   color: white;
-  padding: 15px 30px;
-  border-radius: 25px;
+  padding: 12px 24px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  transition: all 0.3s ease;
+  font-size: 16px;
+  transition: background-position 0.5s ease-in-out;
   box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
 }
 
+/* Responsive sizing for larger screens */
+@media (min-width: 640px) {
+  .tip-section {
+    margin-top: 30px;
+  }
+  
+  .tip-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+  }
+}
+
 .tip-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.5);
-  background: linear-gradient(135deg, #8b0000 0%, #1a1a1a 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.6), 0 0 20px rgba(139, 0, 0, 0.4);
+  background-position: 100% 0%;
 }
 </style>
