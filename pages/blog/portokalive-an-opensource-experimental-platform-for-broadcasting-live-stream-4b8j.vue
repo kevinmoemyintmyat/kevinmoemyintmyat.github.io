@@ -1,6 +1,11 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>PortokaLive - An opensource experimental platform for broadcasting live stream <br /><span>By Kevin Moe Myint Myat</span></h1>
+    <div class="tip-section">
+      <a href="https://ko-fi.com/m3_yevnnn" target="_blank" class="tip-button">
+        Tip me if you want ☕
+      </a>
+    </div>
     <h2>Written on 29 July 2021</h2>
     <img class="cover-image" src="" />
     <div class="blog-body"><p>🎉🎉🎉 After years of procrastinating on working on this project, I'm finally proud to launch this platform PortokaLive to public. Hooray! Here's the link</p>
@@ -215,5 +220,29 @@ footer {
 footer a {
   text-decoration: underline;
   color: crimson;
+}
+
+.tip-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.tip-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+}
+
+.tip-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.5);
+  background: linear-gradient(135deg, #8b0000 0%, #1a1a1a 100%);
 }
 </style>

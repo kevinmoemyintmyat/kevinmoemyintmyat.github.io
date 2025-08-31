@@ -1,6 +1,11 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>From Human to Machine <br /><span>By Kevin Moe Myint Myat</span></h1>
+    <div class="tip-section">
+      <a href="https://ko-fi.com/m3_yevnnn" target="_blank" class="tip-button">
+        Tip me if you want ☕
+      </a>
+    </div>
     <h2>Written on 29 October 2024</h2>
     <img class="cover-image" src="https://media2.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fa120x1vj8nyk0btf12p5.png" />
     <div class="blog-body"><h1>
@@ -244,5 +249,29 @@ footer {
 footer a {
   text-decoration: underline;
   color: crimson;
+}
+
+.tip-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.tip-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+}
+
+.tip-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.5);
+  background: linear-gradient(135deg, #8b0000 0%, #1a1a1a 100%);
 }
 </style>

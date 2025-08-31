@@ -1,6 +1,11 @@
 <template>
   <section class="mt-20 lg:pl-20 p-5 lg:ml-20 lg:w-4/6" ref="startOfArticle">
     <h1>a day in the life of a software engineer <br /><span>By Kevin Moe Myint Myat</span></h1>
+    <div class="tip-section">
+      <a href="https://ko-fi.com/m3_yevnnn" target="_blank" class="tip-button">
+        Tip me if you want ☕
+      </a>
+    </div>
     <h2>Written on 12 October 2024</h2>
     <img class="cover-image" src="https://media2.dev.to/dynamic/image/width&#x3D;1000,height&#x3D;420,fit&#x3D;cover,gravity&#x3D;auto,format&#x3D;auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhegttjvo34a4cxob8x3f.jpg" />
     <div class="blog-body"><p>Woah, I finally have the time to write this blog that’s been on my mind recently!</p>
@@ -113,7 +118,7 @@
 
 <p><a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvk3nk4aphgcjhhnx5dnz.jpg" class="article-body-image-wrapper"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvk3nk4aphgcjhhnx5dnz.jpg" alt="After Office" loading="lazy" width="800" height="460"></a></p>
 
-                <p>6 PM to 7/7:30 PM flies by due to the commute and dinner. At home, I usually unwind by watching some series or movies. On some nights, I work on side projects, adding features and making updates. I would also paint depending on my mood. Some of my paintings are <a href="https://kevinmoemyintmyat.github.io/art" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>6 PM to 7/7:30 PM flies by due to the commute and dinner. At home, I usually unwind by watching some series or movies. On some nights, I work on side projects, adding features and making updates. I would also paint or sing depending on my mood. Some of my paintings are <a href="https://kevinmoemyintmyat.github.io/art" target="_blank" rel="noopener noreferrer">here</a> and my karaoke covers are <a href="https://kevinmoemyintmyat.github.io/music" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
 <p>On days when I don’t feel sore or tired, I hit the nearby gym or go jogging or cycling around the neighborhood. Otherwise, I play with my cat and check his litter box—--- (talk about being a full-time cat dad!)</p>
 
@@ -277,5 +282,29 @@ footer {
 footer a {
   text-decoration: underline;
   color: crimson;
+}
+
+.tip-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.tip-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #1a1a1a 0%, #8b0000 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+}
+
+.tip-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.5);
+  background: linear-gradient(135deg, #8b0000 0%, #1a1a1a 100%);
 }
 </style>
