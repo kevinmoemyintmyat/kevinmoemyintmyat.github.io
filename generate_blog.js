@@ -7,11 +7,23 @@ const { exec } = require("child_process");
 const appRoot = path.resolve(__dirname);
 dotenv.config();
 
-const devBlogApiUrl = process.env.NUXT_ENV_DEV_TO_API;
+// Add fallback values and validation for environment variables
+const devBlogApiUrl = process.env.NUXT_ENV_DEV_TO_API || "https://dev.to/api";
 const devApiKey = process.env.DEV_TO_API_KEY;
-const bloggerApiUrl =
-  process.env.NUXT_ENV_BLOGGER_API + "/" + process.env.BLOGGER_ID + "/posts";
+const bloggerApiUrl = process.env.NUXT_ENV_BLOGGER_API && process.env.BLOGGER_ID && process.env.BLOGGER_API_KEY 
+  ? `${process.env.NUXT_ENV_BLOGGER_API}/${process.env.BLOGGER_ID}/posts`
+  : null;
 const bloggerApiKey = process.env.BLOGGER_API_KEY;
+
+// Validate required environment variables
+if (!devApiKey) {
+  console.warn("⚠️  Warning: DEV_TO_API_KEY is not set. Dev.to blog fetching will be skipped.");
+}
+
+if (!bloggerApiUrl || !bloggerApiKey) {
+  console.warn("⚠️  Warning: Blogger API configuration is incomplete. Blogger blog fetching will be skipped.");
+  console.warn("   Required: NUXT_ENV_BLOGGER_API, BLOGGER_ID, BLOGGER_API_KEY");
+}
 
 const readFile = (path) => {
   return new Promise((resolve, reject) => {
@@ -25,11 +37,23 @@ const readFile = (path) => {
   });
 };
 
+const ensureDirectoryExists = (filePath) => {
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+};
+
 const fillTemplate = (html, replacements) => {
   return handlebars.compile(html)(replacements);
 };
 
 async function fetchBlogsplotData() {
+  if (!bloggerApiUrl || !bloggerApiKey) {
+    console.warn("Skipping fetchBlogsplotData due to incomplete Blogger API configuration.");
+    return;
+  }
+
   const response = await fetch(`${bloggerApiUrl}?key=${bloggerApiKey}`, {
     cache: "no-cache",
   });
@@ -45,9 +69,10 @@ async function fetchBlogsplotData() {
       tags: blogData.labels,
     };
     const template = fillTemplate(html, templateReplacement);
-    const path = appRoot + `/pages/blog/${blogData.id}.vue`;
-    fs.readFile(path, () => {
-      fs.writeFile(path, template, function (err) {
+    const filePath = appRoot + `/pages/blog/${blogData.id}.vue`;
+    ensureDirectoryExists(filePath);
+    fs.readFile(filePath, () => {
+      fs.writeFile(filePath, template, function (err) {
         if (err) {
           return console.log(err);
         }
@@ -67,18 +92,24 @@ async function fetchBlogsplotData() {
     ),
   };
   const dataFile = fillTemplate(dataJson, dataJsonReplacement);
-  const dataPath = appRoot + `/assets/data/data-blogspot-blogs.js`;
-  fs.readFile(dataPath, () => {
-    fs.writeFile(dataPath, dataFile, function (err) {
-      if (err) {
-        return console.log(err);
-      }
+      const dataPath = appRoot + `/assets/data/data-blogspot-blogs.js`;
+    ensureDirectoryExists(dataPath);
+    fs.readFile(dataPath, () => {
+      fs.writeFile(dataPath, dataFile, function (err) {
+        if (err) {
+          return console.log(err);
+        }
+      });
+      exec(`npm run prettier ${dataPath}`);
     });
-    exec(`npm run prettier ${dataPath}`);
-  });
 }
 
 async function fetchDevBlogData() {
+  if (!devApiKey) {
+    console.warn("Skipping fetchDevBlogData due to missing DEV_TO_API_KEY.");
+    return;
+  }
+
   try {
     const response = await fetch(`${devBlogApiUrl}/articles/me/all`, {
       cache: "no-cache",
@@ -129,9 +160,10 @@ async function fetchDevBlogData() {
       };
       const template = fillTemplate(html, templateReplacement);
       
-      const path = appRoot + `/pages/blog/${blogData.slug}.vue`;
-      fs.readFile(path, () => {
-        fs.writeFile(path, template, function (err) {
+      const filePath = appRoot + `/pages/blog/${blogData.slug}.vue`;
+      ensureDirectoryExists(filePath);
+      fs.readFile(filePath, () => {
+        fs.writeFile(filePath, template, function (err) {
           if (err) {
             return console.log(err);
           }
@@ -152,6 +184,7 @@ async function fetchDevBlogData() {
     };
     const dataFile = fillTemplate(dataJson, dataJsonReplacement);
     const dataPath = appRoot + `/assets/data/data-dev-blogs.js`;
+    ensureDirectoryExists(dataPath);
     fs.readFile(dataPath, () => {
       fs.writeFile(dataPath, dataFile, function (err) {
         if (err) {
@@ -165,5 +198,31 @@ async function fetchDevBlogData() {
   }
 }
 
-fetchDevBlogData();
-fetchBlogsplotData();
+// Execute blog fetching functions with proper error handling
+(async () => {
+  try {
+    console.log("🚀 Starting blog generation...");
+    
+    if (devApiKey) {
+      console.log("📝 Fetching Dev.to blogs...");
+      await fetchDevBlogData();
+    }
+    
+    if (bloggerApiUrl && bloggerApiKey) {
+      console.log("📝 Fetching Blogger blogs...");
+      await fetchBlogsplotData();
+    }
+    
+    if (!devApiKey && (!bloggerApiUrl || !bloggerApiKey)) {
+      console.log("ℹ️  No API keys configured. Please set up environment variables to fetch blogs.");
+      console.log("   Create a .env file with the required API keys:");
+      console.log("   - DEV_TO_API_KEY for Dev.to");
+      console.log("   - NUXT_ENV_BLOGGER_API, BLOGGER_ID, BLOGGER_API_KEY for Blogger");
+    }
+    
+    console.log("✅ Blog generation completed!");
+  } catch (error) {
+    console.error("❌ Error during blog generation:", error);
+    process.exit(1);
+  }
+})();

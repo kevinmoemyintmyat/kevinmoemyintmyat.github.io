@@ -37,7 +37,7 @@ rm -rf .git
 cd ../../..
 
 #AboutMe deployment
-cd .output/public/about
+cd .output/public/About
 rm -rf .git
 git init
 git remote add origin https://github.com/kevinmoemyintmyat/about.git
