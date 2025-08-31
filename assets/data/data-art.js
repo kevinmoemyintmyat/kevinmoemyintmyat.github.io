@@ -1,6 +1,46 @@
 export default [
   [
     {
+      name: "Crimson Eyes",
+      description:
+        "A striking portrait featuring intense crimson eyes that convey deep emotion and mystery",
+      image: "/art/crimson-eyes.jpg",
+    },
+    {
+      name: "Mein Sohn",
+      description:
+        "A heartfelt representation of paternal love and connection, capturing the bond between father and son",
+      image: "/art/mein-sohn.jpg",
+    },
+    {
+      name: "Yellow Ribbon Tree",
+      description:
+        "A symbolic tree adorned with yellow ribbons, representing hope, remembrance, and solidarity",
+      image: "/art/yellow-ribbon-tree.jpg",
+    },
+  ],
+  [
+    {
+      name: "Shiva",
+      description:
+        "A spiritual depiction of Lord Shiva, embodying the divine energy of transformation and cosmic dance",
+      image: "/art/shiva.jpg",
+    },
+    {
+      name: "Orange Snake",
+      description:
+        "A vibrant serpent in warm orange tones, symbolizing transformation and primal energy",
+      image: "/art/orange-snake.jpg",
+    },
+    {
+      name: "Red Snake",
+      description:
+        "A powerful red serpent representing passion, danger, and the raw forces of nature",
+      image: "/art/red-snake.jpg",
+    },
+  ],
+  [
+    {
       name: "The Monk with a Fan and a Gourd",
       description:
         "A depiction of Ji Gong (濟公), an icon of charitable acts and kind heart",
