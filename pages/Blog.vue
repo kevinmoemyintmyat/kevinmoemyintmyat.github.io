@@ -235,33 +235,46 @@ function constructPath(blog) {
 </script>
 
 <style scoped>
+/* Apply Playfair Display to page titles */
 .title {
   margin-top: 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 p {
   font-size: 1.5em;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
 }
 
 span.title {
   color: whitesmoke;
   font-size: 1.5rem;
   padding: unset;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 span.description {
   color: crimson;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
 }
 
 .tooltiptext {
   font-size: 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .date {
-  font: 1em sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1em;
   color: gray;
   position: relative;
   display: block;
+  font-weight: 400;
 }
 
 .read-more {
@@ -271,6 +284,8 @@ span.description {
   right: 0px;
   bottom: 8px;
   position: absolute;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
 }
 
 .gallery-card {
@@ -285,5 +300,6 @@ span.description {
 
 a {
   cursor: pointer;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 </style>

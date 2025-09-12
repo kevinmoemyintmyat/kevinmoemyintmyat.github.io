@@ -160,14 +160,20 @@ export default {
 </script>
 
 <style scoped>
+/* Import Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 div {
   margin-top: 30px;
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 32px;
   font-weight: 700;
   padding-bottom: 10px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 /* Responsive font sizing for larger screens */
@@ -191,12 +197,16 @@ h1 {
 
 h1 span {
   color: whitesmoke;
+  font-weight: 400;
+  font-size: 0.7em;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
   padding-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 /* Responsive font sizing for larger screens */
@@ -215,49 +225,154 @@ h2 {
 @media (min-width: 1024px) {
   h2 {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 }
 
 .blog-body {
   margin-top: 20px;
+  max-width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-code {
-  padding: 16px;
-  background: rgb(41, 41, 41);
-  display: block;
-  border-radius: 12px;
-  width: 1024px;
+/* Improved typography for blog content */
+.blog-body p {
+  font-size: 18px;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
-ol,
-ul,
-menu {
-  list-style: decimal;
-  margin: 1em;
-  padding: 1em;
-}
-
-ol li {
-  padding: 8px;
+.blog-body h1,
+.blog-body h2,
+.blog-body h3,
+.blog-body h4,
+.blog-body h5,
+.blog-body h6 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  font-weight: 600;
 }
 
 .blog-body h1 {
-  font-size: 40px;
-  font-weight: 500;
-  padding-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.blog-body h2 {
+  font-size: 2rem;
+  color: crimson;
+}
+
+.blog-body h3 {
+  font-size: 1.75rem;
+}
+
+.blog-body h4 {
+  font-size: 1.5rem;
+}
+
+/* Improved image spacing and styling */
+.blog-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cover-image {
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Improved code blocks */
+code {
+  padding: 1.5rem;
+  background: rgb(41, 41, 41);
+  display: block;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+/* Improved lists */
+ol,
+ul,
+menu {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+  line-height: 1.65;
+}
+
+ol li,
+ul li {
+  padding: 0.5rem 0;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Improved blockquotes */
+blockquote {
+  border-left: 4px solid crimson;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  background-color: rgba(220, 20, 60, 0.1);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+blockquote p {
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Improved tables */
+.blog-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 16px;
+}
+
+.blog-body th,
+.blog-body td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-body th {
+  background-color: rgba(220, 20, 60, 0.2);
+  font-weight: 600;
+  color: crimson;
 }
 
 footer {
-  padding-top: 32px;
-  font-size: 20px;
+  padding-top: 3rem;
+  font-size: 18px;
   color: whitesmoke;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
 }
 
 footer a {
   text-decoration: underline;
   color: crimson;
+  font-weight: 500;
 }
 
 .tip-section {
@@ -297,5 +412,36 @@ footer a {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(139, 0, 0, 0.6), 0 0 20px rgba(139, 0, 0, 0.4);
   background-position: 100% 0%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-body p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .blog-body h1 {
+    font-size: 2rem;
+  }
+  
+  .blog-body h2 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-body img {
+    margin: 1.5rem auto;
+  }
+  
+  blockquote {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-body {
+    max-width: 800px;
+  }
 }
 </style>

@@ -77,6 +77,14 @@ div {
   opacity: 1;
 }
 
+/* Apply Playfair Display to navbar headings */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: all 0.3s ease;
+}
+
 .selected {
   text-decoration: underline;
   color: whitesmoke;

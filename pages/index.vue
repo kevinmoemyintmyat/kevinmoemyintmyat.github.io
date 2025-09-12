@@ -52,4 +52,44 @@ useHead({
   width: 300px;
   border-radius: 100%;
 }
+
+/* Apply Playfair Display to main headings */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Apply Inter to body text */
+span {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Style the main name */
+.text-9xl {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Style the subtitle */
+.text-2xl {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* Style the description links */
+.text-1xl {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.text-1xl:hover {
+  color: crimson !important;
+}
 </style>

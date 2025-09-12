@@ -115,16 +115,22 @@ section {
     padding: 2em;
 }
 
+/* Apply Playfair Display to main heading */
 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 100px;
     padding-bottom: 10px;
     color: whitesmoke;
     line-height: 100px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
     padding-bottom: 10px;
+    font-weight: 600;
 }
 
 p {
@@ -139,6 +145,7 @@ p {
 
 p b {
     text-decoration: underline;
+    font-weight: 600;
 }
 
 p h2 {
@@ -148,12 +155,20 @@ p h2 {
 p span {
     display: block;
     color: greenyellow;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 p a {
     cursor: pointer;
     text-decoration: underline;
     color: whitesmoke;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: crimson;
 }
 
 hr {
@@ -164,6 +179,7 @@ hr {
 
 ul li {
     cursor: pointer;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 ul li:hover {
@@ -172,7 +188,8 @@ ul li:hover {
 
 .selling-link {
     font-size: 0.9rem;
-    font-weight: bolder;
+    font-weight: 600;
     color: greenyellow;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 </style>

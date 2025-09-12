@@ -118,6 +118,7 @@ export default {
   opacity: 1;
 }
 
+
 /* Image Container Styles */
 .image-container {
   position: relative;
