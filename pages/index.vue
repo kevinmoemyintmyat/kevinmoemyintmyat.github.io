@@ -1,8 +1,8 @@
 <template>
   <div class="h-screen w-screen flex lg:flex-row sm:flex-col-reverse lg:visible">
-    <div class="h-screen lg:w-3/6 w-full flex flex-col justify-center items-center">
-      <img v-if="shouldShow" src="@/assets/images/me-cool-avatar.jpg"
-        class="mobile-avatar md:visible sm:visible lg:invisible mt-10" />
+    <div class="min-h-screen lg:h-screen lg:w-3/6 w-full flex flex-col justify-start lg:justify-center items-center pt-32 pb-20 lg:pt-0 lg:pb-0">
+      <img src="@/assets/images/me-cool-avatar.jpg"
+        class="mobile-avatar block lg:hidden mb-8" />
       <h1 class="p-12">
         <span class="text-9xl">Kevin</span>
         <br />
@@ -74,13 +74,6 @@ const getBlogUrl = (blog) => {
   return '/blog';
 };
 
-// Check if mobile view
-const shouldShow = computed(() => {
-  if (process.client) {
-    return window.innerWidth <= 1024;
-  }
-  return false;
-});
 
 useHead({
   title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
