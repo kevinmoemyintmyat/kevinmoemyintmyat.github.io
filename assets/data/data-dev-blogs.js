@@ -10,12 +10,12 @@ export default [
     path: "/m3yevn/welcome-to-the-era-of-software-captains-1i22",
     url: "https://dev.to/m3yevn/welcome-to-the-era-of-software-captains-1i22",
     comments_count: 0,
-    public_reactions_count: 0,
+    public_reactions_count: 1,
     collection_id: null,
     published_timestamp: "2025-09-12T18:51:55Z",
     language: "en",
     subforem_id: 1,
-    positive_reactions_count: 0,
+    positive_reactions_count: 1,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3wquu0tsuufwq2iklwz0.png",
     social_image:
@@ -52,6 +52,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9.8,
+    ratingReason:
+      "Strong content with comprehensive content, rich technical content, good structure, organized presentation, engaging personal narrative, good title length, well-tagged, includes references, optimal reading length. Comprehensive coverage with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -64,12 +67,12 @@ export default [
     path: "/m3yevn/the-good-devs-the-bad-stress-and-the-ugly-truth-35n1",
     url: "https://dev.to/m3yevn/the-good-devs-the-bad-stress-and-the-ugly-truth-35n1",
     comments_count: 0,
-    public_reactions_count: 5,
+    public_reactions_count: 3,
     collection_id: null,
     published_timestamp: "2025-08-31T06:33:22Z",
     language: "en",
     subforem_id: 1,
-    positive_reactions_count: 5,
+    positive_reactions_count: 3,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqriqnzf3prqpjulyb522.jpg",
     social_image:
@@ -101,6 +104,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 8.8,
+    ratingReason:
+      "Strong content with good content length, rich technical content, good structure, organized presentation, good title length, well-tagged, includes references, optimal reading length. Comprehensive coverage with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -150,6 +156,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9.9,
+    ratingReason:
+      "Excellent technical blog with engaging personal narrative and strong content structure. Well-written account of AI's impact on coding interviews with good technical depth and personal insights. The Halloween theme adds creative flair while maintaining professional quality. Comprehensive coverage with substantial technical depth and engaging storytelling.",
   },
   {
     type_of: "article",
@@ -198,6 +207,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9,
+    ratingReason:
+      "Strong content with good content length, rich technical content, good structure, engaging personal narrative, well-tagged, includes references, optimal reading length. Comprehensive coverage with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -252,6 +264,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9.4,
+    ratingReason:
+      "Strong content with good content length, rich technical content, good structure, engaging personal narrative, good title length, well-tagged, includes references, optimal reading length. Comprehensive coverage with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -301,6 +316,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9.2,
+    ratingReason:
+      "Strong content with rich technical content, well-structured content, organized presentation, engaging personal narrative, good title length, well-tagged, includes code examples, includes references. Concise presentation with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -350,6 +368,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 8.2,
+    ratingReason:
+      "Strong content with rich technical content, good structure, personal touch, good title length, well-tagged, includes references. Concise presentation with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -400,6 +421,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 9,
+    ratingReason:
+      "Strong content with rich technical content, well-structured content, organized presentation, engaging personal narrative, well-tagged, includes code examples, includes references. Concise presentation with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -449,6 +473,9 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 8.2,
+    ratingReason:
+      "Strong content with rich technical content, good structure, personal touch, good title length, well-tagged, includes references. Concise presentation with substantial technical depth.",
   },
   {
     type_of: "article",
@@ -498,5 +525,8 @@ export default [
         "https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F217073%2F0f0c2cec-62f0-4ec6-b164-23e0a893e311.jpg",
     },
     category: "Tech",
+    rating: 8.2,
+    ratingReason:
+      "Strong content with rich technical content, good structure, personal touch, good title length, well-tagged, includes references. Concise presentation with substantial technical depth.",
   },
 ];

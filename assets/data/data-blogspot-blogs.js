@@ -26,6 +26,9 @@ export default [
     },
     etag: '"dGltZXN0YW1wOiAJIDE3NDQxNzY3MTY4NTkKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
+    rating: 6.2,
+    ratingReason:
+      "Strong content with good title length. Concise presentation with accessible explanations.",
   },
   {
     kind: "blogger#post",
@@ -54,6 +57,9 @@ export default [
     },
     etag: '"dGltZXN0YW1wOiAJIDE3NDQxNzc3MTg4NzcKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
+    rating: 10,
+    ratingReason:
+      "Masterpiece memoir! A deeply moving and beautifully written personal journey spanning 12 years in Singapore. Exceptional storytelling with profound reflections on identity, belonging, and the immigrant experience. Rich emotional depth, vivid imagery, and honest vulnerability make this an extraordinary piece of writing. The narrative structure, personal growth arc, and cultural insights create a compelling and unforgettable read.",
   },
   {
     kind: "blogger#post",
@@ -82,6 +88,9 @@ export default [
     },
     etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NjY5NjY0NTUKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
+    rating: 6,
+    ratingReason:
+      "Solid blog post with good content structure and focused topic.",
   },
   {
     kind: "blogger#post",
@@ -111,6 +120,9 @@ export default [
     labels: ["manila", "manila memories", "part-2", "part-two", "travel"],
     etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NTk4NzkyNjgKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
+    rating: 6,
+    ratingReason:
+      "Solid blog post with good content structure and focused topic.",
   },
   {
     kind: "blogger#post",
@@ -140,5 +152,8 @@ export default [
     labels: ["manila", "manila memories", "part-1", "part-one", "travel"],
     etag: '"dGltZXN0YW1wOiAJIDE3Mjk5NjU5NjQzMTEKb2Zmc2V0OiAyODgwMDAwMAo"',
     category: "Memoir",
+    rating: 6,
+    ratingReason:
+      "Solid blog post with good content structure and focused topic.",
   },
 ];

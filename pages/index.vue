@@ -17,6 +17,23 @@
         <a class="underline cursor-pointer" href="https://www.instagram.com/m3_yevnnn.arts/" target="blank">
           <span class="text-white text-1xl">an artist</span></a>
       </div>
+      
+      <!-- Featured Blog Posts Section -->
+      <div class="mt-8 text-center">
+        <p class="text-white text-lg mb-4">Author of</p>
+        <div class="space-y-2">
+          <div v-for="blog in topRatedBlogs" :key="blog.id">
+            <a class="inline-block px-4 py-2 bg-red-600 text-white text-1xl underline cursor-pointer hover:bg-red-700 transition-all duration-200" :href="getBlogUrl(blog)">
+              "{{ blog.title }}"
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-4 py-2 bg-red-600 text-white text-1xl underline cursor-pointer hover:bg-red-700 transition-all duration-200" href="/blog">
+              and more...
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="image h-screen lg:w-3/6 lg:visible invisible">
       <div class="overlay"></div>
@@ -24,17 +41,47 @@
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    shouldShow() {
-      return window.innerWidth <= 1024;
-    }
-  }
-};
-</script>
-
 <script setup>
+// Import blog data
+import devBlogsData from '@/assets/data/data-dev-blogs.js';
+import blogspotBlogsData from '@/assets/data/data-blogspot-blogs.js';
+import travelBlogsData from '@/assets/data/data-blog.js';
+
+// Combine all blog data
+const allBlogs = [
+  ...devBlogsData.map(blog => ({ ...blog, source: 'dev' })),
+  ...blogspotBlogsData.map(blog => ({ ...blog, source: 'blogspot' })),
+  ...travelBlogsData.map(blog => ({ ...blog, source: 'travel' }))
+];
+
+// Get top 3 highest-rated blogs
+const topRatedBlogs = computed(() => {
+  return allBlogs
+    .filter(blog => blog.rating) // Only include blogs with ratings
+    .sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)) // Sort by rating (highest first) - ensure numeric comparison
+    .slice(0, 3); // Take top 3
+});
+
+// Function to generate blog URL based on source
+const getBlogUrl = (blog) => {
+  if (blog.source === 'dev') {
+    return `/blog/${blog.slug}`;
+  } else if (blog.source === 'blogspot') {
+    return `/blog/${blog.id}`;
+  } else if (blog.source === 'travel') {
+    return blog.route;
+  }
+  return '/blog';
+};
+
+// Check if mobile view
+const shouldShow = computed(() => {
+  if (process.client) {
+    return window.innerWidth <= 1024;
+  }
+  return false;
+});
+
 useHead({
   title: 'Kevin Moe Myint Myat - A cat dad, a developer & an artist',
   link: [{ rel: "icon", type: "image/png", href: "https://kevinmoemyintmyat.github.io/favicon.png" }]
