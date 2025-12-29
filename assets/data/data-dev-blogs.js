@@ -10,12 +10,12 @@ export default [
     path: "/m3yevn/welcome-to-the-era-of-software-captains-1i22",
     url: "https://dev.to/m3yevn/welcome-to-the-era-of-software-captains-1i22",
     comments_count: 0,
-    public_reactions_count: 1,
+    public_reactions_count: 0,
     collection_id: null,
     published_timestamp: "2025-09-12T18:51:55Z",
     language: "en",
     subforem_id: 1,
-    positive_reactions_count: 1,
+    positive_reactions_count: 0,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3wquu0tsuufwq2iklwz0.png",
     social_image:
@@ -67,12 +67,12 @@ export default [
     path: "/m3yevn/the-good-devs-the-bad-stress-and-the-ugly-truth-35n1",
     url: "https://dev.to/m3yevn/the-good-devs-the-bad-stress-and-the-ugly-truth-35n1",
     comments_count: 0,
-    public_reactions_count: 3,
+    public_reactions_count: 2,
     collection_id: null,
     published_timestamp: "2025-08-31T06:33:22Z",
     language: "en",
     subforem_id: 1,
-    positive_reactions_count: 3,
+    positive_reactions_count: 2,
     cover_image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqriqnzf3prqpjulyb522.jpg",
     social_image:

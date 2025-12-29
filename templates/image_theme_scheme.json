@@ -1,0 +1,172 @@
+{
+  "image_theme_scheme": {
+    "style": "Aesthetic 2D Minecraft style",
+    "aesthetic": "Pixelated, blocky, nostalgic gaming aesthetic",
+    "color_palette": {
+      "primary": "Warm, earthy tones with vibrant accents",
+      "secondary": "Natural colors - blues, greens, browns",
+      "accent": "Golden lighting, sunset/sunrise colors",
+      "mood": "Cozy, nostalgic, dreamlike quality"
+    },
+    "technical_specs": {
+      "resolution": "High resolution with pixelated/blocky appearance",
+      "lighting": "Soft, warm lighting with dramatic shadows",
+      "texture": "Smooth pixelated surfaces with subtle details",
+      "perspective": "Isometric or 3/4 view preferred",
+      "atmosphere": "Dreamlike, ethereal, mystical quality"
+    },
+    "character_design": {
+      "fish": "Simple humanoid figure, expressive but minimal features",
+      "hei": "Orange tabby cat with pixelated fur texture",
+      "bird": "Humanoid figure, office worker appearance",
+      "niwra": "Local resident, friendly appearance",
+      "luna": "Caring friend, warm expression",
+      "other_characters": "Minimalist but expressive design"
+    },
+    "environmental_themes": {
+      "urban": "Blocky buildings, pixelated windows, geometric architecture",
+      "natural": "Pixelated trees, blocky water, geometric landscapes",
+      "spiritual": "Ethereal lighting, mystical atmospheres, divine presences",
+      "water": "Liquid effects, pixelated waves, reflective surfaces",
+      "weather": "Pixelated rain, storm effects, dramatic skies"
+    }
+  },
+  "image_placeholders": [
+    {
+      "id": "storm_new_hill_city",
+      "scene": "Storm hitting New Hill City",
+      "description": "Pixelated urban skyline, dark storm clouds, wind effects, debris flying, blocky buildings, dramatic lighting, apocalyptic atmosphere",
+      "keywords": "Aesthetic 2D Minecraft style, storm scene, New Hill City, pixelated urban, storm clouds, wind effects, debris, blocky architecture, dramatic lighting, apocalyptic mood",
+      "mood": "Dramatic, chaotic, destructive",
+      "colors": "Dark grays, blues, with bright debris effects"
+    },
+    {
+      "id": "bird_office_desk",
+      "scene": "Bird at office desk",
+      "description": "Computer screen showing spam folder, pixelated office environment, warm desk lamp, cluttered workspace, email interface, cozy indoor lighting",
+      "keywords": "Aesthetic 2D Minecraft style, office desk scene, computer screen, spam folder, pixelated office, desk lamp, cluttered workspace, email interface, indoor lighting, Bird character",
+      "mood": "Cozy, mundane, discovery",
+      "colors": "Warm indoor lighting, computer screen glow"
+    },
+    {
+      "id": "bridge_two_cities",
+      "scene": "Bridge connecting two cities",
+      "description": "Pixelated bridge architecture, water below, sunset lighting, two different architectural styles, transition scene",
+      "keywords": "Aesthetic 2D Minecraft style, bridge scene, two cities, pixelated bridge, water below, sunset lighting, architectural contrast, transition moment, New Hill City, New Arrivals",
+      "mood": "Transitional, hopeful, journey beginning",
+      "colors": "Sunset oranges and purples, water blues"
+    },
+    {
+      "id": "hei_cat_waiting",
+      "scene": "Hei the cat waiting",
+      "description": "Pixelated cat character, orange tabby cat, sitting on windowsill, looking out window, cozy home setting, warm lighting, cat waiting for owner",
+      "keywords": "Aesthetic 2D Minecraft style, Hei cat, pixelated cat, orange tabby, windowsill, looking out window, cozy home, warm lighting, waiting cat, pet character",
+      "mood": "Melancholy, longing, loyalty",
+      "colors": "Warm home lighting, orange cat fur"
+    },
+    {
+      "id": "immigration_checkpoint",
+      "scene": "Immigration checkpoint",
+      "description": "Fish at border crossing, pixelated immigration office, officer checking documents, passport and papers, bureaucratic setting, crossing threshold moment",
+      "keywords": "Aesthetic 2D Minecraft style, immigration checkpoint, border crossing, pixelated office, documents checking, passport, bureaucratic setting, threshold moment, Fish character",
+      "mood": "Nervous, official, crossing boundaries",
+      "colors": "Institutional lighting, official documents"
+    },
+    {
+      "id": "fish_dream_sequence",
+      "scene": "Fish's dream sequence",
+      "description": "Pixelated temple with red lanterns, Goddess of Compassion figure, willow branch, divine presence, ethereal lighting, mystical atmosphere, dreamlike quality",
+      "keywords": "Aesthetic 2D Minecraft style, dream sequence, pixelated temple, red lanterns, Goddess of Compassion, willow branch, divine presence, ethereal lighting, mystical atmosphere, dreamlike quality",
+      "mood": "Mystical, divine, ethereal",
+      "colors": "Red lanterns, golden divine light, ethereal glow"
+    },
+    {
+      "id": "fish_niwra_apartment",
+      "scene": "Fish and Niwra on apartment steps",
+      "description": "Fish and Niwra sitting on pixelated apartment steps, warm golden evening light, blocky architecture, cozy neighborhood setting, New Arrivals",
+      "keywords": "Aesthetic 2D Minecraft style, Fish and Niwra, apartment steps, pixelated architecture, warm golden light, cozy neighborhood, New Arrivals, friendship moment",
+      "mood": "Warm, friendly, community",
+      "colors": "Warm golden evening light, cozy neighborhood tones"
+    },
+    {
+      "id": "mystical_bridge_scene",
+      "scene": "Mystical bridge with Guan Yin",
+      "description": "Mystical bridge scene with Guan Yin figure, willow branch, Southeast Asian people crossing bridge, ethereal lighting, spiritual atmosphere, pixelated mystical elements",
+      "keywords": "Aesthetic 2D Minecraft style, mystical bridge, Guan Yin figure, willow branch, Southeast Asian people, ethereal lighting, spiritual atmosphere, pixelated mystical elements",
+      "mood": "Spiritual, mystical, divine guidance",
+      "colors": "Ethereal lighting, spiritual glow, mystical atmosphere"
+    },
+    {
+      "id": "melaka_river_walk",
+      "scene": "Fish walking along Melaka river",
+      "description": "Fish walking along Melaka river at evening, colonial buildings reflected in water, stone embankments, peaceful atmosphere, historical port city, pixelated water reflections",
+      "keywords": "Aesthetic 2D Minecraft style, Fish walking, Melaka river, colonial buildings, water reflections, stone embankments, evening light, historical port city, peaceful exploration, pixelated water reflections",
+      "mood": "Peaceful, reflective, historical",
+      "colors": "Evening light, water reflections, colonial architecture"
+    },
+    {
+      "id": "sky_bridges_rain",
+      "scene": "Fish at Sky Bridges in rain",
+      "description": "Fish at Sky Bridges in rain, towering glass structures, stormy sky, ethereal silhouettes, liquid silver cascading down facades, modern architecture, pixelated rain effects",
+      "keywords": "Aesthetic 2D Minecraft style, Fish at Sky Bridges, rain scene, towering glass structures, stormy sky, ethereal silhouettes, liquid silver, modern architecture, awe-inspiring moment, pixelated rain effects",
+      "mood": "Awe-inspiring, dramatic, urban beauty",
+      "colors": "Stormy grays, liquid silver, glass reflections"
+    },
+    {
+      "id": "mountain_city_temple",
+      "scene": "Mountain City temple",
+      "description": "Goddess of Mercy statue, limestone cave temple, pixelated spiritual setting, divine light, meditation scene, peaceful atmosphere, hidden sanctuary",
+      "keywords": "Aesthetic 2D Minecraft style, Mountain City temple, Goddess of Mercy, limestone cave, pixelated spiritual, divine light, meditation, peaceful atmosphere, hidden sanctuary, spiritual connection",
+      "mood": "Sacred, peaceful, divine",
+      "colors": "Divine golden light, limestone whites, spiritual glow"
+    },
+    {
+      "id": "palm_island_arrival",
+      "scene": "Fish arriving at Palm Island",
+      "description": "Fish arriving at Palm Island, ferry dock, tropical island landscape, pixelated tropical vegetation, gentle hills, peaceful atmosphere, arrival moment, island beauty",
+      "keywords": "Aesthetic 2D Minecraft style, Palm Island arrival, ferry dock, tropical landscape, pixelated vegetation, gentle hills, peaceful atmosphere, arrival moment, island beauty, Fish character",
+      "mood": "Anticipatory, tropical, peaceful",
+      "colors": "Tropical greens, ocean blues, warm island light"
+    },
+    {
+      "id": "monkey_king_temple",
+      "scene": "Monkey King temple in Floating Village",
+      "description": "Monkey King temple in Floating Village, pixelated stilt houses over water, wooden walkways, Monkey King statue, intricate details, wisdom and mischief, transformation themes, water reflections",
+      "keywords": "Aesthetic 2D Minecraft style, Monkey King temple, Floating Village, pixelated stilt houses, wooden walkways, Monkey King statue, intricate details, wisdom mischief, transformation themes, water reflections",
+      "mood": "Playful, wise, transformative",
+      "colors": "Wooden browns, water blues, golden statue details"
+    },
+    {
+      "id": "temple_completion",
+      "scene": "Temple of Ten Thousand Buddhas completion",
+      "description": "Temple of Ten Thousand Buddhas, massive Goddess of Mercy statue, Fish at spiritual completion, pixelated temple complex, divine fulfillment, tears of joy, spiritual mountain, journey completion",
+      "keywords": "Aesthetic 2D Minecraft style, Temple of Ten Thousand Buddhas, Goddess of Mercy statue, Fish spiritual completion, pixelated temple, divine fulfillment, tears of joy, spiritual mountain, journey completion, emotional moment",
+      "mood": "Transcendent, emotional, fulfilling",
+      "colors": "Divine golden light, temple architecture, emotional warmth"
+    },
+    {
+      "id": "jetskiing_freedom",
+      "scene": "Fish jetskiing at Cape Mangrove",
+      "description": "Fish jetskiing at Cape Mangrove, pixelated water sports scene, turquoise waters, water spray, freedom and joy, coastal landscape, mangrove forests, sunset lighting, pure liberation",
+      "keywords": "Aesthetic 2D Minecraft style, Fish jetskiing, Cape Mangrove, pixelated water sports, turquoise waters, water spray, freedom joy, coastal landscape, mangrove forests, sunset lighting, pure liberation",
+      "mood": "Liberating, joyful, free",
+      "colors": "Turquoise waters, sunset oranges, water spray whites"
+    },
+    {
+      "id": "fish_hei_reunion",
+      "scene": "Fish and Hei reunion",
+      "description": "Fish and Hei reunion, pixelated emotional scene, Fish holding orange tabby cat, Luna watching, warm home setting, emotional reunion, love and loyalty, Saving Private Hei moment",
+      "keywords": "Aesthetic 2D Minecraft style, Fish Hei reunion, pixelated emotional scene, Fish holding orange tabby, Luna watching, warm home setting, emotional reunion, love loyalty, Saving Private Hei moment, pet bond",
+      "mood": "Emotional, heartwarming, reuniting",
+      "colors": "Warm home lighting, orange cat fur, emotional warmth"
+    }
+  ],
+  "generation_guidelines": {
+    "style_consistency": "Maintain pixelated, blocky aesthetic throughout all images",
+    "lighting": "Use warm, atmospheric lighting that enhances mood",
+    "composition": "Focus on emotional impact and story progression",
+    "details": "Include subtle environmental storytelling elements",
+    "color_harmony": "Maintain consistent color palette across all images",
+    "character_consistency": "Keep character designs simple but expressive"
+  }
+}
